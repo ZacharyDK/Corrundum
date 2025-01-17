@@ -421,14 +421,14 @@ data:extend(
         {
 
           {type ="item", name ="iron-plate", amount = 1},
-          {type ="fluid", name ="mixed-sulfate-solution", amount = 100},
+          {type ="fluid", name ="mixed-sulfate-solution", amount = 200},
         },
 
         energy_required = 5,
         results =
         {
-          {type ="fluid", name ="iron-sulfate-solution", amount = 100},
-          {type ="item", name ="copper-ore", amount = 1}
+          {type ="fluid", name ="iron-sulfate-solution", amount = 200},
+          {type ="item", name ="copper-ore", amount = 2}
         },
         allow_productivity = false, 
         auto_recycle = false,
