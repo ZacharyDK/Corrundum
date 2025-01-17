@@ -446,15 +446,15 @@ data:extend(
         {
 
           {type ="item", name ="iron-plate", amount = 1},
-          {type ="fluid", name ="iron-sulfate-solution", amount = 100},
+          {type ="fluid", name ="iron-sulfate-solution", amount = 200},
           {type ="fluid", name ="water", amount = 100}, --Why do I need more water, its aqueous already. Oh for washing the products...
         },
 
         energy_required = 15,
         results =
         {
-          {type ="fluid", name ="sulfuric-acid-dilute", amount = 180}, --some fluid lost.
-          {type ="item", name ="iron-ore", amount = 2}
+          {type ="fluid", name ="sulfuric-acid-dilute", amount = 280}, --some fluid lost.
+          {type ="item", name ="iron-ore", amount = 3}
         },
         allow_productivity = false,
         auto_recycle = false,
@@ -472,15 +472,15 @@ data:extend(
         {
 
           {type ="item", name ="copper-plate", amount = 1},
-          {type ="fluid", name ="copper-sulfate-solution", amount = 100},
+          {type ="fluid", name ="copper-sulfate-solution", amount = 200},
           {type ="fluid", name ="water", amount = 100},
         },
 
         energy_required = 17,
         results =
         {
-          {type ="fluid", name ="sulfuric-acid-dilute", amount = 180},
-          {type ="item", name ="copper-ore", amount = 2}
+          {type ="fluid", name ="sulfuric-acid-dilute", amount = 280},
+          {type ="item", name ="copper-ore", amount = 3}
         },
         allow_productivity = false, 
         maximum_productivity = 1,
@@ -693,6 +693,30 @@ data:extend(
         maximum_productivity = 1,
         main_product ="sulfuric-acid",
         factoriopedia_description ="We spend alot of energy boiling off water into steam, which can be condensed back into water."
+
+    },
+    {
+      type ="recipe",
+      name ="sulfuric-acid-concentration-alt",
+      category ="chemistry",
+      icon ="__base__/graphics/icons/fluid/sulfuric-acid.png",
+      enabled = false,
+      ingredients =
+      {
+
+        {type ="fluid", name ="sulfuric-acid-dilute", amount = 500},
+      },
+
+      energy_required = 200,
+      results =
+      {
+        {type ="fluid", name ="sulfuric-acid", amount = 100},
+      },
+      allow_productivity = false, 
+      allow_quality = false,
+      maximum_productivity = 1,
+      main_product ="sulfuric-acid",
+      factoriopedia_description ="We spend alot of energy boiling off water, and don't bother to catch it."
 
     },
     {
@@ -1135,6 +1159,30 @@ data:extend(
       {
 
         {type ="item", name ="iron-gear-wheel", amount = 16},
+        {type ="fluid", name ="sulfuric-acid", amount = 200},
+      },
+
+      energy_required = 4,
+      results =
+      {
+        {type ="fluid", name ="iron-sulfate-solution", amount = 200},
+      },
+      allow_productivity = false, 
+      maximum_productivity = 1,
+      main_product ="iron-sulfate-solution",
+      auto_recycle = false,
+
+    },
+    {
+      type ="recipe",
+      name ="iron-stick-recrystalization",
+      category ="chemistry",
+      icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
+      enabled = false,
+      ingredients =
+      {
+
+        {type ="item", name ="iron-stick", amount = 16},
         {type ="fluid", name ="sulfuric-acid", amount = 200},
       },
 

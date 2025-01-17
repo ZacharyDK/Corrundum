@@ -1,0 +1,64 @@
+==1.07==
+-Updated force reduction recipes. Now 1 plate, 200 fluid --> 3 ore.
+-Alternative dilution recipe
+-Updated localization files.
+
+
+==1.06==
+-TODO review markdown syntax and move this to change log.
+-Updated reactive-displacement recipe. 1 iron plate can convert 200 mixed sulfate solution to 200 Iron sulfate solution, 2 copper ore. This should allow you to produce iron instead of being iron neutral.
+
+==1.05==
+-Condensed several technologies to optimize gameplay flow. All recipes
+-Corrundum planet discovery now available when main planets are available.
+-Added a planet connection from nauvis to corrundum. Rip to nice star map.
+-Petroleum tile can now be covered by landfill.
+-Nerfed space steam production recipe by a factor of about 20,
+-Adjusted platinum thruster efficiency. It is now efficient only at high fuel consumption. Hence, you want to be cognizant of this thruster when you run low on fuel. The goal is not replace normal thrusters, but increase the depth of ship design and allow for faster speeds. Note that this is the inverse of the base thruster, who gets more efficient at low fuel values.
+-Added achievements related to visiting the Corrundum and using electrochemical science.
+-auto_recycle on concrete recipe introduced by this mod is now false. This should ensure that this mod does not alter fulgora recycling.
+-Added alternative recrystalization recipes - convert excess gears and cables to their respective sulfate solutions.
+-New calcium sulfate recipe. With time consuming effort and techinques from organic chemistry, we can recover calcium sulfate from nutrients. Now we can use calcium sulfate to make lots of stone of gleba. Making use of this recipe is a challenge, and serves as an alternative to importing calcite.
+-Added fish to icebox functionality and tested it. (Yes fish in the icebox caused a crash because I manually put in stack sizes, and I put in the wrong stack size.)
+-Fixed the wrong cache being updated upon building/destroying an ice box. Sorry if this caused problems.
+-Added robust nil checking to the code. If we are using tick function on an entity, and we get a nil value, we remake the crash and continue with a different part of the loop.
+-Posted on github.
+==1.04==
+-Ensured ice-boxes can't be placed on space-platforms.
+-Added a new platinum thruster with respective recipe and technology. It is a hybrid of tungsten and platinum.
+-Max fluid usage is 3.5 (base thruster is 2) at 0.65 percent efficiency, 0.90 fluid volume. Minfluid usuage is 0.4, at 0.1 fluid volume at only 0.7 efficiency.
+Gotta go fast.
+-If you want fuel economy, you're in the wrong place.
+
+-Duplicate recipes to ensure platinum both works in the foundry and furnace is intended. Wube needs to add a smelting or metallurgy built in category, and add it to the respective machines. In the meantime, duplicate recipes that only change the category to ensure functionality is the best band-aid.
+
+-If we all have to update the base game/ space age files to add the same category, this will increase the chance of something breaking or an unknown incompatibility. (The chance is small, Wube's design is robust and they have correctly accounted for multiple mods handling updates to the same entity class. I do not know if they accounted for mods adding the exact same recipe category name.)
+
+-I make an effort to avoid sending updates to base game or space age files even though we have that functionality as modders. The major exception is labs - you have to update them so they accept your science. As many mods add science packs, it would be ideal if any entity of type lab automatically gets available input sciences updated no matter where they come from. I'm sure Wube considered this already, but I will bring it up.
+
+==1.03==
+-Added huge rock localization - thanks StephenB
+-Added recipe for recrystalization. Make sulfate solutions by dissolving plates in sulfuric acid. - thanks StephenB.
+-New technology - recrystalization.
+-Added built-in subgroups to items. - thanks StephenB. No more uncategorized mess.
+
+==1.02==
+-Correctly adds electro-chemical science pack to all labs. This insures mods like nuclear science can load.
+-However, I have not be able to correctly add all the science packs to my lab. Documentation has not been helpful and not sure how to log values for debugging.
+
+-Modders who add additional science to labs should do so in the following way in data-updates.lua
+
+for k,v in pairs( data.raw['lab']) do
+table.insert(v.inputs,"MY-SCIENCE-PACK") --add my science pack to all labs
+end
+
+-This will ensure your science pack is always added to any labs modders add, instead of just the standard lab and the biolab.
+
+== 1.01 ===
+
+-Used caching to reduce calls to find_entities(). Mod should be playable with large number of entities, as find_entities is an expensive function.
+-Added a module slot to the pressure lab.
+-Fixed overlap with Fulgora on the starmap (embarrassing on my end)
+-TODO - science compatibility
+
+-Special thanks to StephenB for making this optimization possible. 

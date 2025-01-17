@@ -231,6 +231,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "sulfuric-acid-concentration"
             },
+            {
+                type = "unlock-recipe",
+                recipe = "sulfuric-acid-concentration-alt"
+            },
         },
         research_trigger =
         {
@@ -437,11 +441,15 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
+                recipe = "iron-recrystalization-alt",
+            },
+            {
+                type = "unlock-recipe",
                 recipe = "copper-recrystalization-alt",
             },
             {
                 type = "unlock-recipe",
-                recipe = "iron-recrystalization-alt",
+                recipe = "iron-stick-recrystalization",
             },
 
 
