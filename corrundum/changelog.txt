@@ -2,7 +2,7 @@
 -Updated force reduction recipes. Now 1 plate, 200 fluid --> 3 ore.
 -Alternative dilution recipe
 -Updated localization files.
-
+-Moved changelog
 
 ==1.06==
 -TODO review markdown syntax and move this to change log.
