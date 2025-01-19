@@ -1,3 +1,13 @@
+==1.08==
+-New controlled combustion recipe to convert petroleum gas to CO2. (Can't get red boiler to be any better, but this should help with CO2 production)
+-Reduced time it takes for sulfuric acid dilution
+-Steam as a product of concentration/pressurization recipes now correctly at 500C
+-New recipe Dilute acid neutralization. Turn dilute sulfuric acid directly into water. This should make it easy to get rid of dilute sulfuric acid
+-Fixed auto place control names in localization
+-Moved red engine/boiler recipes to Corundum planet discovery.
+-TODO consider how to reorganize all the chemistry recipes.
+-TODO consider a recipe to cool 100 degree water. 
+
 ==1.07==
 -Updated force reduction recipes. Now 1 plate, 200 fluid --> 3 ore.
 -Alternative dilution recipe

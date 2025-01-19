@@ -20,6 +20,14 @@ data:extend({
                 space_location = "corrundum",
                 use_icon_overlay_constant = true
             },
+            {
+                type = "unlock-recipe",
+                recipe = "red-steam-engine-recipe",
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "red-boiler-recipe",
+            },
         },
         prerequisites = { "space-platform-thruster"},
         unit =
@@ -234,6 +242,10 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "sulfuric-acid-concentration-alt"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "dilute-acid-neutralization"
             },
         },
         research_trigger =
@@ -648,6 +660,10 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "ice-box-production",
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "controlled-petrol-combustion",
             },
 
 

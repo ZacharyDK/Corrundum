@@ -196,6 +196,50 @@ data:extend(
       factoriopedia_description ="We need more water to capture all energy released, but this should help get things started."
     },
 
+    {
+      type ="recipe",
+      name ="dilute-acid-neutralization",
+      category ="chemistry-or-cryogenics",
+      icon ="__base__/graphics/icons/fluid/water.png",
+      enabled = false,
+      subgroup ="fluid-recipes",
+      order ="d[other-chemistry]-b[pressurized-acid-neutralisation]",
+      auto_recycle = false,
+      enabled = false,
+      surface_conditions =
+      {
+        {
+          property ="pressure",
+          min = 0,
+          max = 6000
+        }
+      },
+      ingredients =
+      {
+        {type ="item", name ="calcite", amount = 1},
+        {type ="fluid", name ="sulfuric-acid-dilute", amount = 2000},
+      },
+      energy_required = 2,
+      results =
+      {
+        {type ="fluid", name ="water", amount = 2000, temperature = 100}
+      },
+      allow_productivity = false,
+      always_show_products = true,
+      show_amount_in_title = false,
+      allow_decomposition = false,
+      crafting_machine_tint =
+      {
+        primary = {r = 1.000, g = 0.912, b = 0.036, a = 1.000}, -- #ffe809ff
+        secondary = {r = 0.707, g = 0.797, b = 0.335, a = 1.000}, -- #b4cb55ff
+        tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, -- #ada17bff
+        quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, -- #ffcd00ff
+      },
+      factoriopedia_description ="We need more water to capture all energy released, but this should help get things started."
+    },
+
+
+
     --STEP 1 Sulfur Redox 
     {
         type ="recipe",
@@ -682,11 +726,11 @@ data:extend(
           {type ="fluid", name ="sulfuric-acid-dilute", amount = 500},
         },
 
-        energy_required = 400,
+        energy_required = 300,
         results =
         {
           {type ="fluid", name ="sulfuric-acid", amount = 100},
-          {type ="fluid", name ="steam", amount = 4400},
+          {type ="fluid", name ="steam", amount = 4400, temperature = 500},
         },
         allow_productivity = false, 
         allow_quality = false,
@@ -707,7 +751,7 @@ data:extend(
         {type ="fluid", name ="sulfuric-acid-dilute", amount = 500},
       },
 
-      energy_required = 200,
+      energy_required = 100,
       results =
       {
         {type ="fluid", name ="sulfuric-acid", amount = 100},
@@ -904,7 +948,7 @@ data:extend(
       name ="red-boiler-recipe",
       category ="crafting",
       icon ="__corrundum__/graphics/icons/red-boiler.png",
-      enabled = true,
+      enabled = false,
       ingredients =
       {
 
@@ -926,7 +970,7 @@ data:extend(
       name ="red-steam-engine-recipe",
       category ="crafting",
       icon ="__corrundum__/graphics/icons/red-steam-engine.png",
-      enabled = true,
+      enabled = false,
       ingredients =
       {
 
@@ -994,6 +1038,30 @@ data:extend(
       allow_quality = true,
       auto_recycle = false,
       main_product ="carbon",
+
+
+    },
+    {
+      type ="recipe",
+      name ="controlled-petrol-combustion",
+      category ="chemistry",
+      icon = "__corrundum__/graphics/icons/fluid/carbon-dioxide.png",
+      enabled = false,
+      ingredients =
+      {
+
+        {type ="fluid", name = "petroleum-gas", amount = 300},
+      },
+
+      energy_required = 1, 
+      results =
+      {
+        {type ="fluid", name = "carbon-dioxide", amount = 600, temperature = 100},
+      },
+      allow_productivity = true, 
+      allow_quality = true,
+      auto_recycle = false,
+      main_product ="carbon-dioxide",
 
 
     },
