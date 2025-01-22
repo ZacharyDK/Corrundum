@@ -364,6 +364,6 @@ data:extend(
         asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.fulgora_aquilo)
       },
       
-      --Something about icons breaking aquilo connection a mod load
+      
 }
 )

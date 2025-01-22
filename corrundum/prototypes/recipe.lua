@@ -2,8 +2,6 @@ local seconds = 60
 local minutes = 60*seconds
 
 --TODO balence recipe time cost.
-
--- TODO proofread
 -- Crafting machine tints.
 
 data:extend(

@@ -43,7 +43,7 @@ local function find_all_entity_of_name(input_name)
         ::continue_loop::
     end
   
-  log(serpent.block(out_entity_table))
+  --log(serpent.block(out_entity_table))
 
   
 

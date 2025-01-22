@@ -117,7 +117,8 @@ data:extend(
         drawing_box_vertical_extension = 0.4,
         module_slots = 3,
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-    
+        
+
         graphics_set =
         {
             animation = make_4way_animation_from_spritesheet({ layers =
@@ -396,6 +397,7 @@ data:extend(
       corpse = "chemical-plant-remnants",
       dying_explosion = "chemical-plant-explosion",
       damaged_trigger_effect = hit_effects.entity(),
+      heating_energy = "0W",
       --frozen_patch = "__space-age__/graphics/entity/frozen/lab/lab.png", --need to see how it looks FAILS
       
       --V1
