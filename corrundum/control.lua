@@ -333,6 +333,8 @@ script.on_nth_tick(53,
                 handled_dry_ice_count = true
               elseif(handled_dry_ice_count == false and current_surface.name == "aquilo" ) then
                 handled_dry_ice_count = true
+              elseif(handled_dry_ice_count == false and current_surface.name == "frozeta" ) then
+                handled_dry_ice_count = true
               end
 
               

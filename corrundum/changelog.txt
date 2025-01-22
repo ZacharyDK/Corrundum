@@ -1,3 +1,11 @@
+==1.09==
+-Gleba plastics productivity now buffs sulfonated plastic recipes. Go ham
+- Added hot water to steam recipe. This should be a good end to the dilute sulfuric acid crafting chain. And a use for tons of the free solid fuel.
+- dilute acid neutralization --> 2 calcite.
+- updated localization files.
+- Something else I added yesterday but forgot. 
+
+
 ==1.08==
 -New controlled combustion recipe to convert petroleum gas to CO2. (Can't get red boiler to be any better, but this should help with CO2 production)
 -Reduced time it takes for sulfuric acid dilution

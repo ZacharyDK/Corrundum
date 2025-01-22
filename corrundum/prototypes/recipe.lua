@@ -214,7 +214,7 @@ data:extend(
       },
       ingredients =
       {
-        {type ="item", name ="calcite", amount = 1},
+        {type ="item", name ="calcite", amount = 2},
         {type ="fluid", name ="sulfuric-acid-dilute", amount = 2000},
       },
       energy_required = 2,
@@ -236,6 +236,40 @@ data:extend(
       factoriopedia_description ="We need more water to capture all energy released, but this should help get things started."
     },
 
+    {
+      type ="recipe",
+      name ="hot-water-to-steam",
+      category ="chemistry-or-cryogenics",
+      icon ="__base__/graphics/icons/fluid/water.png",
+      enabled = false,
+      subgroup ="fluid-recipes",
+      order ="d[other-chemistry]-c[pressurized-acid-neutralisation]",
+      auto_recycle = false,
+      enabled = false,
+      surface_conditions =
+      {
+        {
+          property ="pressure",
+          min = 0,
+          max = 6000
+        }
+      },
+      ingredients =
+      {
+        {type ="item", name ="solid-fuel", amount = 5},
+        {type ="fluid", name ="water", amount = 90, temperature = 100},
+      },
+      energy_required = 2,
+      results =
+      {
+        {type ="fluid", name ="steam", amount = 1000, temperature = 500},
+      },
+      allow_productivity = false,
+      always_show_products = true,
+      show_amount_in_title = false,
+      allow_decomposition = false,
+
+    },
 
 
     --STEP 1 Sulfur Redox 

@@ -57,3 +57,20 @@ data.raw["assembling-machine"]["catalytic-chemical-plant"].graphics_set.frozen_p
     scale = 0.5
   }
 }
+
+local recipe_patch = 
+{
+  type = "change-recipe-productivity",
+  recipe = "sulfonated-plastic-production",
+  change = 0.1
+}
+
+local recipe_patch_2 = 
+{
+  type = "change-recipe-productivity",
+  recipe = "sulfonated-plastic-production-alt",
+  change = 0.1
+}
+
+table.insert(data.raw.technology["plastic-bar-productivity"].effects,recipe_patch)
+table.insert(data.raw.technology["plastic-bar-productivity"].effects,recipe_patch_2)

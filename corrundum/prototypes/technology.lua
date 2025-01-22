@@ -246,6 +246,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "dilute-acid-neutralization"
             },
+            {
+                type = "unlock-recipe",
+                recipe = "hot-water-to-steam"
+            },
         },
         research_trigger =
         {
