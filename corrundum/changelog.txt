@@ -1,44 +1,54 @@
-==1.09==
--Gleba plastics productivity now buffs sulfonated plastic recipes. Go ham
-- Added hot water to steam recipe. This should be a good end to the dilute sulfuric acid crafting chain. And a use for tons of the free solid fuel.
-- dilute acid neutralization --> 2 calcite.
-- updated localization files.
-- Something else I added yesterday but forgot. 
+---------------------------------------------------------------------------------------------------
+Version: 1.0.10
+Date: 25. 01. 2025
+  Major Features:
+    - asphalt-and-concrete research no longer takes production or utility science. This fixes a lubricant bottle neck.
 
 
-==1.08==
--New controlled combustion recipe to convert petroleum gas to CO2. (Can't get red boiler to be any better, but this should help with CO2 production)
--Reduced time it takes for sulfuric acid dilution
--Steam as a product of concentration/pressurization recipes now correctly at 500C
--New recipe Dilute acid neutralization. Turn dilute sulfuric acid directly into water. This should make it easy to get rid of dilute sulfuric acid
--Fixed auto place control names in localization
--Moved red engine/boiler recipes to Corundum planet discovery.
--TODO consider how to reorganize all the chemistry recipes.
--TODO consider a recipe to cool 100 degree water. 
+---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Date: 25. 01. 2025
+  Major Features:
+    -Gleba plastics productivity now buffs sulfonated plastic recipes. Go ham
+    - Added hot water to steam recipe. This should be a good end to the dilute sulfuric acid crafting chain. And a use for tons of the free solid fuel.
+    - dilute acid neutralization --> 2 calcite.
+    - updated localization files.
+    - Something else I added yesterday but forgot. 
 
-==1.07==
--Updated force reduction recipes. Now 1 plate, 200 fluid --> 3 ore.
--Alternative dilution recipe
--Updated localization files.
--Moved changelog
 
-==1.06==
--TODO review markdown syntax and move this to change log.
--Updated reactive-displacement recipe. 1 iron plate can convert 200 mixed sulfate solution to 200 Iron sulfate solution, 2 copper ore. This should allow you to produce iron instead of being iron neutral.
+---------------------------------------------------------------------------------------------------
+    -New controlled combustion recipe to convert petroleum gas to CO2. (Can't get red boiler to be any better, but this should help with CO2 production)
+    -Reduced time it takes for sulfuric acid dilution
+    -Steam as a product of concentration/pressurization recipes now correctly at 500C    
+    -New recipe Dilute acid neutralization. Turn dilute sulfuric acid directly into water. This should make it easy to get rid of dilute sulfuric acid
+    -Fixed auto place control names in localization
+    -Moved red engine/boiler recipes to Corundum planet discovery.
+    -TODO consider how to reorganize all the chemistry recipes.
+    -TODO consider a recipe to cool 100 degree water. 
 
-==1.05==
--Condensed several technologies to optimize gameplay flow. All recipes
--Corrundum planet discovery now available when main planets are available.
--Added a planet connection from nauvis to corrundum. Rip to nice star map.
--Petroleum tile can now be covered by landfill.
--Nerfed space steam production recipe by a factor of about 20,
--Adjusted platinum thruster efficiency. It is now efficient only at high fuel consumption. Hence, you want to be cognizant of this thruster when you run low on fuel. The goal is not replace normal thrusters, but increase the depth of ship design and allow for faster speeds. Note that this is the inverse of the base thruster, who gets more efficient at low fuel values.
--Added achievements related to visiting the Corrundum and using electrochemical science.
--auto_recycle on concrete recipe introduced by this mod is now false. This should ensure that this mod does not alter fulgora recycling.
--Added alternative recrystalization recipes - convert excess gears and cables to their respective sulfate solutions.
--New calcium sulfate recipe. With time consuming effort and techinques from organic chemistry, we can recover calcium sulfate from nutrients. Now we can use calcium sulfate to make lots of stone of gleba. Making use of this recipe is a challenge, and serves as an alternative to importing calcite.
--Added fish to icebox functionality and tested it. (Yes fish in the icebox caused a crash because I manually put in stack sizes, and I put in the wrong stack size.)
--Fixed the wrong cache being updated upon building/destroying an ice box. Sorry if this caused problems.
+---------------------------------------------------------------------------------------------------
+    -Updated force reduction recipes. Now 1 plate, 200 fluid --> 3 ore.
+    -Alternative dilution recipe
+    -Updated localization files.
+    -Moved changelog
+
+---------------------------------------------------------------------------------------------------
+    -TODO review markdown syntax and move this to change log.
+    -Updated reactive-displacement recipe. 1 iron plate can convert 200 mixed sulfate solution to 200 Iron sulfate solution, 2 copper ore. This should allow you to produce iron instead of being iron neutral.
+
+---------------------------------------------------------------------------------------------------
+    -Condensed several technologies to optimize gameplay flow. All recipes
+    -Corrundum planet discovery now available when main planets are available.
+    -Added a planet connection from nauvis to corrundum. Rip to nice star map.
+    -Petroleum tile can now be covered by landfill.
+    -Nerfed space steam production recipe by a factor of about 20,
+    -Adjusted platinum thruster efficiency. It is now efficient only at high fuel consumption. Hence, you want to be cognizant of this thruster when you run low on fuel. The goal is not replace normal thrusters, but increase the depth of ship design and allow for faster speeds. Note that this is the inverse of the base thruster, who gets more efficient at low fuel values.
+    -Added achievements related to visiting the Corrundum and using electrochemical science.
+    -auto_recycle on concrete recipe introduced by this mod is now false. This should ensure that this mod does not alter fulgora recycling.
+    -Added alternative recrystalization recipes - convert excess gears and cables to their respective sulfate solutions.
+    -New calcium sulfate recipe. With time consuming effort and techinques from organic chemistry, we can recover calcium sulfate from nutrients. Now we can use calcium sulfate to make lots of stone of gleba. Making use of this recipe is a challenge, and serves as an alternative to importing calcite.
+    -Added fish to icebox functionality and tested it. (Yes fish in the icebox caused a crash because I manually put in stack sizes, and I put in the wrong stack size.)
+    -Fixed the wrong cache being updated upon building/destroying an ice box. Sorry if this caused problems.
 -Added robust nil checking to the code. If we are using tick function on an entity, and we get a nil value, we remake the crash and continue with a different part of the loop.
 -Posted on github.
 ==1.04==
@@ -54,13 +64,13 @@ Gotta go fast.
 
 -I make an effort to avoid sending updates to base game or space age files even though we have that functionality as modders. The major exception is labs - you have to update them so they accept your science. As many mods add science packs, it would be ideal if any entity of type lab automatically gets available input sciences updated no matter where they come from. I'm sure Wube considered this already, but I will bring it up.
 
-==1.03==
+---------------------------------------------------------------------------------------------------
 -Added huge rock localization - thanks StephenB
 -Added recipe for recrystalization. Make sulfate solutions by dissolving plates in sulfuric acid. - thanks StephenB.
 -New technology - recrystalization.
 -Added built-in subgroups to items. - thanks StephenB. No more uncategorized mess.
 
-==1.02==
+---------------------------------------------------------------------------------------------------
 -Correctly adds electro-chemical science pack to all labs. This insures mods like nuclear science can load.
 -However, I have not be able to correctly add all the science packs to my lab. Documentation has not been helpful and not sure how to log values for debugging.
 
@@ -72,7 +82,7 @@ end
 
 -This will ensure your science pack is always added to any labs modders add, instead of just the standard lab and the biolab.
 
-== 1.01 ===
+---------------------------------------------------------------------------------------------------
 
 -Used caching to reduce calls to find_entities(). Mod should be playable with large number of entities, as find_entities is an expensive function.
 -Added a module slot to the pressure lab.

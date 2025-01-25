@@ -5,7 +5,8 @@ local last_tick = -1 --Last time we queried ice-box
 local lab_cache = {}
 local ice_box_cache = {}
 local initialized_cache = false
-
+local skip_process_lab = false --When we want to make sure we reset the cache properly
+local skip_process_ice = false
 
 local function calculate_stack_count(item_count,stack_size)
   local out = 1
@@ -66,20 +67,23 @@ local function remove_from_cache(entity,cache)
 end
 
 local function process_labs(pressure_labs)
+  local nil_ent = nil
+  ---@cast nil_ent LuaEntity
   --log("PROCESS BEGIN")
   for i,v in pairs(pressure_labs) do
-    --log("i="..i)
-    --log("v=")
-    --log(serpent.block(v))
-    --log("v.status=")
-    --log(serpent.block(v.status))
-    if(v == nil) then --If we messed up with the cache somehow.
+    log("i="..i)
+    log("v=")
+    log(serpent.block(v))
+
+    if(v == nil or v.valid == false or v == nil_ent ) then --If we messed up with the cache somehow.
       lab_cache = find_all_entity_of_name("pressure-lab")
-      goto continue_loop
+      return
+      --goto continue_loop
     end
+    log("v.status=")
+    log(serpent.block(v.status))
 
-
-    if(v.status == defines.entity_status.missing_science_packs or v.status == defines.entity_status.no_fuel or v.status == 31 or v.status ==24 ) then --Either the brackets around the defines or adding these numbers made it work. Don't like using the numbers as this could break things in the future
+    if(v.valid == false or v.status ~= defines.entity_status_diode.red ) then --Either the brackets around the defines or adding these numbers made it work. Don't like using the numbers as this could break things in the future
       goto continue_loop 
 
     end
@@ -127,6 +131,16 @@ script.on_nth_tick(10, --closest we get to begin play
   end
 )
 
+script.on_nth_tick(7200, --Not sure why caching isn't working correctly. This should ensure that cache eventually recovers.
+  function(NthTickEventData)
+    lab_cache = find_all_entity_of_name("pressure-lab")
+    ice_box_cache = find_all_entity_of_name("ice-box")
+
+
+    
+  end
+)
+
 
 --Thanks StephenB
 for _, eventType in pairs({
@@ -139,8 +153,9 @@ for _, eventType in pairs({
 			local entity = event.entity
 			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
 			add_to_cache(entity,lab_cache)
+      --lab_cache = find_all_entity_of_name("pressure-lab")
 		end,
-		{{ filter = "name", name = "pressure-lab" }})
+		{{ filter = "name", name ="pressure-lab"}})
 end
 
 for _, eventType in pairs({
@@ -154,6 +169,10 @@ for _, eventType in pairs({
 			local entity = event.entity
 			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
 			remove_from_cache(entity,lab_cache)
+      ---skip_process_lab = true
+      --lab_cache = nil
+      --lab_cache = find_all_entity_of_name("pressure-lab")
+      --lab_cache = find_all_entity_of_name("pressure-lab")
 		end,
 		{{ filter = "name", name = "pressure-lab" }})
 end
@@ -169,6 +188,7 @@ for _, eventType in pairs({
 			local entity = event.entity
 			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
 			add_to_cache(entity,ice_box_cache)
+      --ice_box_cache = find_all_entity_of_name("ice-box")
 		end,
 		{{ filter = "name", name = "ice-box" }})
 end
@@ -184,6 +204,10 @@ for _, eventType in pairs({
 			local entity = event.entity
 			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
 			remove_from_cache(entity,ice_box_cache)
+      --skip_process_ice = true
+      --ice_box_cache = nil
+      --ice_box_cache = find_all_entity_of_name("ice-box")
+
 		end,
 		{{ filter = "name", name = "ice-box" }})
 end
@@ -193,6 +217,11 @@ end
 
 script.on_nth_tick(45,
   function(NthTickEventData)
+    if(skip_process_lab == true) then
+      skip_process_lab = false
+      return
+    end
+    
     for s,labArray in pairs(lab_cache) do
       process_labs(labArray)
     end
@@ -203,6 +232,11 @@ script.on_nth_tick(53,
   function(NthTickEventData)
     --log("---TICK START---")
     --log(last_tick)
+    if(skip_process_ice) then
+      skip_process_ice = false
+      return
+    end
+
     local current_tick = NthTickEventData.tick
     local delta_time = 53
     if(last_tick == -1 ) then --Only works if are on tick > 53. last_tick is -1 on start up
@@ -226,7 +260,7 @@ script.on_nth_tick(53,
         end 
 
         for i,v in pairs(ice_boxes) do
-          if(v == nil) then --If we messed up with the cache somehow.
+          if(v == nil or v.valid == false) then --If we messed up with the cache somehow.
             ice_box_cache = find_all_entity_of_name("ice-box")
             goto end_function
           end
