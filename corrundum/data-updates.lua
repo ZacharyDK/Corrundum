@@ -9,6 +9,8 @@ for k,v in pairs(all_lab_types) do
     table.insert(v.inputs,"electrochemical-science-pack") --add my science pack to all labs
 end
 
+
+
 --[[
 for k,v in pairs(all_science_packs) do
     table.insert(data.raw["lab"]["pressure-lab"].inputs,v .. ",")
