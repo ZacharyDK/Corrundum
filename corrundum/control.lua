@@ -54,16 +54,20 @@ end
 
 ---@param entity LuaEntity
 local function add_to_cache(entity,cache)
-  local surface_name = entity.surface.name
-  local key = entity.name .. entity.gps_tag
-  cache[surface_name][key] = entity
+  if(entity.valid == true) then
+    local surface_name = entity.surface.name
+    local key = entity.name .. entity.gps_tag
+    cache[surface_name][key] = entity
+  end
 end
 
 ---@param entity LuaEntity
 local function remove_from_cache(entity,cache)
-  local surface_name = entity.surface.name
-  local key = entity.name .. entity.gps_tag
-  cache[surface_name][key] = nil
+  if(entity.valid == true) then
+    local surface_name = entity.surface.name
+    local key = entity.name .. entity.gps_tag
+    cache[surface_name][key] = nil
+  end
 end
 
 local function process_labs(pressure_labs)
@@ -71,17 +75,17 @@ local function process_labs(pressure_labs)
   ---@cast nil_ent LuaEntity
   --log("PROCESS BEGIN")
   for i,v in pairs(pressure_labs) do
-    log("i="..i)
-    log("v=")
-    log(serpent.block(v))
+    --log("i="..i)
+    --log("v=")
+    --log(serpent.block(v))
 
     if(v == nil or v.valid == false or v == nil_ent ) then --If we messed up with the cache somehow.
       lab_cache = find_all_entity_of_name("pressure-lab")
       return
       --goto continue_loop
     end
-    log("v.status=")
-    log(serpent.block(v.status))
+    --log("v.status=")
+    --log(serpent.block(v.status))
 
     if(v.valid == false or v.status ~= defines.entity_status_diode.red ) then --Either the brackets around the defines or adding these numbers made it work. Don't like using the numbers as this could break things in the future
       goto continue_loop 
@@ -131,6 +135,7 @@ script.on_nth_tick(10, --closest we get to begin play
   end
 )
 
+--[[
 script.on_nth_tick(7200, --Not sure why caching isn't working correctly. This should ensure that cache eventually recovers.
   function(NthTickEventData)
     lab_cache = find_all_entity_of_name("pressure-lab")
@@ -140,7 +145,9 @@ script.on_nth_tick(7200, --Not sure why caching isn't working correctly. This sh
     
   end
 )
+--]]
 
+--Can't have multiple of the same event. New event will override the old one. This isn't what I want.
 
 --Thanks StephenB
 for _, eventType in pairs({
@@ -152,10 +159,16 @@ for _, eventType in pairs({
 			---@cast event EventData.on_built_entity | EventData.on_player_mined_entity | EventData.on_robot_built_entity | EventData.on_robot_mined_entity | EventData.on_entity_died
 			local entity = event.entity
 			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
-			add_to_cache(entity,lab_cache)
-      --lab_cache = find_all_entity_of_name("pressure-lab")
-		end,
-		{{ filter = "name", name ="pressure-lab"}})
+      if (entity.name == "pressure-lab") then
+        add_to_cache(entity,lab_cache)
+      end
+      
+      if(entity.name == "ice-box") then
+        add_to_cache(entity,ice_box_cache)
+      end
+
+		end)
+		--{{ filter = "name", name ="pressure-lab"}})
 end
 
 for _, eventType in pairs({
@@ -168,49 +181,22 @@ for _, eventType in pairs({
 			---@cast event EventData.on_built_entity | EventData.on_player_mined_entity | EventData.on_robot_built_entity | EventData.on_robot_mined_entity | EventData.on_entity_died
 			local entity = event.entity
 			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
-			remove_from_cache(entity,lab_cache)
+
+      if (entity.name == "pressure-lab") then
+        remove_from_cache(entity,lab_cache)
+      end
+
+      if(entity.name == "ice-box") then
+        remove_from_cache(entity,ice_box_cache)
+      end
       ---skip_process_lab = true
       --lab_cache = nil
       --lab_cache = find_all_entity_of_name("pressure-lab")
       --lab_cache = find_all_entity_of_name("pressure-lab")
-		end,
-		{{ filter = "name", name = "pressure-lab" }})
+		end)
+		--{{ filter = "name", name = "pressure-lab" }})
 end
 
-
-for _, eventType in pairs({
-	defines.events.on_built_entity,
-	defines.events.on_robot_built_entity,
-}) do
-	script.on_event(eventType,
-		function(event)
-			---@cast event EventData.on_built_entity | EventData.on_player_mined_entity | EventData.on_robot_built_entity | EventData.on_robot_mined_entity | EventData.on_entity_died
-			local entity = event.entity
-			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
-			add_to_cache(entity,ice_box_cache)
-      --ice_box_cache = find_all_entity_of_name("ice-box")
-		end,
-		{{ filter = "name", name = "ice-box" }})
-end
-
-for _, eventType in pairs({
-	defines.events.on_player_mined_entity,
-	defines.events.on_robot_mined_entity,
-	defines.events.on_entity_died,
-}) do
-	script.on_event(eventType,
-		function(event)
-			---@cast event EventData.on_built_entity | EventData.on_player_mined_entity | EventData.on_robot_built_entity | EventData.on_robot_mined_entity | EventData.on_entity_died
-			local entity = event.entity
-			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
-			remove_from_cache(entity,ice_box_cache)
-      --skip_process_ice = true
-      --ice_box_cache = nil
-      --ice_box_cache = find_all_entity_of_name("ice-box")
-
-		end,
-		{{ filter = "name", name = "ice-box" }})
-end
 
 
 
