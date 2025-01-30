@@ -1,4 +1,11 @@
-
+---------------------------------------------------------------------------------------------------
+Version: 1.0.13
+Date: 28. 01. 2025
+  Bugfixes:
+    - Added locale for achievements.
+  Major Features:
+    - Settings for science compatibility and planetslib
+---------------------------------------------------------------------------------------------------
 Version: 1.0.12
 Date: 28. 01. 2025
   Bugfixes:
