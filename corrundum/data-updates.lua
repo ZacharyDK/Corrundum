@@ -8,7 +8,7 @@ local all_lab_types = data.raw['lab']
 local handle_science_populate = true
 
 --(if planetlib exists and we care) or or we don't want to populate
-if ( (mods["planetslib"] ~= nil and settings.startup["consider-planetslib"].value == true) or settings.startup["automatically-populate-labs-with-electrochemical-science"].value == false) then handle_science_populate = false end
+if ( (mods["PlanetsLib"] ~= nil and settings.startup["consider-planetslib"].value == true) or settings.startup["automatically-populate-labs-with-electrochemical-science"].value == false) then handle_science_populate = false end
 
 if(handle_science_populate == true) then
   for k,v in pairs(all_lab_types) do
@@ -83,3 +83,21 @@ local recipe_patch_2 =
 
 table.insert(data.raw.technology["plastic-bar-productivity"].effects,recipe_patch)
 table.insert(data.raw.technology["plastic-bar-productivity"].effects,recipe_patch_2)
+
+
+
+
+local brute_force = settings.startup["ignore-everything-brute-force-science-into-pressure-lab"].value
+local all_packs = data.raw['tool']
+if(brute_force == true) then
+  if(mods["PlanetsLib"] ~= nil) then
+    data.raw["lab"]["pressure-lab"].include_all_base_lab_science = false --Disable what they want to do.
+  end
+
+  data.raw["lab"]["pressure-lab"].inputs = {}
+  for k,v in pairs(all_packs) do
+    if(v.subgroup == "science-pack") then
+      table.insert(data.raw["lab"]["pressure-lab"].inputs,v.name .. ",")
+    end
+  end
+end

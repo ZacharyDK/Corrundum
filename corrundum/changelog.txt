@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.14
+Date: 30. 01. 2025
+  Major Features:
+    - Brute force option to add all sciences with the subgroup science pack to the pressure lab. The point of this is mitigate errors from no lab accepts all the sciences for some technology errors.
+    - France localization. Thanks Fr-Dae for the translation
+    - Internal changes for PlanetsLib compatibility
+---------------------------------------------------------------------------------------------------
 Version: 1.0.13
-Date: 28. 01. 2025
+Date: 29. 01. 2025
   Bugfixes:
     - Added locale for achievements.
   Major Features:

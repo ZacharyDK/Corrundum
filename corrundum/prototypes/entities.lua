@@ -397,6 +397,7 @@ data:extend(
       corpse = "chemical-plant-remnants",
       dying_explosion = "chemical-plant-explosion",
       damaged_trigger_effect = hit_effects.entity(),
+      include_all_base_lab_science = true, --planets lib
       heating_energy = "0W",
       --frozen_patch = "__space-age__/graphics/entity/frozen/lab/lab.png", --need to see how it looks FAILS
       
