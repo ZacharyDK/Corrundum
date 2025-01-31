@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.15
+Date: 30. 01. 2025
+  Major Features:
+    - Changed version numbers so the game recognizes the new version as different. Thanks Atraxi for bringing this to my attention.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.14
 Date: 30. 01. 2025
   Major Features:

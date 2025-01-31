@@ -3,11 +3,10 @@ data.raw["fluid"]["petroleum-gas"].fuel_value = "0.6MJ"
 
 
 local all_lab_types = data.raw['lab']
---local all_science_packs = data.raw['tool']['science-pack'] --WHY IS THIS NIL ?!?!??! AND WHY does data.raw['tool'] not iterate to a string
 
 local handle_science_populate = true
 
---(if planetlib exists and we care) or or we don't want to populate
+
 if (settings.startup["automatically-populate-labs-with-electrochemical-science"].value == false) then handle_science_populate = false end
 
 if(handle_science_populate == true) then
@@ -20,11 +19,6 @@ if not handle_science_populate then
   table.insert(data.raw["lab"]["pressure-lab"].inputs,"electrochemical-science-pack") --I don't add electrochemical-science-pack to my own prototype. This ensures that I still add it somewhere.
 end
 
---[[
-for k,v in pairs(all_science_packs) do
-    table.insert(data.raw["lab"]["pressure-lab"].inputs,v .. ",")
-end
---]]
 
 
 data.raw["assembling-machine"]["catalytic-chemical-plant"].graphics_set.frozen_patch =
