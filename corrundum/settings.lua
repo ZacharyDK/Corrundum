@@ -13,12 +13,6 @@ data:extend({
     },
     {
         type = "bool-setting",
-        name = "consider-planetslib",
-        setting_type = "startup",
-        default_value = true
-    },
-    {
-        type = "bool-setting",
         name = "ignore-everything-brute-force-science-into-pressure-lab",
         setting_type = "startup",
         default_value = false

@@ -8,7 +8,7 @@ local all_lab_types = data.raw['lab']
 local handle_science_populate = true
 
 --(if planetlib exists and we care) or or we don't want to populate
-if ( (mods["PlanetsLib"] ~= nil and settings.startup["consider-planetslib"].value == true) or settings.startup["automatically-populate-labs-with-electrochemical-science"].value == false) then handle_science_populate = false end
+if (settings.startup["automatically-populate-labs-with-electrochemical-science"].value == false) then handle_science_populate = false end
 
 if(handle_science_populate == true) then
   for k,v in pairs(all_lab_types) do
@@ -16,6 +16,9 @@ if(handle_science_populate == true) then
   end
 end
 
+if not handle_science_populate then
+  table.insert(data.raw["lab"]["pressure-lab"].inputs,"electrochemical-science-pack") --I don't add electrochemical-science-pack to my own prototype. This ensures that I still add it somewhere.
+end
 
 --[[
 for k,v in pairs(all_science_packs) do
