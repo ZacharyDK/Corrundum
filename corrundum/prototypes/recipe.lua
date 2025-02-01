@@ -1088,7 +1088,7 @@ data:extend(
       energy_required = 1, 
       results =
       {
-        {type ="fluid", name = "carbon-dioxide", amount = 600, temperature = 100},
+        {type ="fluid", name = "carbon-dioxide", amount = 600, temperature = 1000},
       },
       allow_productivity = true, 
       allow_quality = true,
