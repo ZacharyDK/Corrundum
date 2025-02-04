@@ -277,10 +277,10 @@ data:extend(
       allow_decomposition = false,
       crafting_machine_tint =
       {
-        primary = {r = 1.000, g = 0.912, b = 0.036, a = 1.000}, --rgb(98, 168, 230)
-        secondary = {r = 0.707, g = 0.797, b = 0.335, a = 1.000}, --rgb(85, 177, 203)
-        tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, --rgb(123, 165, 173)
-        quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, --rgb(0, 179, 255)
+        primary = {r = 98, g = 168, b = 230, a = 1.000}, --rgb(98, 168, 230)
+        secondary = {r = 85, g = 177, b = 203, a = 1.000}, --rgb(85, 177, 203)
+        tertiary = {r = 123, g = 165, b = 173, a = 1.000}, --rgb(123, 165, 173)
+        quaternary = {r = 0, g = 179, b = 255, a = 1.000}, --rgb(0, 179, 255)
       },
 
     },
@@ -311,10 +311,10 @@ data:extend(
         factoriopedia_description ="Large amounts of sulfuric acid can form carbocations, which are used as the basis for alkylation to form new carbon-carbon bonds.",
         crafting_machine_tint =
         {
-          primary = {r = 0.764, g = 0.596, b = 0.780, a = 1.000}, -- #c298c6ff
-          secondary = {r = 0.762, g = 0.551, b = 0.844, a = 1.000}, -- #c28cd7ff
-          tertiary = {r = 0.895, g = 0.773, b = 0.596, a = 1.000}, -- #e4c597ff
-          quaternary = {r = 1.000, g = 0.734, b = 0.290, a = 1.000}, -- #ffbb49ff
+          primary = {r = 194, g = 152, b = 198, a = 1.000}, --rgb(194, 152, 198)
+          secondary = {r = 194, g = 140, b = 215, a = 1.000}, --rgb(194, 140, 215)
+          tertiary = {r = 228, g = 197, b = 151, a = 1.000}, --rgb(228, 197, 151)
+          quaternary = {r = 255, g = 187, b = 73, a = 1.000}, --rgb(255, 187, 73)
         },
     },
     {
@@ -411,9 +411,9 @@ data:extend(
         factoriopedia_description ="With a platinum catalyst, we can use petroleum to hydrogenate sulfur to get hydrogen sulfide.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(246, 243, 86)
+          primary = {r = 246, g = 243, b = 86, a = 1.000}, --rgb(246, 243, 86)
           secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, -- #d38e38ff
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(208, 198, 112)
+          tertiary = {r = 208, g = 198, b = 112, a = 1.000}, --rgb(208, 198, 112)
           quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, -- #efc230ff
         },
     },
@@ -443,10 +443,10 @@ data:extend(
         factoriopedia_description ="Sulfur is reduced to a zero oxidation state, while water is formed.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(246, 255, 0)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(211, 195, 56)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(225, 232, 27)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(239, 229, 48)
+          primary = {r = 246, g = 255, b = 0, a = 1.000}, --rgb(246, 255, 0)
+          secondary = {r = 0.211, g = 195, b = 56, a = 1.000}, --rgb(211, 195, 56)
+          tertiary = {r = 225, g = 232, b = 27, a = 1.000}, --rgb(225, 232, 27)
+          quaternary = {r = 239, g = 229, b = 048.191, a = 1.000}, --rgb(239, 229, 48)
         },
     },
     {
@@ -516,10 +516,10 @@ data:extend(
         factoriopedia_description ="Combustion of hydrogen sulfide gives us more components to make sulfuric acid.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 110, 246)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(61, 56, 211)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(138, 112, 208)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 48, 239)
+          primary = {r = 86, g = 110, b = 246, a = 1.000}, --rgb(86, 110, 246)
+          secondary = {r = 61, g = 56, b = 211, a = 1.000}, --rgb(61, 56, 211)
+          tertiary = {r = 138, g = 112, b = 208, a = 1.000}, --rgb(138, 112, 208)
+          quaternary = {r = 48, g = 48, b = 239, a = 1.000}, --rgb(48, 48, 239)
         },
     },
 
@@ -551,10 +551,10 @@ data:extend(
         factoriopedia_description ="Chalcopyrite is FeCuS. We blast the ore heat and concentrated sulfuric acid fully oxidize the metals, forming a mixture of their aqueous sulfate salts.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 161, 246)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 136, 211)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 146, 208)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 147, 239)
+          primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+          secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+          tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+          quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
     },
     {
@@ -583,10 +583,10 @@ data:extend(
         --factoriopedia_description ="Iron is more reactive than copper. Thus we can use it to displace copper ions in solution. While the copper crystalizes beatifully, it must be reshaped into a workable form.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 246, 230)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 211, 190)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 208, 205)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 239, 194)
+          primary = {r = 86, g = 246, b = 230, a = 1.000}, --rgb(86, 246, 230)
+          secondary = {r = 56, g = 211, b = 190, a = 1.000}, --rgb(56, 211, 190)
+          tertiary = {r = 112, g = 208, b = 205, a = 1.000}, --rgb(112, 208, 205)
+          quaternary = {r = 48, g = 239, b = 194, a = 1.000}, --rgb(48, 239, 194)
         },
     },
     {
@@ -616,10 +616,10 @@ data:extend(
         --factoriopedia_description ="We can use voltage to pump electronics into the ionic solution. These electrons reduce aqueous ferric ions in to pure iron. However, an iron plate must be used to seed crystal growth, and of course the pure product must be shaped back into plates.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 110, 246)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(30, 15, 233)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(84, 96, 225)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 83, 239)
+          primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+          secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+          tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+          quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
     },
     {
@@ -649,10 +649,10 @@ data:extend(
         --factoriopedia_description ="Similiar to reduction of ferric sulfate, we pump electrons in and they reduce copper ions.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+          primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+          secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+          tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+          quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
     },
     -- STEP 3 optimization and plastics, and alkylation. (Alkylation moved to steps 3+4)
@@ -751,10 +751,10 @@ data:extend(
         --factoriopedia_description ="With a nitrogen and phosphorous source, we add more carbon and calcium sulfate to optimize nutrient production.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+          primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+          secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+          tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+          quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
 
     },
@@ -783,10 +783,10 @@ data:extend(
         --factoriopedia_description ="With a nitrogen and phosphorous source, we add more carbon and calcium sulfate to optimize nutrient production."
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+          primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+          secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+          tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+          quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
 
     },
@@ -815,10 +815,10 @@ data:extend(
         --factoriopedia_description ="With a nitrogen and phosphorous source, we add more carbon and calcium sulfate to optimize nutrient production.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+          primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+          secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+          tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+          quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
 
     },
@@ -847,10 +847,10 @@ data:extend(
         --factoriopedia_description ="We neutralize dilute sulfuric acid and collect the salt with evaporation. Adding calcite directly to concentrated sulfuric acid releases a lot of energy, making it difficult to collect a salt that way. Most of the time here is spent drying out the salt.",
         crafting_machine_tint =
         {
-          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
-          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
-          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
-          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+          primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+          secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+          tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+          quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
 
     },
@@ -1128,10 +1128,10 @@ data:extend(
       main_product ="calcium-sulfate",
       crafting_machine_tint =
       {
-        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
-        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
-        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
-        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+        primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+        secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+        tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+        quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
       },
 
     },
@@ -1268,10 +1268,10 @@ data:extend(
       main_product ="carbon",
       crafting_machine_tint =
       {
-        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
-        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
-        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
-        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+        primary = {r = 86, g = 161, b = 246, a = 1.000}, --rgb(86, 161, 246)
+        secondary = {r = 56, g = 136, b = 211, a = 1.000}, --rgb(56, 136, 211)
+        tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
+        quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
       },
 
 
@@ -1302,7 +1302,7 @@ data:extend(
         primary = {r = 1.000, g = 0.735, b = 0.643, a = 1.000}, -- #ffbba4ff
         secondary = {r = 0.749, g = 0.557, b = 0.490, a = 1.000}, -- #bf8e7dff
         tertiary = {r = 0.637, g = 0.637, b = 0.637, a = 1.000}, -- #a2a2a2ff
-        quaternary = {r = 0.283, g = 0.283, b = 0.283, a = 1.000}, --rgb(119, 116, 116)
+        quaternary = {r = 119, g = 116, b = 116, a = 1.000}, --rgb(119, 116, 116)
       },
 
 
@@ -1411,10 +1411,10 @@ data:extend(
       auto_recycle = false,
       crafting_machine_tint =
       {
-        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 110, 246)
-        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(30, 15, 233)
-        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(84, 96, 225)
-        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 83, 239)
+        primary = {r = 86, g = 110, b = 246, a = 1.000}, --rgb(86, 110, 246)
+        secondary = {r = 61, g = 56, b = 211, a = 1.000}, --rgb(61, 56, 211)
+        tertiary = {r = 138, g = 112, b = 208, a = 1.000}, --rgb(138, 112, 208)
+        quaternary = {r = 48, g = 48, b = 239, a = 1.000}, --rgb(48, 48, 239)
       },
 
     },
@@ -1442,10 +1442,10 @@ data:extend(
       auto_recycle = false,
       crafting_machine_tint =
       {
-        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 110, 246)
-        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(30, 15, 233)
-        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(84, 96, 225)
-        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 83, 239)
+        primary = {r = 86, g = 110, b = 246, a = 1.000}, --rgb(86, 110, 246)
+        secondary = {r = 61, g = 56, b = 211, a = 1.000}, --rgb(61, 56, 211)
+        tertiary = {r = 138, g = 112, b = 208, a = 1.000}, --rgb(138, 112, 208)
+        quaternary = {r = 48, g = 48, b = 239, a = 1.000}, --rgb(48, 48, 239)
       },
 
     },
@@ -1473,10 +1473,10 @@ data:extend(
       auto_recycle = false,
       crafting_machine_tint =
       {
-        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 246, 230)
-        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 211, 190)
-        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 208, 205)
-        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 239, 194)
+        primary = {r = 86, g = 246, b = 230, a = 1.000}, --rgb(86, 246, 230)
+        secondary = {r = 56, g = 211, b = 190, a = 1.000}, --rgb(56, 211, 190)
+        tertiary = {r = 112, g = 208, b = 205, a = 1.000}, --rgb(112, 208, 205)
+        quaternary = {r = 48, g = 239, b = 194, a = 1.000}, --rgb(48, 239, 194)
       },
 
     },
@@ -1504,10 +1504,10 @@ data:extend(
       auto_recycle = false,
       crafting_machine_tint =
       {
-        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 246, 230)
-        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 211, 190)
-        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 208, 205)
-        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 239, 194)
+        primary = {r = 86, g = 246, b = 230, a = 1.000}, --rgb(86, 246, 230)
+        secondary = {r = 56, g = 211, b = 190, a = 1.000}, --rgb(56, 211, 190)
+        tertiary = {r = 112, g = 208, b = 205, a = 1.000}, --rgb(112, 208, 205)
+        quaternary = {r = 48, g = 239, b = 194, a = 1.000}, --rgb(48, 239, 194)
       },
 
     },
@@ -1535,10 +1535,10 @@ data:extend(
       auto_recycle = false,
       crafting_machine_tint =
       {
-        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 246, 230)
-        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 211, 190)
-        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 208, 205)
-        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 239, 194)
+        primary = {r = 86, g = 246, b = 230, a = 1.000}, --rgb(86, 246, 230)
+        secondary = {r = 56, g = 211, b = 190, a = 1.000}, --rgb(56, 211, 190)
+        tertiary = {r = 112, g = 208, b = 205, a = 1.000}, --rgb(112, 208, 205)
+        quaternary = {r = 48, g = 239, b = 194, a = 1.000}, --rgb(48, 239, 194)
       },
 
     },
