@@ -1,7 +1,7 @@
 local seconds = 60
 local minutes = 60*seconds
 
---TODO balence recipe time cost.
+
 -- Crafting machine tints.
 
 data:extend(
@@ -40,7 +40,14 @@ data:extend(
         },
         allow_productivity = true,
         main_product ="electrochemical-science-pack",
-        factoriopedia_description ="Sulfur based science only made on corrundum."
+        factoriopedia_description ="Sulfur based science only made on corrundum.",
+        crafting_machine_tint =
+        {
+          primary = {r = 1.000, g = 0.912, b = 0.036, a = 1.000}, --rgb(255, 132, 9)
+          secondary = {r = 0.707, g = 0.797, b = 0.335, a = 1.000}, --rgb(203, 160, 85)
+          tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, --rgb(190, 147, 97)
+          quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, --rgb(255, 136, 0)
+        },
     },
 
     {
@@ -150,7 +157,7 @@ data:extend(
         tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, -- #ada17bff
         quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, -- #ffcd00ff
       },
-      factoriopedia_description ="Even higher pressures and surface conditions on Corrundum let us get even more energy from acid neutralization."
+      factoriopedia_description ="Even higher pressures and surface conditions on Corrundum let us get even more energy from acid neutralization.",
     },
     {
       type ="recipe",
@@ -191,7 +198,7 @@ data:extend(
         tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, -- #ada17bff
         quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, -- #ffcd00ff
       },
-      factoriopedia_description ="We need more water to capture all energy released, but this should help get things started."
+      factoriopedia_description ="We need more water to capture all energy released, but this should help get things started.",
     },
 
     {
@@ -233,7 +240,7 @@ data:extend(
         tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, -- #ada17bff
         quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, -- #ffcd00ff
       },
-      factoriopedia_description ="We need more water to capture all energy released, but this should help get things started."
+      factoriopedia_description ="We need more water to capture all energy released, but this should help get things started.",
     },
 
     {
@@ -268,6 +275,13 @@ data:extend(
       always_show_products = true,
       show_amount_in_title = false,
       allow_decomposition = false,
+      crafting_machine_tint =
+      {
+        primary = {r = 1.000, g = 0.912, b = 0.036, a = 1.000}, --rgb(98, 168, 230)
+        secondary = {r = 0.707, g = 0.797, b = 0.335, a = 1.000}, --rgb(85, 177, 203)
+        tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, --rgb(123, 165, 173)
+        quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, --rgb(0, 179, 255)
+      },
 
     },
 
@@ -294,7 +308,14 @@ data:extend(
         allow_productivity = false,
         allow_quality = false,
         main_product ="light-oil",
-        factoriopedia_description ="Large amounts of sulfuric acid can form carbocations, which are used as the basis for alkylation to form new carbon-carbon bonds."
+        factoriopedia_description ="Large amounts of sulfuric acid can form carbocations, which are used as the basis for alkylation to form new carbon-carbon bonds.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.764, g = 0.596, b = 0.780, a = 1.000}, -- #c298c6ff
+          secondary = {r = 0.762, g = 0.551, b = 0.844, a = 1.000}, -- #c28cd7ff
+          tertiary = {r = 0.895, g = 0.773, b = 0.596, a = 1.000}, -- #e4c597ff
+          quaternary = {r = 1.000, g = 0.734, b = 0.290, a = 1.000}, -- #ffbb49ff
+        },
     },
     {
         type ="recipe",
@@ -317,7 +338,14 @@ data:extend(
         allow_productivity = false,
         allow_quality = false,
         main_product ="heavy-oil",
-        factoriopedia_description ="Large amounts of sulfuric acid can form carbocations, which are used as the basis for alkylation to form new carbon-carbon bonds. We use this form heavy oil."
+        factoriopedia_description ="Large amounts of sulfuric acid can form carbocations, which are used as the basis for alkylation to form new carbon-carbon bonds. We use this form heavy oil.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.710, g = 0.633, b = 0.482, a = 1.000}, -- #b5a17aff
+          secondary = {r = 0.745, g = 0.672, b = 0.527, a = 1.000}, -- #beab86ff
+          tertiary = {r = 0.894, g = 0.773, b = 0.596, a = 1.000}, -- #e4c598ff
+          quaternary = {r = 0.812, g = 0.583, b = 0.202, a = 1.000}, -- #cf9433ff
+        },
     },
     {
         type ="recipe",
@@ -348,7 +376,14 @@ data:extend(
         allow_productivity = true,
         allow_quality = false,
         main_product ="sulfur-dioxide",
-        factoriopedia_description ="Burning sulfur lets us get this gas, which we can use to make both sulfuric acid and water."
+        factoriopedia_description ="Burning sulfur lets us get this gas, which we can use to make both sulfuric acid and water.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, -- #f67a56ff
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, -- #d38e38ff
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, -- #b9d070ff
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, -- #efc230ff
+        },
     },
     {
         type ="recipe",
@@ -373,7 +408,14 @@ data:extend(
         allow_quality = false,
         maximum_productivity = 1,
         main_product ="hydrogen-sulfide",
-        factoriopedia_description ="With a platinum catalyst, we can use petroleum to hydrogenate sulfur to get hydrogen sulfide."
+        factoriopedia_description ="With a platinum catalyst, we can use petroleum to hydrogenate sulfur to get hydrogen sulfide.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(246, 243, 86)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, -- #d38e38ff
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(208, 198, 112)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, -- #efc230ff
+        },
     },
     {
         type ="recipe",
@@ -398,7 +440,14 @@ data:extend(
         allow_quality = false,
         maximum_productivity = 1,
         main_product ="water",
-        factoriopedia_description ="Sulfur is reduced to a zero oxidation state, while water is formed."
+        factoriopedia_description ="Sulfur is reduced to a zero oxidation state, while water is formed.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(246, 255, 0)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(211, 195, 56)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(225, 232, 27)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(239, 229, 48)
+        },
     },
     {
         type ="recipe",
@@ -422,7 +471,14 @@ data:extend(
         allow_quality = false,
         maximum_productivity = 2,
         main_product ="sulfuric-acid",
-        factoriopedia_description ="In the presence of a platinum catalyst, sulfur-dioxide can react with the oxygen to form sulfur trioxide in situ. Sulfur trioxide then reacts with water to form sulfuric acid."
+        factoriopedia_description ="In the presence of a platinum catalyst, sulfur-dioxide can react with the oxygen to form sulfur trioxide in situ. Sulfur trioxide then reacts with water to form sulfuric acid.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, -- #f67a56ff
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, -- #d38e38ff
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, -- #b9d070ff
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, -- #efc230ff
+        },   
     },
 
     --STEP 2, Sulfate processing
@@ -457,7 +513,14 @@ data:extend(
         allow_quality = false,
         maximum_productivity = 1,
         main_product ="water",
-        factoriopedia_description ="Combustion of hydrogen sulfide gives us more components to make sulfuric acid."
+        factoriopedia_description ="Combustion of hydrogen sulfide gives us more components to make sulfuric acid.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 110, 246)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(61, 56, 211)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(138, 112, 208)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 48, 239)
+        },
     },
 
 
@@ -485,7 +548,14 @@ data:extend(
         maximum_productivity = 2,
         main_product ="mixed-sulfate-solution",
         auto_recycle = false,
-        factoriopedia_description ="Chalcopyrite is FeCuS. We blast the ore heat and concentrated sulfuric acid fully oxidize the metals, forming a mixture of their aqueous sulfate salts."
+        factoriopedia_description ="Chalcopyrite is FeCuS. We blast the ore heat and concentrated sulfuric acid fully oxidize the metals, forming a mixture of their aqueous sulfate salts.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 161, 246)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 136, 211)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 146, 208)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 147, 239)
+        },
     },
     {
         type ="recipe",
@@ -510,7 +580,14 @@ data:extend(
         auto_recycle = false,
         maximum_productivity = 1,
         main_product ="iron-sulfate-solution",
-        --factoriopedia_description ="Iron is more reactive than copper. Thus we can use it to displace copper ions in solution. While the copper crystalizes beatifully, it must be reshaped into a workable form."
+        --factoriopedia_description ="Iron is more reactive than copper. Thus we can use it to displace copper ions in solution. While the copper crystalizes beatifully, it must be reshaped into a workable form.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 246, 230)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 211, 190)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 208, 205)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 239, 194)
+        },
     },
     {
         type ="recipe",
@@ -536,7 +613,14 @@ data:extend(
         auto_recycle = false,
         maximum_productivity = 1,
         main_product ="iron-ore",
-        --factoriopedia_description ="We can use voltage to pump electronics into the ionic solution. These electrons reduce aqueous ferric ions in to pure iron. However, an iron plate must be used to seed crystal growth, and of course the pure product must be shaped back into plates."
+        --factoriopedia_description ="We can use voltage to pump electronics into the ionic solution. These electrons reduce aqueous ferric ions in to pure iron. However, an iron plate must be used to seed crystal growth, and of course the pure product must be shaped back into plates.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 110, 246)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(30, 15, 233)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(84, 96, 225)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 83, 239)
+        },
     },
     {
         type ="recipe",
@@ -562,7 +646,14 @@ data:extend(
         maximum_productivity = 1,
         main_product ="copper-ore",
         auto_recycle = false,
-        --factoriopedia_description ="Similiar to reduction of ferric sulfate, we pump electrons in and they reduce copper ions."
+        --factoriopedia_description ="Similiar to reduction of ferric sulfate, we pump electrons in and they reduce copper ions.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+        },
     },
     -- STEP 3 optimization and plastics, and alkylation. (Alkylation moved to steps 3+4)
 
@@ -590,7 +681,14 @@ data:extend(
         maximum_productivity = 5,
         main_product ="plastic-bar",
         auto_recycle = false,
-        --factoriopedia_description ="With a platinum catalyst, we use sulfur dioxide and oxygen to form sulfur trioxide. Sulfur trioxide reacts with sulfuric acid to form fuming sulfuric acid, which can sulfonate hydrocarbons."
+        --factoriopedia_description ="With a platinum catalyst, we use sulfur dioxide and oxygen to form sulfur trioxide. Sulfur trioxide reacts with sulfuric acid to form fuming sulfuric acid, which can sulfonate hydrocarbons.",
+        crafting_machine_tint =
+        {
+          primary = {r = 1.000, g = 0.642, b = 0.261, a = 1.000}, -- #ffa342ff
+          secondary = {r = 1.000, g = 0.722, b = 0.376, a = 1.000}, -- #ffb85fff
+          tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, -- #d9a892ff
+          quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, -- #ff7e45ff
+        }
     },
     {
       type ="recipe",
@@ -616,7 +714,14 @@ data:extend(
       maximum_productivity = 5,
       main_product ="plastic-bar",
       auto_recycle = false,
-      --factoriopedia_description ="With a platinum catalyst, we use sulfur dioxide and oxygen to form sulfur trioxide. Sulfur trioxide reacts with sulfuric acid to form fuming sulfuric acid, which can sulfonate hydrocarbons."
+      --factoriopedia_description ="With a platinum catalyst, we use sulfur dioxide and oxygen to form sulfur trioxide. Sulfur trioxide reacts with sulfuric acid to form fuming sulfuric acid, which can sulfonate hydrocarbons.",
+      crafting_machine_tint =
+      {
+        primary = {r = 1.000, g = 0.642, b = 0.261, a = 1.000}, -- #ffa342ff
+        secondary = {r = 1.000, g = 0.722, b = 0.376, a = 1.000}, -- #ffb85fff
+        tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, -- #d9a892ff
+        quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, -- #ff7e45ff
+      },
     },
 
 
@@ -642,8 +747,15 @@ data:extend(
         },
         allow_productivity = true, 
         maximum_productivity = 2,
-        --main_product ="nutrients",
-        --factoriopedia_description ="With a nitrogen and phosphorous source, we add more carbon and calcium sulfate to optimize nutrient production."
+        main_product ="nutrients",
+        --factoriopedia_description ="With a nitrogen and phosphorous source, we add more carbon and calcium sulfate to optimize nutrient production.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+        },
 
     },
     {
@@ -667,8 +779,15 @@ data:extend(
         },
         allow_productivity = true, 
         maximum_productivity = 2,
-        --main_product ="nutrients",
+        main_product ="nutrients",
         --factoriopedia_description ="With a nitrogen and phosphorous source, we add more carbon and calcium sulfate to optimize nutrient production."
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+        },
 
     },
     {
@@ -692,8 +811,15 @@ data:extend(
         },
         allow_productivity = true, 
         maximum_productivity = 2,
-        --main_product ="nutrients",
-        --factoriopedia_description ="With a nitrogen and phosphorous source, we add more carbon and calcium sulfate to optimize nutrient production."
+        main_product ="nutrients",
+        --factoriopedia_description ="With a nitrogen and phosphorous source, we add more carbon and calcium sulfate to optimize nutrient production.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+        },
 
     },
     {
@@ -718,7 +844,14 @@ data:extend(
         allow_productivity = false, 
         maximum_productivity = 1,
         main_product ="calcium-sulfate",
-        --factoriopedia_description ="We neutralize dilute sulfuric acid and collect the salt with evaporation. Adding calcite directly to concentrated sulfuric acid releases a lot of energy, making it difficult to collect a salt that way. Most of the time here is spent drying out the salt."
+        --factoriopedia_description ="We neutralize dilute sulfuric acid and collect the salt with evaporation. Adding calcite directly to concentrated sulfuric acid releases a lot of energy, making it difficult to collect a salt that way. Most of the time here is spent drying out the salt.",
+        crafting_machine_tint =
+        {
+          primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
+          secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
+          tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
+          quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+        },
 
     },
     {
@@ -743,7 +876,14 @@ data:extend(
         allow_quality = false, 
         maximum_productivity = 1,
         main_product ="sulfuric-acid-dilute",
-        factoriopedia_description ="Add acid to water to dilute safely, not the otherway around."
+        factoriopedia_description ="Add acid to water to dilute safely, not the otherway around.",
+        crafting_machine_tint =
+        {
+          primary = {r = 1.000, g = 0.642, b = 0.261, a = 1.000}, --rgb(240, 194, 146)
+          secondary = {r = 1.000, g = 0.722, b = 0.376, a = 1.000}, --rgb(248, 209, 163)
+          tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, --rgb(219, 186, 171)
+          quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, --rgb(245, 174, 143)
+        },
 
     },
     {
@@ -768,7 +908,14 @@ data:extend(
         allow_quality = false,
         maximum_productivity = 1,
         main_product ="sulfuric-acid",
-        factoriopedia_description ="We spend alot of energy boiling off water into steam, which can be condensed back into water."
+        factoriopedia_description ="We spend alot of energy boiling off water into steam, which can be condensed back into water.",
+        crafting_machine_tint =
+        {
+          primary = {r = 1.000, g = 0.642, b = 0.261, a = 1.000}, -- #ffa342ff
+          secondary = {r = 1.000, g = 0.722, b = 0.376, a = 1.000}, -- #ffb85fff
+          tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, -- #d9a892ff
+          quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, -- #ff7e45ff
+        },
 
     },
     {
@@ -792,7 +939,14 @@ data:extend(
       allow_quality = false,
       maximum_productivity = 1,
       main_product ="sulfuric-acid",
-      factoriopedia_description ="We spend alot of energy boiling off water, and don't bother to catch it."
+      factoriopedia_description ="We spend alot of energy boiling off water, and don't bother to catch it.",
+      crafting_machine_tint =
+      {
+        primary = {r = 1.000, g = 0.642, b = 0.261, a = 1.000}, -- #ffa342ff
+        secondary = {r = 1.000, g = 0.722, b = 0.376, a = 1.000}, -- #ffb85fff
+        tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, -- #d9a892ff
+        quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, -- #ff7e45ff
+      },
 
     },
     {
@@ -816,7 +970,14 @@ data:extend(
         allow_productivity = false, 
         maximum_productivity = 1,
         main_product ="calcium-sulfate",
-        factoriopedia_description ="Sulfur-dioxide and calcium carbonate react to form calcium sulfate and carbon dioxide."
+        factoriopedia_description ="Sulfur-dioxide and calcium carbonate react to form calcium sulfate and carbon dioxide.",
+        crafting_machine_tint =
+        {
+          primary = {r = 1.000, g = 0.642, b = 0.261, a = 1.000}, --rgb(240, 194, 146)
+          secondary = {r = 1.000, g = 0.722, b = 0.376, a = 1.000}, --rgb(248, 209, 163)
+          tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, --rgb(219, 186, 171)
+          quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, --rgb(245, 174, 143)
+        },
 
     },
     {
@@ -844,6 +1005,13 @@ data:extend(
         main_product ="stone",
         factoriopedia_description ="Stone is represented by SiO2 (reactant) and CaSiO3 (product). Analagous to making stone on Vulcanus.",
         auto_recycle = false,
+        crafting_machine_tint =
+        {
+          primary = {r = 1.000, g = 0.642, b = 0.261, a = 1.000}, --rgb(240, 194, 146)
+          secondary = {r = 1.000, g = 0.722, b = 0.376, a = 1.000}, --rgb(248, 209, 163)
+          tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, --rgb(219, 186, 171)
+          quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, --rgb(245, 174, 143)
+        },
 
     },
 
@@ -870,6 +1038,13 @@ data:extend(
         main_product ="asphalt",
         factoriopedia_description ="We condense heavy oil into a concrete precusor.",
         auto_recycle = false,
+        crafting_machine_tint =
+        {
+          primary = {r = 0.889, g = 0.628, b = 0.566, a = 1.000}, -- #e2a090ff
+          secondary = {r = 0.803, g = 0.668, b = 0.644, a = 1.000}, -- #ccaaa4ff
+          tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, -- #d9a892ff
+          quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, -- #ff6420ff
+        },
 
     },
     {
@@ -894,6 +1069,13 @@ data:extend(
         main_product ="asphalt",
         factoriopedia_description ="We can also use excess light oil to make asphalt. Reaction is faster, but less efficient.",
         auto_recycle = false,
+        crafting_machine_tint =
+        {
+          primary = {r = 0.889, g = 0.628, b = 0.566, a = 1.000}, --rgb(226, 226, 144)
+          secondary = {r = 0.803, g = 0.668, b = 0.644, a = 1.000}, --rgb(204, 203, 164)
+          tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, --rgb(217, 196, 146)
+          quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, --rgb(255, 240, 32)
+        },
 
     },
     {
@@ -944,6 +1126,13 @@ data:extend(
       allow_productivity = true, 
       maximum_productivity = 2,
       main_product ="calcium-sulfate",
+      crafting_machine_tint =
+      {
+        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
+        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
+        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
+        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+      },
 
     },
 
@@ -1043,6 +1232,13 @@ data:extend(
       allow_quality = false,
       auto_recycle = false,
       main_product ="steam",
+      crafting_machine_tint =
+      {
+        primary = {r = 0.881, g = 0.100, b = 0.000, a = 0.502}, -- #e0190080
+        secondary = {r = 0.930, g = 0.767, b = 0.605, a = 0.502}, -- #edc39a80
+        tertiary = {r = 0.873, g = 0.649, b = 0.542, a = 0.502}, -- #dea58a80
+        quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
+      },
 
 
     },
@@ -1070,6 +1266,13 @@ data:extend(
       allow_quality = true,
       auto_recycle = false,
       main_product ="carbon",
+      crafting_machine_tint =
+      {
+        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(143, 191, 247)
+        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(145, 179, 212)
+        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(149, 169, 205)
+        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(116, 179, 239)
+      },
 
 
     },
@@ -1094,6 +1297,13 @@ data:extend(
       allow_quality = true,
       auto_recycle = false,
       main_product ="carbon-dioxide",
+      crafting_machine_tint =
+      {
+        primary = {r = 1.000, g = 0.735, b = 0.643, a = 1.000}, -- #ffbba4ff
+        secondary = {r = 0.749, g = 0.557, b = 0.490, a = 1.000}, -- #bf8e7dff
+        tertiary = {r = 0.637, g = 0.637, b = 0.637, a = 1.000}, -- #a2a2a2ff
+        quaternary = {r = 0.283, g = 0.283, b = 0.283, a = 1.000}, --rgb(119, 116, 116)
+      },
 
 
     },
@@ -1199,6 +1409,13 @@ data:extend(
       maximum_productivity = 1,
       main_product ="copper-sulfate-solution",
       auto_recycle = false,
+      crafting_machine_tint =
+      {
+        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 110, 246)
+        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(30, 15, 233)
+        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(84, 96, 225)
+        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 83, 239)
+      },
 
     },
     {
@@ -1223,6 +1440,13 @@ data:extend(
       maximum_productivity = 1,
       main_product ="copper-sulfate-solution",
       auto_recycle = false,
+      crafting_machine_tint =
+      {
+        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 110, 246)
+        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(30, 15, 233)
+        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(84, 96, 225)
+        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 83, 239)
+      },
 
     },
     {
@@ -1247,6 +1471,13 @@ data:extend(
       maximum_productivity = 1,
       main_product ="iron-sulfate-solution",
       auto_recycle = false,
+      crafting_machine_tint =
+      {
+        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 246, 230)
+        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 211, 190)
+        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 208, 205)
+        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 239, 194)
+      },
 
     },
     {
@@ -1271,6 +1502,13 @@ data:extend(
       maximum_productivity = 1,
       main_product ="iron-sulfate-solution",
       auto_recycle = false,
+      crafting_machine_tint =
+      {
+        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 246, 230)
+        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 211, 190)
+        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 208, 205)
+        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 239, 194)
+      },
 
     },
     {
@@ -1295,6 +1533,13 @@ data:extend(
       maximum_productivity = 1,
       main_product ="iron-sulfate-solution",
       auto_recycle = false,
+      crafting_machine_tint =
+      {
+        primary = {r = 0.965, g = 0.482, b = 0.338, a = 1.000}, --rgb(86, 246, 230)
+        secondary = {r = 0.831, g = 0.560, b = 0.222, a = 1.000}, --rgb(56, 211, 190)
+        tertiary = {r = 0.728, g = 0.818, b = 0.443, a = 1.000}, --rgb(112, 208, 205)
+        quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, --rgb(48, 239, 194)
+      },
 
     },
 
