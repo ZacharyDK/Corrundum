@@ -57,6 +57,10 @@ local function add_to_cache(entity,cache)
   if(entity.valid == true) then
     local surface_name = entity.surface.name
     local key = entity.name .. entity.gps_tag
+    --log(serpent.block(entity.name))
+    --log(serpent.block(entity.gps_tag))
+    --log(serpent.block(entity.surface.name))
+    if(cache[surface_name] == nil) then cache[surface_name] = {} end
     cache[surface_name][key] = entity
   end
 end
@@ -66,7 +70,9 @@ local function remove_from_cache(entity,cache)
   if(entity.valid == true) then
     local surface_name = entity.surface.name
     local key = entity.name .. entity.gps_tag
-    cache[surface_name][key] = nil
+    if(cache[surface_name] ~= nil) then
+      cache[surface_name][key] = nil
+    end
   end
 end
 
