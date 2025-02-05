@@ -3,14 +3,14 @@ data:extend(
 
     {
         type = "ambient-sound",
-        name = "fulgora-hero",
+        name = "corrundum-hero",
         track_type = "hero-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-hero.ogg",
     },
     {
         type = "ambient-sound",
-        name = "fulgora-1",
+        name = "corrundum-1",
         track_type = "main-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-1.ogg",
@@ -18,7 +18,7 @@ data:extend(
     },
     {
         type = "ambient-sound",
-        name = "fulgora-2",
+        name = "corrundum-2",
         track_type = "main-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-2.ogg",
@@ -26,7 +26,7 @@ data:extend(
     },
     {
         type = "ambient-sound",
-        name = "fulgora-3",
+        name = "corrundum-3",
         track_type = "main-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-3.ogg",
@@ -34,7 +34,7 @@ data:extend(
     },
     {
         type = "ambient-sound",
-        name = "fulgora-4",
+        name = "corrundum-4",
         track_type = "main-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-4.ogg",
@@ -43,7 +43,7 @@ data:extend(
     require("__space-age__/sound/ambient/fulgora/fulgora-5/fulgora-5"),
     {
         type = "ambient-sound",
-        name = "fulgora-6",
+        name = "corrundum-6",
         track_type = "main-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-6.ogg",
@@ -51,7 +51,7 @@ data:extend(
     },
     {
         type = "ambient-sound",
-        name = "fulgora-7",
+        name = "corrundum-7",
         track_type = "main-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-7.ogg",
@@ -59,7 +59,7 @@ data:extend(
     },
     {
         type = "ambient-sound",
-        name = "fulgora-8",
+        name = "corrundum-8",
         track_type = "main-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-8.ogg",
@@ -67,7 +67,7 @@ data:extend(
     },
     {
         type = "ambient-sound",
-        name = "fulgora-9",
+        name = "corrundum-9",
         track_type = "main-track",
         planet = "corrundum",
         sound = "__space-age__/sound/ambient/fulgora/fulgora-9.ogg",

@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.19
+Date: 5. 02. 2025
+  Major Features:
+    - Prevent Corrundum from stealing Fulgora's music. Both planets should now have music. 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.18
 Date: 5. 02. 2025
   Major Features:
