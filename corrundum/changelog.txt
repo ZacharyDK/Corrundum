@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.20
+Date: 14. 02. 2025
+  Major Features:
+    - Reworked fluid inputs for pressure lab. Should be less of pain to build around now.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.19
 Date: 5. 02. 2025
   Major Features:

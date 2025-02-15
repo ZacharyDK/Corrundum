@@ -643,27 +643,35 @@ data:extend(
           pipe_connections =
           {
               {
-              flow_direction="input", --only one that seems to be working.
+              flow_direction="output", 
               direction = defines.direction.north,
               position = {0, -1},
-              }
-          },
-          {
+              },
               {
-                flow_direction="input", --wanted multiple points from the standard chem plant's input. And to be able to channel steam through. Whatever.
+              flow_direction="input", 
+              direction = defines.direction.north,
+              position = {-1, -1},
+              },
+              {
+                flow_direction="input",
                 direction = defines.direction.north,
                 position = {1, -1},
-              }
-          },
-          {
-            flow_direction = "output",
-            direction = defines.direction.south,
-            position = {-1, 1}
-          },
-          {
-            flow_direction = "output",
-            direction = defines.direction.south,
-            position = {1, 1}
+              },
+              {
+                flow_direction = "output",
+                direction = defines.direction.south,
+                position = {-1, 1}
+              },
+              {
+                flow_direction = "output",
+                direction = defines.direction.south,
+                position = {1, 1}
+              },
+              {
+                flow_direction = "input",
+                direction = defines.direction.south,
+                position = {0, 1}
+              },
           },
         },
         scale_fluid_usage = true

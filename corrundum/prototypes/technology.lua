@@ -9,7 +9,7 @@ data:extend({
     {
         type = "technology",
         name = "planet-discovery-corrundum",
-        icons = util.technology_icon_constant_planet("__corrundum__/graphics/technology/corrundum-discovery.png"), --TODO check if this is the proper way to do planet icons
+        icons = util.technology_icon_constant_planet("__corrundum__/graphics/technology/corrundum-discovery.png"),
         icon_size = 256,
         essential = true,
         effects =
