@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.21
+Date: 16. 02. 2025
+  Major Features:
+    - Rocket fuel can now be made in the catalytic chemical plant
+    - Added a recipe to destroy dilute sulfuric acid.
+    - Reduced how much dilute sulfuric acid you get from force reduction recipes compared to total fluid in (30 --> 50)
+    - Removed plate inputs from force reduction recipes. Slightly less realistic, but I felt it was a bit to strong gameplay wise. My original intention was use the force reduction recipes to roll for quality.
+    - Removed 5 seconds from the force reduction recipes crafting time. (15-->10,17-->12)
+    - Added a module slot to the catalytic chemical plant. Now it is easier to roll for quality
+    - Force reduction recipes now take 300 units of sulfate solution
+---------------------------------------------------------------------------------------------------
 Version: 1.0.20
 Date: 14. 02. 2025
   Major Features:

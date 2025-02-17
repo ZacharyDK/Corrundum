@@ -248,6 +248,10 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
+                recipe = "destructive-dilute-acid-neutralization"
+            },
+            {
+                type = "unlock-recipe",
                 recipe = "hot-water-to-steam"
             },
         },
@@ -281,6 +285,10 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "sulfonated-plastic-production-alt"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "rocket-fuel-catalytic-chemistry"
             },
 
         },

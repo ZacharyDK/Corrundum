@@ -49,7 +49,29 @@ data:extend(
           quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, --rgb(255, 136, 0)
         },
     },
-
+    {
+      type = "recipe",
+      icon = "__base__/graphics/icons/rocket-fuel.png",
+      name = "rocket-fuel-catalytic-chemistry",
+      energy_required = 15,
+      enabled = false,
+      category = "catalytic-chemistry",
+      ingredients =
+      {
+        {type = "item", name = "solid-fuel", amount = 10},
+        {type = "fluid", name = "light-oil", amount = 10}
+      },
+      results = {{type="item", name="rocket-fuel", amount=1}},
+      crafting_machine_tint =
+      {
+        primary = {r = 194, g = 152, b = 198, a = 1.000}, --rgb(194, 152, 198)
+        secondary = {r = 194, g = 140, b = 215, a = 1.000}, --rgb(194, 140, 215)
+        tertiary = {r = 228, g = 197, b = 151, a = 1.000}, --rgb(228, 197, 151)
+        quaternary = {r = 255, g = 187, b = 73, a = 1.000}, --rgb(255, 187, 73)
+      },
+      allow_productivity = true,
+      main_product = "rocket-fuel",
+    },
     {
       type ="recipe",
       name ="platinum-plate-production",
@@ -240,8 +262,51 @@ data:extend(
         tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, -- #ada17bff
         quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, -- #ffcd00ff
       },
-      factoriopedia_description ="We need more water to capture all energy released, but this should help get things started.",
+      factoriopedia_description ="We get enough heat energy from neutralization to boil water",
     },
+
+    {
+      type ="recipe",
+      name ="destructive-dilute-acid-neutralization",
+      category ="chemistry-or-cryogenics",
+      icon ="__corrundum__/graphics/icons/fluid/sulfuric-acid-dilute-X.png",
+      enabled = false,
+      subgroup ="fluid-recipes",
+      order ="d[other-chemistry]-b[pressurized-acid-neutralisation]",
+      auto_recycle = false,
+      enabled = false,
+      surface_conditions =
+      {
+        {
+          property ="pressure",
+          min = 0,
+          max = 6000
+        }
+      },
+      ingredients =
+      {
+        {type ="item", name ="calcite", amount = 5},
+        {type ="fluid", name ="sulfuric-acid-dilute", amount = 4000},
+      },
+      energy_required = 8,
+      results =
+      {
+        --{}
+      },
+      allow_productivity = false,
+      always_show_products = true,
+      show_amount_in_title = false,
+      allow_decomposition = false,
+      crafting_machine_tint =
+      {
+        primary = {r = 1.000, g = 0.912, b = 0.036, a = 1.000}, -- #ffe809ff
+        secondary = {r = 0.707, g = 0.797, b = 0.335, a = 1.000}, -- #b4cb55ff
+        tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, -- #ada17bff
+        quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, -- #ffcd00ff
+      },
+      factoriopedia_description ="Heat the water, and boil it away.",
+    },
+
 
     {
       type ="recipe",
@@ -598,15 +663,15 @@ data:extend(
         ingredients =
         {
 
-          {type ="item", name ="iron-plate", amount = 1},
-          {type ="fluid", name ="iron-sulfate-solution", amount = 200},
+          --{type ="item", name ="iron-plate", amount = 1},
+          {type ="fluid", name ="iron-sulfate-solution", amount = 300},
           {type ="fluid", name ="water", amount = 100}, --Why do I need more water, its aqueous already. Oh for washing the products...
         },
 
-        energy_required = 15,
+        energy_required = 10,
         results =
         {
-          {type ="fluid", name ="sulfuric-acid-dilute", amount = 280}, --some fluid lost.
+          {type ="fluid", name ="sulfuric-acid-dilute", amount = 350}, --some fluid lost.
           {type ="item", name ="iron-ore", amount = 3}
         },
         allow_productivity = false,
@@ -631,15 +696,15 @@ data:extend(
         ingredients =
         {
 
-          {type ="item", name ="copper-plate", amount = 1},
-          {type ="fluid", name ="copper-sulfate-solution", amount = 200},
+          --{type ="item", name ="copper-plate", amount = 1},
+          {type ="fluid", name ="copper-sulfate-solution", amount = 300},
           {type ="fluid", name ="water", amount = 100},
         },
 
-        energy_required = 17,
+        energy_required = 12,
         results =
         {
-          {type ="fluid", name ="sulfuric-acid-dilute", amount = 280},
+          {type ="fluid", name ="sulfuric-acid-dilute", amount = 350},
           {type ="item", name ="copper-ore", amount = 3}
         },
         allow_productivity = false, 

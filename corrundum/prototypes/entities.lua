@@ -115,7 +115,7 @@ data:extend(
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         damaged_trigger_effect = hit_effects.entity(),
         drawing_box_vertical_extension = 0.4,
-        module_slots = 3,
+        module_slots = 4,
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
         
 
