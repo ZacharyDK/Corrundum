@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.22
+Date: 17. 02. 2025
+  Major Features:
+    - Added recipe - supersaturated displacement. Should help you better balance copper and iron
+---------------------------------------------------------------------------------------------------
 Version: 1.0.21
 Date: 16. 02. 2025
   Major Features:

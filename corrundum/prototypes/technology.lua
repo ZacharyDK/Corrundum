@@ -254,6 +254,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "hot-water-to-steam"
             },
+            {
+                type = "unlock-recipe",
+                recipe = "super-saturated-displacement"
+            },
         },
         research_trigger =
         {

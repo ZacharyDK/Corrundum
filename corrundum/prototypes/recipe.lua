@@ -645,7 +645,7 @@ data:extend(
         auto_recycle = false,
         maximum_productivity = 1,
         main_product ="iron-sulfate-solution",
-        --factoriopedia_description ="Iron is more reactive than copper. Thus we can use it to displace copper ions in solution. While the copper crystalizes beatifully, it must be reshaped into a workable form.",
+        factoriopedia_description ="Iron is more reactive than copper. Thus we can use it to displace copper ions in solution.",
         crafting_machine_tint =
         {
           primary = {r = 86, g = 246, b = 230, a = 1.000}, --rgb(86, 246, 230)
@@ -654,6 +654,44 @@ data:extend(
           quaternary = {r = 48, g = 239, b = 194, a = 1.000}, --rgb(48, 239, 194)
         },
     },
+    {
+      type ="recipe",
+      name ="super-saturated-displacement",
+      category ="chemistry",
+      icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
+      enabled = false,
+      ingredients =
+      {
+
+        {type ="item", name ="copper-plate", amount = 15},
+        {type ="fluid", name ="mixed-sulfate-solution", amount = 200},
+        {type ="fluid", name ="water", amount = 300},
+        {type ="fluid", name ="sulfuric-acid", amount = 300},
+      },
+
+      energy_required = 20,
+      results =
+      {
+        {type ="fluid", name ="iron-sulfate-solution", amount = 200},
+        {type ="fluid", name ="copper-sulfate-solution", amount = 300},
+        {type ="item", name ="copper-ore", amount = 5}
+      },
+      allow_productivity = false, 
+      auto_recycle = false,
+      maximum_productivity = 1,
+      main_product ="iron-sulfate-solution",
+      factoriopedia_description ="We can coax more copper out of a mixed solution with repeated supersaturation and recrystalization.",
+      crafting_machine_tint =
+      {
+        primary = {r = 86, g = 246, b = 230, a = 1.000}, --rgb(86, 246, 230)
+        secondary = {r = 56, g = 211, b = 190, a = 1.000}, --rgb(56, 211, 190)
+        tertiary = {r = 112, g = 208, b = 205, a = 1.000}, --rgb(112, 208, 205)
+        quaternary = {r = 48, g = 239, b = 194, a = 1.000}, --rgb(48, 239, 194)
+      },
+    },
+
+
+
     {
         type ="recipe",
         name ="force-reduction-iron",
