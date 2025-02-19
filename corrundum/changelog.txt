@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.23
+Date: 17. 02. 2025
+  Major Features:
+    - Added technology - steam turbine productivity
+    - Added technology - pipe productivity
+    - Buff technology - research speed. 120 --> 90 seconds per science pack.   
+    - Added technology - rocket-fuel-catalysis. Rocket fuel productivity for the recipe rocket-fuel-catalytic-chemistry. Note that the catalytic chem plant cannot do organic-or-chemistry recipes. Or organic recipes.
+    - Thanks Zwvei for asking me about my thoughts on infinite research.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.22
 Date: 17. 02. 2025
   Major Features:

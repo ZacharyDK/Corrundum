@@ -585,10 +585,116 @@ data:extend({
 
     {
         type = "technology",
+        name = "rocket-fuel-catalysis-productivity-infinite",
+        icons = util.technology_icon_constant_recipe_productivity("__space-age__/graphics/technology/rocket-fuel-productivity.png"),
+        icon_size = 256,
+        effects =
+        {
+          {
+            type = "change-recipe-productivity",
+            recipe = "rocket-fuel-catalytic-chemistry",
+            change = 0.10
+          },
+        },
+        prerequisites = {"electrochemical-science-pack"},
+        unit =
+        {
+        count_formula = "1.5^L*1000",
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"military-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"production-science-pack", 1},
+            {"utility-science-pack", 1},
+            {"space-science-pack", 1},
+            {"electrochemical-science-pack", 1},
+          },
+          time = 60
+        },
+        max_level = "infinite",
+        upgrade = true
+    },
+
+    {
+        type = "technology",
+        name = "steam-turbine-productivity-infinite",
+        icons = util.technology_icon_constant_recipe_productivity("__base__/graphics/technology/fluid-handling.png"),
+        icon_size = 256,
+        effects =
+        {
+          {
+            type = "change-recipe-productivity",
+            recipe = "steam-turbine",
+            change = 0.10
+          },
+        },
+        prerequisites = {"electrochemical-science-pack"},
+        unit =
+        {
+        count_formula = "1.5^L*1000",
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"military-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"production-science-pack", 1},
+            {"utility-science-pack", 1},
+            {"space-science-pack", 1},
+            {"electrochemical-science-pack", 1},
+          },
+          time = 60
+        },
+        max_level = "infinite",
+        upgrade = true
+    },
+    {
+        type = "technology",
+        name = "pipe-productivity-infinite",
+        icons = util.technology_icon_constant_recipe_productivity("__base__/graphics/technology/fluid-handling.png"),
+        icon_size = 256,
+        effects =
+        {
+          {
+            type = "change-recipe-productivity",
+            recipe = "pipe",
+            change = 0.025
+          },
+          {
+            type = "change-recipe-productivity",
+            recipe = "casting-pipe",
+            change = 0.025
+          },
+        },
+        prerequisites = {"electrochemical-science-pack"},
+        unit =
+        {
+        count_formula = "1.5^L*1000",
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"military-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"production-science-pack", 1},
+            {"utility-science-pack", 1},
+            {"space-science-pack", 1},
+            {"electrochemical-science-pack", 1},
+          },
+          time = 60
+        },
+        max_level = "infinite",
+        upgrade = true
+    },
+
+    {
+        type = "technology",
         name = "research-speed-infinite",
-        icon = "__space-age__/graphics/technology/research-productivity.png",
+        icons = util.technology_icon_constant_recipe_productivity("__space-age__/graphics/technology/research-productivity.png"),
         icon_size = 256,
-        icon_size = 256,
+
         effects =
         {
           {
@@ -616,7 +722,7 @@ data:extend({
             {"electrochemical-science-pack", 1},
             {"promethium-science-pack", 1}
           },
-          time = 120
+          time = 90
         },
         max_level = "infinite",
         upgrade = true

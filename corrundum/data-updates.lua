@@ -78,6 +78,13 @@ local recipe_patch_2 =
   change = 0.1
 }
 
+local recipe_patch_3 = 
+{
+  type = "change-recipe-productivity",
+  recipe = "rocket-fuel-catalytic-chemistry",
+  change = 0.1
+}
+
 table.insert(data.raw.technology["plastic-bar-productivity"].effects,recipe_patch)
 table.insert(data.raw.technology["plastic-bar-productivity"].effects,recipe_patch_2)
 
