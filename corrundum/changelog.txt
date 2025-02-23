@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.24
+Date: 17. 02. 2025
+  Major Features:
+    - Added technology - sulfuric acid productivity
+    - Red engine and Catalytic plant should now freeze and have heat energy requirement.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.23
 Date: 17. 02. 2025
   Major Features:

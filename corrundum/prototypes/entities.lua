@@ -117,7 +117,7 @@ data:extend(
         drawing_box_vertical_extension = 0.4,
         module_slots = 4,
         allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-        
+        heating_energy = "100kW",
 
         graphics_set =
         {
@@ -1020,6 +1020,7 @@ data:extend(
       effectivity = 0.2,
       fluid_usage_per_tick = 0.5, --Might have to adjust
       maximum_temperature = 1500,
+      heating_energy = "50kW",
       max_power_output = "300kW",
       resistances =
       {
