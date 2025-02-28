@@ -884,6 +884,76 @@ data:extend({
             time = 60
         }
     },
+    {
+        type = "technology",
+        name = "sulfur-poison-capsule",
+        icon_size = 256,
+        icon = "__base__/graphics/technology/lamp.png", --PLACEHOLDER
+        essential = false,
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "sulfur-poison-capsule",
+            },
+
+        },
+
+        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-laboratory"},
+        unit =
+        {
+            count = 2000,
+            ingredients =
+            {
+                { "automation-science-pack",      1 },
+                { "logistic-science-pack",        1 },
+                { "chemical-science-pack",        1 },
+                { "electrochemical-science-pack", 1 },
+                { "military-science-pack", 1 },
+                
+            },
+            time = 60
+        }
+    },
+    {
+        type = "technology",
+        name = "blue-rocket-production",
+        icon_size = 256,
+        icon = "__corrundum__/graphics/technology/blue-rocket.png", 
+        essential = false,
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "blue-rocket",
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "explosives-from-sulfuric-oxidizer",
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "sulfuric-oxidizer",
+            },
+
+        },
+
+        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-laboratory"},
+        unit =
+        {
+            count = 3000,
+            ingredients =
+            {
+                { "automation-science-pack",      1 },
+                { "logistic-science-pack",        1 },
+                { "chemical-science-pack",        1 },
+                { "electrochemical-science-pack", 1 },
+                { "military-science-pack",        1 },
+                
+            },
+            time = 60
+        }
+    },
 
 }
 )

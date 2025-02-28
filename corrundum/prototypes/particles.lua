@@ -396,7 +396,22 @@ local particles =
     life_time = 180,
     pictures = particle_animations.get_chalcopyrite_ore_particle_pictures(),
     shadows = particle_animations.get_old_stone_particle_shadow_pictures() -- I'll reuse old stone shadows. Kinda want to create a wrapper, but just not worth the risk of breaking things.
-  }
+  },
+  make_particle
+  {
+    name = "sulfur-poison-capsule-metal-particle",
+    pictures = particle_animations.get_metal_particle_small_pictures({}),
+    shadows = particle_animations.get_metal_particle_small_pictures({ tint = shadowtint(), shift = util.by_pixel (1,0)}),
+    regular_trigger_effect =
+    {
+      type = "create-trivial-smoke",
+      smoke_name = "sulfur-poison-capsule-particle-smoke",
+      starting_frame_deviation = 0,
+      offset_deviation = {{-0.03, -0.03}, {0.03, 0.03}},
+      speed_from_center = nil
+    },
+    ended_in_water_trigger_effect = default_ended_in_water_trigger_effect()
+  },
 
 }
 

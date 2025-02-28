@@ -2,16 +2,16 @@ require ("util")
 require ("__base__.prototypes.entity.pipecovers")
 require ("circuit-connector-sprites")
 require ("__base__.prototypes.entity.assemblerpipes")
--- For p-lab
---TODO animation
---TODO recipe
---TODO technology
---TODO icon
+
 
 --Control lua handles p lab rejecting items of normal, "", nil, or common quality
 local simulations = require("__base__.prototypes.factoriopedia-simulations")
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
+
+local smoke_animations = require("__base__.prototypes.entity.smoke-animations")
+local smoke_fast_animation = smoke_animations.trivial_smoke_fast
+local trivial_smoke = smoke_animations.trivial_smoke
 
 function make_4way_animation_from_spritesheet(animation)
     local function make_animation_layer(idx, anim)
@@ -292,7 +292,7 @@ data:extend(
             emissions_per_minute = { pollution = 4 }
         },
         energy_usage = "200kW",
-        crafting_categories = {"chemistry","catalytic-chemistry","chemistry-or-cryogenics"},
+        crafting_categories = {"chemistry","catalytic-chemistry","chemistry-or-cryogenics","organic-or-chemistry"},
         fluid_boxes =
         {
             {
@@ -1545,5 +1545,338 @@ data:extend(
       },
     },
 
+    {
+      type = "smoke-with-trigger",
+      name = "sulfur-poison-cloud-visual-dummy",
+      flags = {"not-on-map"},
+      hidden = true,
+      show_when_smoke_off = true,
+      particle_count = 24,
+      particle_spread = { 3.6 * 1.05, 3.6 * 0.6 * 1.05 },
+      particle_distance_scale_factor = 0.5,
+      particle_scale_factor = { 1, 0.707 },
+      particle_duration_variation = 60 * 3,
+      wave_speed = { 0.5 / 80, 0.5 / 60 },
+      wave_distance = { 1, 0.5 },
+      spread_duration_variation = 300 - 20,
+  
+      render_layer = "object",
+  
+      affected_by_wind = false,
+      cyclic = true,
+      duration = 60 * 20 + 4 * 60,
+      fade_away_duration = 3 * 60,
+      spread_duration = (300 - 20) / 2 ,
+      color = {r = 76, g = 100, b = 3, a = 0.32}, --rgba(76, 100, 3, 0.32)
+  
+      animation =
+      {
+        width = 152,
+        height = 120,
+        line_length = 5,
+        frame_count = 60,
+        shift = {-0.53125, -0.4375},
+        priority = "high",
+        animation_speed = 0.25,
+        filename = "__base__/graphics/entity/smoke/smoke.png",
+        flags = { "smoke" }
+      },
+      working_sound =
+      {
+        sound = { filename = "__base__/sound/fight/poison-cloud.ogg", volume = 0.5 },
+        max_sounds_per_type = 1,
+        audible_distance_modifier = 0.8,
+        match_volume_to_activity = true
+      }
+    },
+
+    {
+      type = "trivial-smoke",
+      name = "sulfur-poison-capsule-smoke",
+      animation = smoke_fast_animation(
+        {
+          scale = 0.5
+        }
+      ),
+      duration = 60,
+      fade_away_duration = 60,
+      render_layer = "higher-object-above",
+      color = {r = 240, g = 253, b = 61, a = 0.69}, --rgba(240, 253, 61, 0.69),
+    },
+  
+    {
+      type = "trivial-smoke",
+      name = "sulfur-poison-capsule-particle-smoke",
+      animation = smoke_fast_animation(
+        {
+          scale = 0.2
+        }
+      ),
+      duration = 60,
+      fade_away_duration = 60,
+      render_layer = "higher-object-above",
+      color = {r = 240, g = 253, b = 61, a = 0.69}, --rgba(240, 253, 61, 0.69),
+    },
+
+    {
+      name = "sulfur-poison-cloud",
+      type = "smoke-with-trigger",
+      flags = {"not-on-map"},
+      hidden = true,
+      show_when_smoke_off = true,
+      particle_count = 16,
+      particle_spread = { 3.6 * 1.05, 3.6 * 0.6 * 1.05 },
+      particle_distance_scale_factor = 0.5,
+      particle_scale_factor = { 1, 0.707 },
+      wave_speed = { 1/80, 1/60 },
+      wave_distance = { 0.3, 0.2 },
+      spread_duration_variation = 20,
+      particle_duration_variation = 60 * 3,
+      render_layer = "object",
+  
+      affected_by_wind = false,
+      cyclic = true,
+      duration = 60 * 20,
+      fade_away_duration = 2 * 60,
+      spread_duration = 20,
+      color = {r = 240, g = 253, b = 61, a = 0.69}, --rgba(240, 253, 61, 0.69),
+  
+      animation =
+      {
+        width = 152,
+        height = 120,
+        line_length = 5,
+        frame_count = 60,
+        shift = {-0.53125, -0.4375},
+        priority = "high",
+        animation_speed = 0.25,
+        filename = "__base__/graphics/entity/smoke/smoke.png",
+        flags = { "smoke" }
+      },
+  
+      created_effect =
+      {
+        {
+          type = "cluster",
+          cluster_count = 10,
+          distance = 4,
+          distance_deviation = 5,
+          action_delivery =
+          {
+            type = "instant",
+            target_effects =
+            {
+              {
+                type = "create-smoke",
+                show_in_tooltip = false,
+                entity_name = "sulfur-poison-cloud-visual-dummy",
+                initial_height = 0
+              },
+              {
+                type = "play-sound",
+                sound = sounds.poison_capsule_explosion
+              }
+            }
+          }
+        },
+        {
+          type = "cluster",
+          cluster_count = 11,
+          distance = 8 * 1.1,
+          distance_deviation = 2,
+          action_delivery =
+          {
+            type = "instant",
+            target_effects =
+            {
+              {
+                type = "create-smoke",
+                show_in_tooltip = false,
+                entity_name = "sulfur-poison-cloud-visual-dummy",
+                initial_height = 0
+              }
+            }
+          }
+        }
+      },
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          target_effects =
+          {
+            type = "nested-result",
+            action =
+            {
+              type = "area",
+              radius = 11,
+              entity_flags = {"breaths-air"},
+              action_delivery =
+              {
+                type = "instant",
+                target_effects =
+                {
+                  type = "damage",
+                  damage = { amount = 16, type = "poison"} --Double damage
+                }
+              }
+            }
+          }
+        }
+      },
+      action_cooldown = 30
+    },
+
+    {
+      type = "projectile",
+      name = "sulfur-poison-capsule",
+      flags = {"not-on-map"},
+      hidden = true,
+      acceleration = 0.005,
+      action =
+      {
+        {
+          type = "direct",
+          action_delivery =
+          {
+            type = "instant",
+            target_effects =
+            {
+              {
+                type = "create-smoke",
+                show_in_tooltip = true,
+                entity_name = "sulfur-poison-cloud",
+                initial_height = 0
+              },
+              {
+                type = "create-particle",
+                particle_name = "sulfur-poison-capsule-metal-particle",
+                repeat_count = 8,
+                initial_height = 1,
+                initial_vertical_speed = 0.1,
+                initial_vertical_speed_deviation = 0.05,
+                offset_deviation = {{-0.1, -0.1}, {0.1, 0.1}},
+                speed_from_center = 0.05,
+                speed_from_center_deviation = 0.01
+              }
+            }
+          }
+        }
+      },
+      --light = {intensity = 0.5, size = 4},
+      animation =
+      {
+        filename = "__corrundum__/graphics/entity/poison-capsule/poison-capsule.png",
+        draw_as_glow = true,
+        frame_count = 16,
+        line_length = 8,
+        animation_speed = 0.250,
+        width = 58,
+        height = 59,
+        shift = util.by_pixel(1, 0.5),
+        priority = "high",
+        scale = 0.5
+      },
+      shadow =
+      {
+        filename = "__base__/graphics/entity/poison-capsule/poison-capsule-shadow.png",
+        frame_count = 16,
+        line_length = 8,
+        animation_speed = 0.250,
+        width = 54,
+        height = 42,
+        shift = util.by_pixel(1, 2),
+        priority = "high",
+        draw_as_shadow = true,
+        scale = 0.5
+      },
+      smoke =
+      {
+        {
+          name = "sulfur-poison-capsule-smoke", --yellow
+          deviation = {0.15, 0.15},
+          frequency = 1,
+          position = {0, 0},
+          starting_frame = 3,
+          starting_frame_deviation = 5,
+        }
+      }
+    },
+
+    {
+      type = "projectile",
+      name = "blue-rocket",
+      flags = {"not-on-map"},
+      hidden = true,
+      acceleration = 0.015,
+      turn_speed = 0.0035,
+      turning_speed_increases_exponentially_with_projectile_speed = true,
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          target_effects =
+          {
+            {
+              type = "create-entity",
+              entity_name = "big-explosion"
+            },
+            {
+              type = "damage",
+              damage = {amount = 100, type = "explosion"}
+            },
+            {
+              type = "create-entity",
+              entity_name = "medium-scorchmark-tintable",
+              check_buildability = true
+            },
+            {
+              type = "invoke-tile-trigger",
+              repeat_count = 1
+            },
+            {
+              type = "destroy-decoratives",
+              from_render_layer = "decorative",
+              to_render_layer = "object",
+              include_soft_decoratives = true, -- soft decoratives are decoratives with grows_through_rail_path = true
+              include_decals = false,
+              invoke_decorative_trigger = true,
+              decoratives_with_trigger_only = false, -- if true, destroys only decoratives that have trigger_effect set
+              radius = 4, -- large radius for demostrative purposes
+            },
+            {
+              type = "nested-result",
+              action =
+              {
+                type = "area",
+                radius = 8,
+                action_delivery =
+                {
+                  type = "instant",
+                  target_effects =
+                  {
+                    {
+                      type = "damage",
+                      damage = {amount = 150, type = "explosion"}
+                    },
+                    {
+                      type = "create-entity",
+                      entity_name = "explosion"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      animation = require("__base__.prototypes.entity.rocket-projectile-pictures").animation({0.2, 0.2, 1}),
+      shadow = require("__base__.prototypes.entity.rocket-projectile-pictures").shadow,
+      smoke = require("__base__.prototypes.entity.rocket-projectile-pictures").smoke,
+    },
 }
 )

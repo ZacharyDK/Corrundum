@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.25
+Date: 28. 02. 2025
+  Major Features:
+    - Added sulfur-poison-capsule item. Twice as effective as base game poison capsule.
+    - Added technology for poison capsule. Lamp is the icon. 
+    - Platinum thruster light is now purple.
+    - Buffed Sulfuric acid concentration recipes. (Reduced crafting time.)
+    - Added organic-or-chemistry recipe category to the catalytic chemical plant
+    - Added blue rocket and blue rocket technology. Produce a rocket that packs a bigger punch than red rockets.
+    - Added a mod setting to lock Corundum behind Vulcanus. Enabled by default.
+    - Added a mod setting to revert the change to force reduction recipes. Disabled by default. Probably unbalanced. Play how you want. If I get the chance, I would restrict the ingredient quality, but that is not feasible at the prototype stage. 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.24
 Date: 17. 02. 2025
   Major Features:

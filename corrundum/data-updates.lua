@@ -105,3 +105,39 @@ if(brute_force == true) then
     end
   end
 end
+
+local update_discovery = settings.startup["require-vulcanus-before-corrundum"].value
+
+if(update_discovery == true) then
+  data.raw["technology"]["planet-discovery-corrundum"].unit = 
+  {
+      count = 1000,
+      ingredients =
+      {
+          { "automation-science-pack",      1 },
+          { "logistic-science-pack",        1 },
+          { "chemical-science-pack",        1 },
+          { "space-science-pack",           1 },
+          { "metallurgic-science-pack",     1 },
+      },
+      time = 60
+  }
+end
+
+local update_reduction_recipes = settings.startup["force-reduction-requires-plates"].value
+if(update_reduction_recipes == true) then
+  data.raw["recipe"]["force-reduction-iron"].ingredients = 
+  {
+    {type ="item", name ="iron-plate", amount = 1},
+    {type ="fluid", name ="iron-sulfate-solution", amount = 200},
+    {type ="fluid", name ="water", amount = 100},
+  }
+
+  data.raw["recipe"]["force-reduction-copper"].ingredients = 
+  {
+    {type ="item", name ="copper-plate", amount = 1},
+    {type ="fluid", name ="copper-sulfate-solution", amount = 200},
+    {type ="fluid", name ="water", amount = 100},
+  }
+
+end

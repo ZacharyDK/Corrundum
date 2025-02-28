@@ -608,6 +608,13 @@ data:extend(
         {
           {type ="fluid", name ="mixed-sulfate-solution", amount = 500},
         },
+        surface_conditions =
+        {
+            {
+                property ="pressure",
+                min = 1000,
+            },
+        },
         allow_productivity = true, --I'll allow productivity for now
         allow_quality = false,
         maximum_productivity = 2,
@@ -1001,7 +1008,7 @@ data:extend(
           {type ="fluid", name ="sulfuric-acid-dilute", amount = 500},
         },
 
-        energy_required = 300,
+        energy_required = 150,
         results =
         {
           {type ="fluid", name ="sulfuric-acid", amount = 100},
@@ -1033,7 +1040,7 @@ data:extend(
         {type ="fluid", name ="sulfuric-acid-dilute", amount = 500},
       },
 
-      energy_required = 100,
+      energy_required = 60,
       results =
       {
         {type ="fluid", name ="sulfuric-acid", amount = 100},
@@ -1376,7 +1383,16 @@ data:extend(
         tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
         quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
       },
-
+      --[[
+      surface_conditions =
+      {
+          {
+              property ="pressure",
+              min = 6000,
+              max = 8000,
+          },
+      },
+      --]]
 
     },
     {
@@ -1674,4 +1690,75 @@ data:extend(
 
 
     },
+    {
+      type = "recipe",
+      name = "sulfur-poison-capsule",
+      icon = "__corrundum__/graphics/icons/poison-capsule.png",
+      category ="catalytic-chemistry",
+      enabled = false,
+      energy_required = 8,
+      ingredients =
+      {
+        {type = "item", name = "plastic-bar", amount = 2},
+        {type = "item", name = "steel-plate", amount = 4},
+        {type = "item", name = "electronic-circuit", amount = 3},
+        {type = "item", name = "sulfur", amount = 10},
+        {type = "fluid", name = "sulfuric-acid", amount = 50},
+      },
+      results = {{type="item", name="sulfur-poison-capsule", amount=1}}
+    },
+    {
+      type = "recipe",
+      name = "sulfuric-oxidizer",
+      icon = "__corrundum__/graphics/icons/sulfuric-oxidizer.png",
+      category ="catalytic-chemistry",
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 23,
+      ingredients =
+      {
+        {type = "item", name = "solid-fuel", amount = 2},
+        {type = "fluid", name = "sulfuric-acid", amount = 100},
+      },
+      results = {{type="item", name="sulfuric-oxidizer", amount=2}}
+    },
+    {
+      type = "recipe",
+      name = "explosives-from-sulfuric-oxidizer",
+      icon = "__base__/graphics/icons/explosives.png",
+      category ="catalytic-chemistry",
+      enabled = false,
+      auto_recycle = false,
+      energy_required = 8,
+      ingredients =
+      {
+        {type = "item", name = "carbon", amount = 6},
+        {type = "item", name = "sulfuric-oxidizer", amount = 1},
+      },
+      results = 
+      {
+        {type="item", name="explosives", amount=5}
+      }
+    },
+    {
+      type = "recipe",
+      name = "blue-rocket",
+      icon = "__corrundum__/graphics/icons/blue-rocket.png",
+      category ="chemistry",
+      enabled = false,
+      auto_recycle = true,
+      energy_required = 8,
+      ingredients =
+      {
+        {type = "item", name = "rocket", amount = 1},
+        {type = "item", name = "carbon", amount = 4},
+        {type = "item", name = "sulfuric-oxidizer", amount = 1},
+      },
+      results = 
+      {
+        {type="item", name="blue-rocket", amount=1}
+      }
+    },
+
+
 })

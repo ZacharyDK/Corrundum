@@ -17,4 +17,16 @@ data:extend({
         setting_type = "startup",
         default_value = false
     },
+    {
+        type = "bool-setting",
+        name = "require-vulcanus-before-corrundum",
+        setting_type = "startup",
+        default_value = true
+    },
+    {
+        type = "bool-setting",
+        name = "force-reduction-requires-plates",
+        setting_type = "startup",
+        default_value = false
+    },
 })

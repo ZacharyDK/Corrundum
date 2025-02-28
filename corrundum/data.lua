@@ -1,8 +1,9 @@
+require("__corrundum__.prototypes.particles")
 require("__corrundum__.prototypes.entities")
 require("__corrundum__.prototypes.factoriopedia-simulations")
 require("__corrundum__.prototypes.fluid")
 require("__corrundum__.prototypes.item")
-require("__corrundum__.prototypes.particles")
+
 require("__corrundum__.prototypes.recipe-category")
 require("__corrundum__.prototypes.recipe")
 require("__corrundum__.prototypes.remnants")

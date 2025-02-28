@@ -230,6 +230,106 @@ data:extend(
       weight = 200*kg
     },
 
+    {
+      type = "capsule",
+      name = "sulfur-poison-capsule",
+      icon = "__corrundum__/graphics/icons/poison-capsule.png",
+      capsule_action =
+      {
+        type = "throw",
+        attack_parameters =
+        {
+          type = "projectile",
+          activation_type = "throw",
+          ammo_category = "capsule",
+          cooldown = 30,
+          projectile_creation_distance = 0.6,
+          range = 30,
+          ammo_type =
+          {
+            target_type = "position",
+            action =
+            {
+              {
+                type = "direct",
+                action_delivery =
+                {
+                  type = "projectile",
+                  projectile = "sulfur-poison-capsule",
+                  starting_speed = 0.3
+                }
+              },
+              {
+                type = "direct",
+                action_delivery =
+                {
+                  type = "instant",
+                  target_effects =
+                  {
+                    {
+                      type = "play-sound",
+                      sound = sounds.throw_projectile
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      subgroup = "capsule",
+      order = "b[sulfur-poison-capsule]",
+      inventory_move_sound = item_sounds.grenade_inventory_move,
+      pick_sound = item_sounds.grenade_inventory_pickup,
+      drop_sound = item_sounds.grenade_inventory_move,
+      stack_size = 100,
+      weight = 10*kg
+    },
+
+    {
+      type = "ammo",
+      name = "blue-rocket",
+      icon = "__corrundum__/graphics/icons/blue-rocket.png",
+      ammo_category = "rocket",
+      ammo_type =
+      {
+        action =
+        {
+          type = "direct",
+          action_delivery =
+          {
+            type = "projectile",
+            projectile = "blue-rocket",
+            starting_speed = 0.1,
+            source_effects =
+            {
+              type = "create-entity",
+              entity_name = "explosion-hit"
+            }
+          }
+        }
+      },
+      subgroup = "ammo",
+      order = "d[rocket-launcher]-c[explosive]",
+      inventory_move_sound = item_sounds.ammo_large_inventory_move,
+      pick_sound = item_sounds.ammo_large_inventory_pickup,
+      drop_sound = item_sounds.ammo_large_inventory_move,
+      stack_size = 100,
+      weight = 35*kg
+    },
+    {
+      type = "item",
+      name = "sulfuric-oxidizer",
+      icon = "__corrundum__/graphics/icons/sulfuric-oxidizer.png",
+      subgroup = "raw-material",
+      order = "z[chemistry]-z[solid-fuel]",
+      inventory_move_sound = item_sounds.solid_fuel_inventory_move,
+      pick_sound = item_sounds.solid_fuel_inventory_pickup,
+      drop_sound = item_sounds.solid_fuel_inventory_move,
+      stack_size = 50,
+      weight = 1 * kg,
+      random_tint_color = item_tints.yellowing_coal
+    },
 }
 
 )
