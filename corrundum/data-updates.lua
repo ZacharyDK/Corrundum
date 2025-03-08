@@ -122,7 +122,7 @@ if(update_discovery == true) then
       },
       time = 60
   }
-  data.raw["technology"]["planet-discovery-corrundum"].prerequisites = { "space-platform-thruster","planet-discovery-vulcanus"}
+  data.raw["technology"]["planet-discovery-corrundum"].prerequisites = { "space-platform-thruster","metallurgic-science-pack"}
 end
 
 local update_reduction_recipes = settings.startup["force-reduction-requires-plates"].value
