@@ -1,4 +1,29 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.28
+Date: 3. 07. 2025
+  Major Features:
+    - Rocket fuel catalysis recipe hidden from crafting screen.
+    - Recipe descriptions.
+    - Added default import locations for items where I forgot to
+    - Calcium sulfate recipes can now be done in the biochamber
+    - Reduced water consumption for space steam
+    - Sulfonated explosive recipes now should now accept productivity modules
+---------------------------------------------------------------------------------------------------
+Version: 1.0.27
+Date: 3. 04. 2025
+  Major Features:
+    - Reconfigured the tech tree to help new players understand ore processing on Corrundum. All chalcopyrite recipes moved to the tech (chalcopyrite-processing), which is now triggered by mining chalcopyrite
+    - Existing players will just have to mine chalcopyrite to get the research back.
+    - Free items received from research moved to chalcopyrite trigger tech. Now added pipes to the trigger tech.
+    - Instead of crafting electrochemical science packs, you craft items or fluid instead for trigger research. 
+---------------------------------------------------------------------------------------------------
+Version: 1.0.26
+Date: 3. 03. 2025
+  Major Features:
+    - Updated the surface generation. More rocks spawn, and ore spacing is decreased.
+    - Updated the technologies to use the icons at 64 pixel resolution of the item icons related to the research. (Pressure lab, poison capsule, catalytic chemical plant)
+    - Thanks Frontrider for explaining that I could use pictures in the icons folder and set th icon size to 64
+---------------------------------------------------------------------------------------------------
 Version: 1.0.25
 Date: 28. 02. 2025
   Major Features:

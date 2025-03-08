@@ -71,6 +71,7 @@ data:extend(
       },
       allow_productivity = true,
       main_product = "rocket-fuel",
+      hide_from_player_crafting = true,
     },
     {
       type ="recipe",
@@ -839,7 +840,7 @@ data:extend(
     {
         type ="recipe",
         name ="calcium-sulfate-fish",
-        category ="chemistry",
+        category ="organic-or-chemistry",
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
         ingredients =
@@ -871,7 +872,7 @@ data:extend(
     {
         type ="recipe",
         name ="calcium-sulfate-bioflux",
-        category ="chemistry",
+        category ="organic-or-chemistry",
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
         ingredients =
@@ -903,7 +904,7 @@ data:extend(
     {
         type ="recipe",
         name ="calcium-sulfate-egg",
-        category ="chemistry",
+        category ="organic-or-chemistry",
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
         ingredients =
@@ -935,7 +936,7 @@ data:extend(
     {
         type ="recipe",
         name ="calcium-sulfate-production",
-        category ="chemistry",
+        category ="organic-or-chemistry",
         icon ="__corrundum__/graphics/icons/calcium-sulfate.png",
         enabled = false,
         ingredients =
@@ -1329,7 +1330,7 @@ data:extend(
       {
 
         {type ="fluid", name ="thruster-fuel", amount = 500},
-        {type ="fluid", name ="water", amount = 250},
+        {type ="fluid", name ="water", amount = 150},
         {type ="fluid", name ="thruster-oxidizer", amount = 500},
       },
 
@@ -1349,7 +1350,6 @@ data:extend(
         tertiary = {r = 0.873, g = 0.649, b = 0.542, a = 0.502}, -- #dea58a80
         quaternary = {r = 0.629, g = 0.174, b = 0.000, a = 0.502}, -- #a02c0080
       },
-
 
     },
     {
@@ -1715,6 +1715,7 @@ data:extend(
       enabled = false,
       auto_recycle = false,
       energy_required = 23,
+      allow_productivity = true,
       ingredients =
       {
         {type = "item", name = "solid-fuel", amount = 2},
@@ -1730,6 +1731,7 @@ data:extend(
       enabled = false,
       auto_recycle = false,
       energy_required = 8,
+      allow_productivity = true,
       ingredients =
       {
         {type = "item", name = "carbon", amount = 6},

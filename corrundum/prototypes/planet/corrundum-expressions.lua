@@ -5,7 +5,7 @@ data:extend{
   {
     type = "noise-expression",
     name = "corrundum_ore_spacing",
-    expression = 128
+    expression = 96
   },
   {
     type = "noise-expression",
@@ -852,7 +852,7 @@ data:extend{
                                     seed0 = map_seed,\z
                                     seed1 = 137,\z
                                     octaves = 4,\z
-                                    persistence = 0.65,\z
+                                    persistence = 0.7,\z
                                     input_scale = 0.1,\z
                                     output_scale = 0.4}"
     -- 0.1 / slider_rescale(var('control:rocks:frequency'), 2),\z

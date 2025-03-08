@@ -76,9 +76,70 @@ data:extend({
     },
     {
         type = "technology",
+        name = "chalcopyrite-processing",
+        icon_size = 64,
+        icon = "__corrundum__/graphics/icons/chalcopyrite-ore.png",
+        essential = true,
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "chalcopyrite-refining"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "reactive-displacement"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "force-reduction-iron"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "force-reduction-copper"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "super-saturated-displacement"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "destructive-dilute-acid-neutralization"
+            },
+            {
+                type = "give-item",
+                item = "iron-plate",
+                count = 200
+            },
+            {
+                type = "give-item",
+                item = "copper-plate",
+                count = 200
+            },
+            {
+                type = "give-item",
+                item = "steel-plate",
+                count = 200
+            },
+            {
+                type = "give-item",
+                item = "pipe",
+                count = 200
+            }
+        },
+        research_trigger =
+        {
+            type = "mine-entity",
+            entity = "chalcopyrite-ore"
+        },
+        prerequisites = { "planet-discovery-corrundum" }
+    },
+    {
+        type = "technology",
         name = "catalytic-chemical-plant",
-        icon_size = 256,
-        icon = "__base__/graphics/technology/fluid-handling.png",
+        icon_size = 64,
+        --icon = "__base__/graphics/technology/fluid-handling.png",
+        icon = "__corrundum__/graphics/icons/catalytic-chemical-plant.png",
         essential = true,
         effects =
         {
@@ -182,26 +243,12 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "hydrogen-sulfide-combustion"
             },
-            {
-                type = "give-item",
-                item = "iron-plate",
-                count = 200
-            },
-            {
-                type = "give-item",
-                item = "copper-plate",
-                count = 200
-            },
-            {
-                type = "give-item",
-                item = "steel-plate",
-                count = 200
-            }
+
         },
         research_trigger =
         {
             type = "craft-item",
-            item = "electrochemical-science-pack",
+            item = "sulfur",
             count = 10
         },
         prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2"}
@@ -214,22 +261,7 @@ data:extend({
         essential = true,
         effects =
         {
-            {
-                type = "unlock-recipe",
-                recipe = "chalcopyrite-refining"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "reactive-displacement"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "force-reduction-iron"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "force-reduction-copper"
-            },
+
             {
                 type = "unlock-recipe",
                 recipe = "sulfuric-acid-dilution"
@@ -246,24 +278,18 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "dilute-acid-neutralization"
             },
-            {
-                type = "unlock-recipe",
-                recipe = "destructive-dilute-acid-neutralization"
-            },
+
             {
                 type = "unlock-recipe",
                 recipe = "hot-water-to-steam"
             },
-            {
-                type = "unlock-recipe",
-                recipe = "super-saturated-displacement"
-            },
+
         },
         research_trigger =
         {
-            type = "craft-item",
-            item = "electrochemical-science-pack",
-            count = 100
+            type = "craft-fluid",
+            fluid = "sulfur-dioxide",
+            count = 2000
         },
         prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1" }
     },
@@ -313,8 +339,8 @@ data:extend({
     {
         type = "technology",
         name = "calcium-sulfate",
-        icon_size = 256,
-        icon = "__space-age__/graphics/technology/tree-seeding.png", --TODO new image
+        icon_size = 64,
+        icon = "__corrundum__/graphics/icons/calcium-sulfate.png",
         essential = true,
         effects =
         {
@@ -416,8 +442,6 @@ data:extend({
             time = 60
         }
     },
-
-
 
     {
         type = "technology",
@@ -551,8 +575,9 @@ data:extend({
     {
         type = "technology",
         name = "pressure-laboratory",
-        icon_size = 256,
-        icon = "__base__/graphics/technology/lamp.png", --PLACEHOLDER
+        icon_size = 64,
+        --icon = "__base__/graphics/technology/lamp.png", --PLACEHOLDER
+        icon = "__corrundum__/graphics/icons/pressure-lab.png", --PLACEHOLDER
         essential = true,
         effects =
         {
@@ -887,8 +912,9 @@ data:extend({
     {
         type = "technology",
         name = "sulfur-poison-capsule",
-        icon_size = 256,
-        icon = "__base__/graphics/technology/lamp.png", --PLACEHOLDER
+        icon_size = 64,
+        --icon = "__base__/graphics/technology/lamp.png", --PLACEHOLDER
+        icon = "__corrundum__/graphics/icons/poison-capsule.png", --PLACEHOLDER
         essential = false,
         effects =
         {

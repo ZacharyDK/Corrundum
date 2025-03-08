@@ -39,7 +39,7 @@ data:extend{
 {
     type = "noise-expression",
     name = "corrundum_rock_huge",
-    expression = "min(0.2 * (1 - 0.75 * corrundum_petrol_lands_biome), - 1.5 + 1.09 * min(aux, -0.1 + 1.1 * moisture) + corrundum_rock_noise + 0.45 * corrundum_decorative_knockout)"
+    expression = "min(0.2 * (1 - 0.75 * corrundum_petrol_lands_biome), - 1.2 + 1.09 * min(aux, -0.1 + 1.1 * moisture) + corrundum_rock_noise + 0.45 * corrundum_decorative_knockout)"
 
 }
 }

@@ -174,6 +174,7 @@ data:extend(
       stack_size = 50,
       random_tint_color = item_tints.iron_rust,
       --ingredient_to_weight_coefficient = 1,
+      default_import_location = "corrundum",
     },
     {
       type = "item",
@@ -188,6 +189,7 @@ data:extend(
       stack_size = 10,
       random_tint_color = item_tints.iron_rust,
       --ingredient_to_weight_coefficient = 1,
+      default_import_location = "corrundum",
     },
     {
       type = "item",
@@ -199,7 +201,8 @@ data:extend(
       pick_sound = item_sounds.wood_inventory_pickup,
       drop_sound = item_sounds.wood_inventory_move,
       place_result = "ice-box",
-      stack_size = 50
+      stack_size = 50,
+      default_import_location = "corrundum",
     },
     {
       type = "item",
@@ -214,6 +217,7 @@ data:extend(
       weight = 0.1 * kg,
       random_tint_color = item_tints.ice_blue,
       spoil_ticks = 60 * 4 * minute, --4 hours of spoil time
+      default_import_location = "corrundum",
     },
 
     {
@@ -227,7 +231,8 @@ data:extend(
       drop_sound = space_age_item_sounds.rocket_inventory_move,
       place_result = "platinum-thruster",
       stack_size = 10,
-      weight = 200*kg
+      weight = 200*kg,
+      default_import_location = "corrundum",
     },
 
     {
@@ -283,7 +288,8 @@ data:extend(
       pick_sound = item_sounds.grenade_inventory_pickup,
       drop_sound = item_sounds.grenade_inventory_move,
       stack_size = 100,
-      weight = 10*kg
+      weight = 10*kg,
+      default_import_location = "corrundum",
     },
 
     {
@@ -315,7 +321,8 @@ data:extend(
       pick_sound = item_sounds.ammo_large_inventory_pickup,
       drop_sound = item_sounds.ammo_large_inventory_move,
       stack_size = 100,
-      weight = 35*kg
+      weight = 35*kg,
+      default_import_location = "corrundum",
     },
     {
       type = "item",
@@ -328,7 +335,8 @@ data:extend(
       drop_sound = item_sounds.solid_fuel_inventory_move,
       stack_size = 50,
       weight = 1 * kg,
-      random_tint_color = item_tints.yellowing_coal
+      random_tint_color = item_tints.yellowing_coal,
+      default_import_location = "corrundum",
     },
 }
 
