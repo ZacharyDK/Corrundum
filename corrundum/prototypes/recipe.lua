@@ -1016,7 +1016,7 @@ data:extend(
         results =
         {
           {type ="fluid", name ="sulfuric-acid", amount = 100},
-          {type ="fluid", name ="steam", amount = 4400, temperature = 500},
+          {type ="fluid", name ="steam", amount = 4400, temperature = 100},
         },
         allow_productivity = false, 
         allow_quality = false,

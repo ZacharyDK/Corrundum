@@ -1,9 +1,10 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.28
+Version: 1.0.29
 Date: 3. 11. 2025
-  Major Features:
+  Bugfixes:
     - Fixed nutrient recycling biter egg exploit.
     - Moved planet discovery corundum to be before Vulcanus planet discovery
+    - planet discovery corundum now unlocks lightning rod. Thanks to XredoFin for bringing this to my attention. Had thought it was unlocked by default.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.28
 Date: 3. 07. 2025

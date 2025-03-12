@@ -142,3 +142,7 @@ if(update_reduction_recipes == true) then
   }
 
 end
+
+
+--local alt_unlocks = {"planet-discovery-corrundum"}
+--data.raw["recipe"]["lightning-rod"].alternative_unlock_methods =alt_unlocks 

@@ -27,6 +27,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "red-boiler-recipe",
             },
+            {
+                type = "unlock-recipe",
+                recipe = "lightning-rod",
+            },
         },
         prerequisites = { "space-platform-thruster"},
         unit =
