@@ -3,6 +3,7 @@ Version: 1.0.28
 Date: 3. 11. 2025
   Major Features:
     - Fixed nutrient recycling biter egg exploit.
+    - Moved planet discovery corundum to be before Vulcanus planet discovery
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.28
 Date: 3. 07. 2025

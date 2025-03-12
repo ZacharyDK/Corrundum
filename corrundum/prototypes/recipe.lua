@@ -1247,7 +1247,7 @@ data:extend(
         tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
         quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
       },
-
+      auto_recycle = false,
     },
 
 
