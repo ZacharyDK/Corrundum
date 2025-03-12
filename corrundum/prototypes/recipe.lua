@@ -867,6 +867,7 @@ data:extend(
           tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
           quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
+        auto_recycle = false,
 
     },
     {
@@ -899,6 +900,7 @@ data:extend(
           tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
           quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
+        auto_recycle = false,
 
     },
     {
@@ -931,6 +933,7 @@ data:extend(
           tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
           quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
+        auto_recycle = false,
 
     },
     {
@@ -963,7 +966,7 @@ data:extend(
           tertiary = {r = 112, g = 146, b = 208, a = 1.000}, --rgb(112, 146, 208)
           quaternary = {r = 48, g = 147, b = 239, a = 1.000}, --rgb(48, 147, 239)
         },
-
+        auto_recycle = false,
     },
     {
         type ="recipe",
@@ -995,7 +998,7 @@ data:extend(
           tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, --rgb(219, 186, 171)
           quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, --rgb(245, 174, 143)
         },
-
+        auto_recycle = false,
     },
     {
         type ="recipe",
@@ -1027,7 +1030,7 @@ data:extend(
           tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, -- #d9a892ff
           quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, -- #ff7e45ff
         },
-
+        auto_recycle = false,
     },
     {
       type ="recipe",
@@ -1058,7 +1061,7 @@ data:extend(
         tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, -- #d9a892ff
         quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, -- #ff7e45ff
       },
-
+      auto_recycle = false,
     },
     {
         type ="recipe",
@@ -1089,7 +1092,7 @@ data:extend(
           tertiary = {r = 0.854, g = 0.659, b = 0.576, a = 1.000}, --rgb(219, 186, 171)
           quaternary = {r = 1.000, g = 0.494, b = 0.271, a = 1.000}, --rgb(245, 174, 143)
         },
-
+        auto_recycle = false,
     },
     {
         type ="recipe",
