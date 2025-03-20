@@ -528,10 +528,10 @@ data:extend(
           {type ="fluid", name ="sulfur-dioxide", amount = 50},
         },
 
-        energy_required = 15,
+        energy_required = 10,
         results =
         {
-          {type ="fluid", name ="sulfuric-acid", amount = 100},
+          {type ="fluid", name ="sulfuric-acid", amount = 125},
         },
         allow_productivity = true,
         allow_quality = false,
@@ -569,7 +569,7 @@ data:extend(
           }
         },
 
-        energy_required = 15,
+        energy_required = 10,
         results =
         {
           {type ="fluid", name ="sulfur-dioxide", amount = 200},
@@ -604,7 +604,7 @@ data:extend(
           {type ="fluid", name ="sulfuric-acid", amount = 500},
         },
 
-        energy_required = 40,
+        energy_required = 30,
         results =
         {
           {type ="fluid", name ="mixed-sulfate-solution", amount = 500},
@@ -649,7 +649,7 @@ data:extend(
           {type ="fluid", name ="iron-sulfate-solution", amount = 200},
           {type ="item", name ="copper-ore", amount = 2}
         },
-        allow_productivity = false, 
+        allow_productivity = true, 
         auto_recycle = false,
         maximum_productivity = 1,
         main_product ="iron-sulfate-solution",
@@ -684,7 +684,7 @@ data:extend(
         {type ="fluid", name ="copper-sulfate-solution", amount = 300},
         {type ="item", name ="copper-ore", amount = 5}
       },
-      allow_productivity = false, 
+      allow_productivity = true, 
       auto_recycle = false,
       maximum_productivity = 1,
       main_product ="iron-sulfate-solution",
@@ -718,9 +718,9 @@ data:extend(
         results =
         {
           {type ="fluid", name ="sulfuric-acid-dilute", amount = 350}, --some fluid lost.
-          {type ="item", name ="iron-ore", amount = 3}
+          {type ="item", name ="iron-ore", amount = 7}
         },
-        allow_productivity = false,
+        allow_productivity = true,
         auto_recycle = false,
         maximum_productivity = 1,
         main_product ="iron-ore",
@@ -753,7 +753,7 @@ data:extend(
           {type ="fluid", name ="sulfuric-acid-dilute", amount = 350},
           {type ="item", name ="copper-ore", amount = 3}
         },
-        allow_productivity = false, 
+        allow_productivity = true, 
         maximum_productivity = 1,
         main_product ="copper-ore",
         auto_recycle = false,
@@ -778,7 +778,7 @@ data:extend(
         {
 
           {type ="item", name ="solid-fuel", amount = 3},
-          {type ="fluid", name ="sulfuric-acid", amount = 110},
+          {type ="fluid", name ="sulfuric-acid", amount = 90},
           {type ="fluid", name ="sulfur-dioxide", amount = 110},
           {type ="fluid", name ="light-oil", amount = 10},
         },
@@ -811,7 +811,7 @@ data:extend(
       {
 
         {type ="item", name ="solid-fuel", amount = 2},
-        {type ="fluid", name ="sulfuric-acid", amount = 110},
+        {type ="fluid", name ="sulfuric-acid", amount = 90},
         {type ="fluid", name ="sulfur-dioxide", amount = 110},
         {type ="fluid", name ="heavy-oil", amount = 8},
       },

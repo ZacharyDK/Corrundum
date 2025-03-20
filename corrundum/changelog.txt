@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.30
+Date: 3. 19. 2025
+  Major Features:
+   - Balance patch from most recent playtest
+   - sulfurous-oxidation recipe changed from 15 to 10 seconds. Yield increased to 125 units of sulfuric acid from 100
+   - hydrogen-sulfide-combustion changed from 15 to 10 seconds.
+   - Allowed productivity modules on some fluid recipes.
+   - chalcopyrite-refining energy required 40 to 30
+   - Removed production science pack as a requirement for calcium sulfate. This is to make getting stone production easier.
+   - Reduced sulfuric acid cost for plastic recipes. (110 to 90)
+   - Force reduction of iron recipe now gives you 7 iron ore, from 3. I did some long tests and wasn't happy with the iron production. While I wanted to keep things 1:1 for reality, gameplay is more important.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.29
 Date: 3. 11. 2025
   Bugfixes:

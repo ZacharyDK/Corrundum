@@ -368,7 +368,6 @@ data:extend({
                 { "automation-science-pack",      1 },
                 { "logistic-science-pack",        1 },
                 { "chemical-science-pack",        1 },
-                { "production-science-pack",      1 },
                 { "utility-science-pack",         1 },
                 { "electrochemical-science-pack", 1 },
             },
