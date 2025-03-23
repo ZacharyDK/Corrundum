@@ -60,7 +60,7 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "platinum-plate-production"
+                recipe = "platinum-plate"
             },
             {
                 type = "unlock-recipe",
@@ -197,7 +197,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "hydrogen-sulfide-production"
+                recipe = "hydrogen-sulfide"
             }
         },
         research_trigger =
@@ -310,7 +310,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "sulfonated-plastic-production"
+                recipe = "sulfonated-plastic"
             },
             {
                 type = "unlock-recipe",
@@ -350,7 +350,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "calcium-sulfate-production"
+                recipe = "calcium-sulfate"
             },
             {
                 type = "unlock-recipe",
@@ -397,7 +397,7 @@ data:extend({
 
         },
 
-        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","calcium-sulfate" },
+        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","calcium-sulfate","agricultural-science-pack" },
         unit =
         {
             count = 1000,
@@ -887,7 +887,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "platinum-thruster-production",
+                recipe = "platinum-thruster",
             },
 
         },
@@ -946,7 +946,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "blue-rocket-production",
+        name = "blue-rocket",
         icon_size = 256,
         icon = "__corrundum__/graphics/technology/blue-rocket.png", 
         essential = false,

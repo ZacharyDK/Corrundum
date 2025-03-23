@@ -75,7 +75,7 @@ data:extend(
     },
     {
       type ="recipe",
-      name ="platinum-plate-production",
+      name ="platinum-plate",
       category ="metallurgy",
       icon ="__corrundum__/graphics/icons/platinum-plate.png",
       enabled = false,
@@ -453,7 +453,7 @@ data:extend(
     },
     {
         type ="recipe",
-        name ="hydrogen-sulfide-production",
+        name ="hydrogen-sulfide",
         category ="catalytic-chemistry",
         icon ="__corrundum__/graphics/icons/fluid/hydrogen-sulfide.png",
         enabled = false,
@@ -770,7 +770,7 @@ data:extend(
 
     {
         type ="recipe",
-        name ="sulfonated-plastic-production",
+        name ="sulfonated-plastic",
         category ="catalytic-chemistry",
         icon ="__base__/graphics/icons/plastic-bar.png",
         enabled = false,
@@ -938,7 +938,7 @@ data:extend(
     },
     {
         type ="recipe",
-        name ="calcium-sulfate-production",
+        name ="calcium-sulfate",
         category ="organic-or-chemistry",
         icon ="__corrundum__/graphics/icons/calcium-sulfate.png",
         enabled = false,
@@ -1668,7 +1668,7 @@ data:extend(
     --Space goodies
     {
       type ="recipe",
-      name ="platinum-thruster-production",
+      name ="platinum-thruster",
       category ="crafting",
       icon = "__corrundum__/graphics/icons/platinum-thruster-icon.png",
       enabled = false,
