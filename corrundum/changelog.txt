@@ -6,6 +6,7 @@ Date: 3. 22. 2025
     - Blue rocket and sulfur poison capsule added to castra's productivity research
     - Fixed changelog
     - Calcium sulfate nutrients now locked behind agricultural science.
+    - Thanks to huipaodetudou2000 for adding Chinese localization
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.30
 Date: 3. 19. 2025
