@@ -986,3 +986,48 @@ data:extend({
 
 }
 )
+
+if mods["maraxsis"] then
+    data:extend(
+    {
+        {
+            type = "technology",
+            name = "petrol-dehydrogenation-and-combustion",
+            icon_size = 64,
+            icon = "__corrundum__/graphics/icons/catalytic-chemical-plant.png",
+            essential = false,
+            effects =
+            {
+                {
+                    type = "unlock-recipe",
+                    recipe = "petrol-dehydrogenation-and-combustion",
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "petrol-dehydrogenation-and-combustion-maraxsis",
+                },
+
+    
+    
+            },
+    
+            prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","hydraulic-science-pack"},
+            unit =
+            {
+                count = 1000,
+                ingredients =
+                {
+                    { "automation-science-pack",      1 },
+                    { "logistic-science-pack",        1 },
+                    { "chemical-science-pack",        1 }, 
+                    { "electrochemical-science-pack", 1 },
+                    { "space-science-pack", 1 },
+                    {"hydraulic-science-pack", 1}
+                    
+                },
+                time = 60
+            }
+        }
+    }
+    )
+end

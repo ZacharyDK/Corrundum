@@ -628,7 +628,7 @@ data:extend(
         "promethium-science-pack",
         --"electrochemical-science-pack"
       },
-      science_pack_drain_rate_percent = 50,
+      science_pack_drain_rate_percent = 30,
       energy_source =
       {
         type = "fluid",

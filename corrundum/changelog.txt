@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.32
+Date: 3. 28. 2025
+  Major Features:
+    - Chinese localization updated. Thanks huipaodetudou2000
+    - Per request, added recipe to product hydrogen from petroleum. This research is available if Maraxsis is installed.
+    - Buffed pressure laboratory. Science pack drain rate is now 30%, from 50%. I wanted to be conservative when I introduced the pressure laboratory. Players need a bit of kick to actually use the pressure lab, so this should be it.
+    - Even in the context of the buff - rejection of normal quality science is a huge downside. 
+---------------------------------------------------------------------------------------------------
 Version: 1.0.31
 Date: 3. 22. 2025
   Major Features:
