@@ -743,7 +743,7 @@ data:extend(
         production_type = "output",
         filter = "carbon-dioxide" 
       },
-      energy_consumption = "0.9MW",
+      energy_consumption = "15MW",
       energy_source = 
       {
         type = "void", --Ideally we would have a fluidbox to use a fuel..But this is fine the way it is. TODO consider swaping input and output pipes, then have one be input for boiler fluid transmutation, and the other as fuel.
@@ -1827,7 +1827,7 @@ data:extend(
             },
             {
               type = "damage",
-              damage = {amount = 100, type = "explosion"}
+              damage = {amount = 200, type = "explosion"}
             },
             {
               type = "create-entity",

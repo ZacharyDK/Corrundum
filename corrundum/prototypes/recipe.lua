@@ -11,6 +11,8 @@ data:extend(
     {
         type ="recipe",
         name ="electrochemical-science-pack",
+        subgroup = "sulfur",
+        order = "a",
         category ="catalytic-chemistry",
         icon ="__corrundum__/graphics/icons/electrochemical-science-pack.png",
         enabled = false,
@@ -52,6 +54,8 @@ data:extend(
     {
       type = "recipe",
       icon = "__base__/graphics/icons/rocket-fuel.png",
+      subgroup = "sulfur",
+      order = "a",
       name = "rocket-fuel-catalytic-chemistry",
       energy_required = 15,
       enabled = false,
@@ -358,6 +362,8 @@ data:extend(
         name ="petroleum-alkylation",
         category ="catalytic-chemistry",
         icon ="__corrundum__/graphics/icons/petrol-alkylation.png",
+        subgroup = "sulfur",
+        order = "c1",
         enabled = false,
         ingredients =
         {
@@ -387,6 +393,8 @@ data:extend(
         type ="recipe",
         name ="light-oil-alkylation",
         category ="catalytic-chemistry",
+        subgroup = "sulfur",
+        order = "c2",
         icon ="__corrundum__/graphics/icons/light-oil-alkylation.png",
         enabled = false,
         ingredients =
@@ -416,6 +424,8 @@ data:extend(
     {
         type ="recipe",
         name ="sulfur-combustion",
+        subgroup = "sulfur",
+        order = "a",
         category ="chemistry",
         icon ="__corrundum__/graphics/icons/fluid/sulfur-dioxide.png",
         enabled = false,
@@ -455,6 +465,8 @@ data:extend(
         type ="recipe",
         name ="hydrogen-sulfide",
         category ="catalytic-chemistry",
+        subgroup = "sulfur",
+        order = "b",
         icon ="__corrundum__/graphics/icons/fluid/hydrogen-sulfide.png",
         enabled = false,
         ingredients =
@@ -487,6 +499,8 @@ data:extend(
         type ="recipe",
         name ="sulfur-reduction",
         category ="chemistry",
+        subgroup = "sulfur",
+        order = "b",
         icon ="__base__/graphics/icons/fluid/water.png",
         enabled = false,
         ingredients =
@@ -519,6 +533,8 @@ data:extend(
         type ="recipe",
         name ="sulfurous-oxidation",
         category ="catalytic-chemistry",
+        subgroup = "sulfur",
+        order = "b",
         icon ="__base__/graphics/icons/fluid/sulfuric-acid.png",
         enabled = false,
         ingredients =
@@ -551,6 +567,8 @@ data:extend(
     {
         type ="recipe",
         name ="hydrogen-sulfide-combustion",
+        subgroup = "sulfur",
+        order = "b",
         category ="chemistry",
         icon ="__base__/graphics/icons/fluid/water.png",
         enabled = false,
@@ -594,6 +612,8 @@ data:extend(
     {
         type ="recipe",
         name ="chalcopyrite-refining",
+        subgroup = "sulfur",
+        order = "e",
         category ="chemistry",
         icon ="__corrundum__/graphics/icons/fluid/mixed-sulfate-solution.png",
         enabled = false,
@@ -633,6 +653,8 @@ data:extend(
     {
         type ="recipe",
         name ="reactive-displacement",
+        subgroup = "sulfur",
+        order = "f",
         category ="chemistry",
         icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
         enabled = false,
@@ -665,6 +687,8 @@ data:extend(
     {
       type ="recipe",
       name ="super-saturated-displacement",
+      subgroup = "sulfur",
+      order = "f",
       category ="chemistry",
       icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
       enabled = false,
@@ -703,6 +727,8 @@ data:extend(
     {
         type ="recipe",
         name ="force-reduction-iron",
+        subgroup = "sulfur",
+        order = "g",
         category ="chemistry",
         icon ="__base__/graphics/icons/iron-ore.png",
         enabled = false,
@@ -736,6 +762,8 @@ data:extend(
     {
         type ="recipe",
         name ="force-reduction-copper",
+        subgroup = "sulfur",
+        order = "g",
         category ="chemistry",
         icon ="__base__/graphics/icons/copper-ore.png",
         enabled = false,
@@ -771,6 +799,8 @@ data:extend(
     {
         type ="recipe",
         name ="sulfonated-plastic",
+        subgroup = "sulfur",
+        order = "i",
         category ="catalytic-chemistry",
         icon ="__base__/graphics/icons/plastic-bar.png",
         enabled = false,
@@ -804,6 +834,8 @@ data:extend(
     {
       type ="recipe",
       name ="sulfonated-plastic-production-alt",
+      subgroup = "sulfur",
+      order = "i",
       category ="catalytic-chemistry",
       icon ="__base__/graphics/icons/plastic-bar.png",
       enabled = false,
@@ -840,6 +872,8 @@ data:extend(
     {
         type ="recipe",
         name ="calcium-sulfate-fish",
+        subgroup = "sulfur",
+        order = "j",
         category ="organic-or-chemistry",
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
@@ -874,6 +908,8 @@ data:extend(
         type ="recipe",
         name ="calcium-sulfate-bioflux",
         category ="organic-or-chemistry",
+        subgroup = "sulfur",
+        order = "j",
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
         ingredients =
@@ -906,6 +942,8 @@ data:extend(
     {
         type ="recipe",
         name ="calcium-sulfate-egg",
+        subgroup = "sulfur",
+        order = "j",
         category ="organic-or-chemistry",
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
@@ -940,6 +978,8 @@ data:extend(
         type ="recipe",
         name ="calcium-sulfate",
         category ="organic-or-chemistry",
+        subgroup = "sulfur",
+        order = "j",
         icon ="__corrundum__/graphics/icons/calcium-sulfate.png",
         enabled = false,
         ingredients =
@@ -971,6 +1011,8 @@ data:extend(
     {
         type ="recipe",
         name ="sulfuric-acid-dilution",
+        subgroup = "sulfur",
+        order = "b",
         category ="chemistry",
         icon ="__corrundum__/graphics/icons/fluid/sulfuric-acid-dilute.png",
         enabled = false,
@@ -1003,6 +1045,8 @@ data:extend(
     {
         type ="recipe",
         name ="sulfuric-acid-concentration",
+        subgroup = "sulfur",
+        order = "b",
         category ="chemistry",
         icon ="__base__/graphics/icons/fluid/sulfuric-acid.png",
         enabled = false,
@@ -1036,6 +1080,8 @@ data:extend(
       type ="recipe",
       name ="sulfuric-acid-concentration-alt",
       category ="chemistry",
+      subgroup = "sulfur",
+      order = "b",
       icon ="__base__/graphics/icons/fluid/sulfuric-acid.png",
       enabled = false,
       ingredients =
@@ -1068,6 +1114,8 @@ data:extend(
         name ="calcium-sulfate-production-alt",
         category ="chemistry",
         icon ="__corrundum__/graphics/icons/calcium-sulfate.png",
+        subgroup = "sulfur",
+        order = "j",
         enabled = false,
         ingredients =
         {
@@ -1099,6 +1147,8 @@ data:extend(
         name ="stone-production",
         category ="chemistry",
         icon ="__base__/graphics/icons/stone.png",
+        subgroup = "sulfur",
+        order = "j",
         enabled = false,
         ingredients =
         {
@@ -1133,6 +1183,8 @@ data:extend(
     {
         type ="recipe",
         name ="asphalt-production",
+        subgroup = "sulfur",
+        order = "d",
         category ="chemistry",
         icon ="__corrundum__/graphics/icons/asphalt.png",
         enabled = false,
@@ -1164,6 +1216,8 @@ data:extend(
     {
         type ="recipe",
         name ="asphalt-production-alt",
+        subgroup = "sulfur",
+        order = "d",
         category ="chemistry",
         icon ="__corrundum__/graphics/icons/asphalt.png",
         enabled = false,
@@ -1195,6 +1249,8 @@ data:extend(
     {
         type ="recipe",
         name ="concrete-production-from-asphalt",
+        subgroup = "sulfur",
+        order = "e",
         category ="crafting-with-fluid",
         icon ="__base__/graphics/icons/concrete.png",
         enabled = false,
@@ -1221,6 +1277,8 @@ data:extend(
       type ="recipe",
       name ="calcium-sulfate-recovery",
       category ="chemistry",
+      subgroup = "sulfur",
+      order = "j",
       icon ="__corrundum__/graphics/icons/calcium-sulfate.png",
       enabled = false,
       ingredients =
@@ -1328,6 +1386,8 @@ data:extend(
       name ="thruster-fuel-oxidizer-to-steam",
       category ="catalytic-chemistry",
       icon ="__base__/graphics/icons/fluid/steam.png",
+      subgroup = "sulfur",
+      order = "zz",
       enabled = false,
       ingredients =
       {
@@ -1402,6 +1462,8 @@ data:extend(
       type ="recipe",
       name ="controlled-petrol-combustion",
       category ="chemistry",
+      subgroup = "sulfur",
+      order = "a",
       icon = "__corrundum__/graphics/icons/fluid/carbon-dioxide.png",
       enabled = false,
       ingredients =
@@ -1512,6 +1574,8 @@ data:extend(
     {
       type ="recipe",
       name ="copper-recrystalization",
+      subgroup = "sulfur",
+      order = "n",
       category ="chemistry",
       icon ="__corrundum__/graphics/icons/fluid/copper-sulfate-solution.png",
       enabled = false,
@@ -1543,6 +1607,8 @@ data:extend(
     {
       type ="recipe",
       name ="copper-recrystalization-alt",
+      subgroup = "sulfur",
+      order = "n",
       category ="chemistry",
       icon ="__corrundum__/graphics/icons/fluid/copper-sulfate-solution.png",
       enabled = false,
@@ -1574,6 +1640,8 @@ data:extend(
     {
       type ="recipe",
       name ="iron-recrystalization",
+      subgroup = "sulfur",
+      order = "m",
       category ="chemistry",
       icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
       enabled = false,
@@ -1605,6 +1673,8 @@ data:extend(
     {
       type ="recipe",
       name ="iron-recrystalization-alt",
+      subgroup = "sulfur",
+      order = "m",
       category ="chemistry",
       icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
       enabled = false,
@@ -1637,6 +1707,8 @@ data:extend(
       type ="recipe",
       name ="iron-stick-recrystalization",
       category ="chemistry",
+      subgroup = "sulfur",
+      order = "m",
       icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
       enabled = false,
       ingredients =

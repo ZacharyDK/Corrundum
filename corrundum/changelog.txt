@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.33
+Date: 4. 4. 2025
+  Major Features:
+    - Reorganized most recipes into the sulfur subgroup
+    - Blue rocket direct damage equal to the yellow rocket, area damage unchanged.
+    - Pipe productivity - now 10% per research. From 2.5%
+    - Steam turbine productivity - now 15% from 10%
+    - Sulfuric acid productivity - now 10%, from 5%
+    - Sulfuric acid productivity formula now 1.1^L*1000 ,from 1.5^L*1000
+    - It turns out that increasing the energy consumption on the red boiler makes it work faster. Red boiler is not trash anymore can actually be used as a power source.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.32
 Date: 3. 28. 2025
   Major Features:

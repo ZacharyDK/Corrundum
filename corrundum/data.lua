@@ -8,6 +8,7 @@ require("__corrundum__.prototypes.recipe-category")
 require("__corrundum__.prototypes.recipe")
 require("__corrundum__.prototypes.remnants")
 require("__corrundum__.prototypes.technology")
+require("__corrundum__.prototypes.item-groups")
 
 require("__corrundum__.prototypes.entity.resources")
 require("__corrundum__.prototypes.planet.corrundum-map-gen")

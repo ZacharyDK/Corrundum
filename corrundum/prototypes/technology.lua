@@ -655,7 +655,7 @@ data:extend({
           {
             type = "change-recipe-productivity",
             recipe = "steam-turbine",
-            change = 0.10
+            change = 0.15
           },
         },
         prerequisites = {"electrochemical-science-pack"},
@@ -688,12 +688,12 @@ data:extend({
           {
             type = "change-recipe-productivity",
             recipe = "pipe",
-            change = 0.025
+            change = 0.10
           },
           {
             type = "change-recipe-productivity",
             recipe = "casting-pipe",
-            change = 0.025
+            change = 0.10
           },
         },
         prerequisites = {"electrochemical-science-pack"},
@@ -727,18 +727,18 @@ data:extend({
           {
             type = "change-recipe-productivity",
             recipe = "sulfurous-oxidation",
-            change = 0.05
+            change = 0.10
           },
           {
             type = "change-recipe-productivity",
             recipe = "sulfuric-acid",
-            change = 0.05
+            change = 0.10
           },
         },
         prerequisites = {"electrochemical-science-pack"},
         unit =
         {
-        count_formula = "1.5^L*1000",
+        count_formula = "1.1^L*1000",
           ingredients =
           {
             {"automation-science-pack", 1},
@@ -807,8 +807,6 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "thruster-fuel-oxidizer-to-steam"
             },
-
-
         },
 
         prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-laboratory"},
@@ -916,8 +914,8 @@ data:extend({
         type = "technology",
         name = "sulfur-poison-capsule",
         icon_size = 64,
-        --icon = "__base__/graphics/technology/lamp.png", --PLACEHOLDER
-        icon = "__corrundum__/graphics/icons/poison-capsule.png", --PLACEHOLDER
+        --icon = "__base__/graphics/technology/lamp.png", 
+        icon = "__corrundum__/graphics/icons/poison-capsule.png", 
         essential = false,
         effects =
         {
