@@ -743,7 +743,7 @@ data:extend(
         production_type = "output",
         filter = "carbon-dioxide" 
       },
-      energy_consumption = "15MW",
+      energy_consumption = "45MW",
       energy_source = 
       {
         type = "void", --Ideally we would have a fluidbox to use a fuel..But this is fine the way it is. TODO consider swaping input and output pipes, then have one be input for boiler fluid transmutation, and the other as fuel.
@@ -1017,7 +1017,7 @@ data:extend(
       corpse = "red-steam-engine-remnants",
       dying_explosion = "steam-engine-explosion",
       alert_icon_shift = util.by_pixel(0, -12),
-      effectivity = 0.2,
+      effectivity = 0.3,
       fluid_usage_per_tick = 0.5, --Might have to adjust
       maximum_temperature = 1500,
       heating_energy = "50kW",

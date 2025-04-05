@@ -9,6 +9,7 @@ Date: 4. 4. 2025
     - Sulfuric acid productivity - now 10%, from 5%
     - Sulfuric acid productivity formula now 1.1^L*1000 ,from 1.5^L*1000
     - It turns out that increasing the energy consumption on the red boiler makes it work faster. Red boiler is not trash anymore can actually be used as a power source.
+    - Red steam engine effectivity now 0.3 from 0.2. Buffed redboiler again. (New 1.0.33 patch)
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.32
 Date: 3. 28. 2025
