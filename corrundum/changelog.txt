@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.34
+Date: 4. 14. 2025
+  Major Features:
+    - Fixed Maraxsis bonus content. (Author had renamed prototypes, this caused a crash with Maraxsis installed
+    - Added a mod setting to control this behavior. If there are other crashes with Maraxsis, just set the bonus content setting to false.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.33
 Date: 4. 4. 2025
   Major Features:

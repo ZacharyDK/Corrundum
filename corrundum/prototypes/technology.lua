@@ -985,7 +985,7 @@ data:extend({
 }
 )
 
-if mods["maraxsis"] then
+if mods["maraxsis"] and settings.startup["maraxsis-bonus-content"].value then
     data:extend(
     {
         {

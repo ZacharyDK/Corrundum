@@ -1840,7 +1840,7 @@ data:extend(
 
 })
 
-if mods["maraxsis"] then
+if mods["maraxsis"] and settings.startup["maraxsis-bonus-content"].value then
   data:extend(
     {
       {
@@ -1864,10 +1864,10 @@ if mods["maraxsis"] then
         results =
         {
           {type ="fluid", name ="carbon-dioxide", amount = 80, temperature = 1000},
-          {type ="fluid", name ="maraxsis-hydrogen", amount = 250}
+          {type ="fluid", name ="hydrogen", amount = 250}
         },
         allow_productivity = true,
-        main_product ="maraxsis-hydrogen",
+        main_product ="hydrogen",
         crafting_machine_tint =
         {
           primary = {r = 1.000, g = 0.912, b = 0.036, a = 1.000}, --rgb(255, 132, 9)
@@ -1884,7 +1884,7 @@ if mods["maraxsis"] then
       ingredients = 
       {
         {type ="fluid", name ="petroleum-gas", amount = 50}, 
-        {type ="fluid", name ="maraxsis-oxygen", amount = 300}, 
+        {type ="fluid", name ="oxygen", amount = 300}, 
       },
       surface_conditions =
       {
@@ -1898,10 +1898,10 @@ if mods["maraxsis"] then
       results =
       {
         {type ="fluid", name ="carbon-dioxide", amount = 80, temperature = 1000},
-        {type ="fluid", name ="maraxsis-hydrogen", amount = 250}
+        {type ="fluid", name ="hydrogen", amount = 250}
       },
       allow_productivity = true,
-      main_product ="maraxsis-hydrogen",
+      main_product ="hydrogen",
       crafting_machine_tint =
       {
         primary = {r = 1.000, g = 0.912, b = 0.036, a = 1.000}, --rgb(255, 132, 9)
