@@ -120,7 +120,7 @@ data:extend(
     },
     {
       type = "item",
-      name = "asphalt",
+      name = "asphalt-c",
       icon = "__corrundum__/graphics/icons/asphalt.png",
 
       subgroup = "raw-material",

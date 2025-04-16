@@ -149,7 +149,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "catalytic-chemical-plant-recipe"
+                recipe = "catalytic-chemical-plant"
             }
         },
         research_trigger =
@@ -536,11 +536,11 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "asphalt-production"
+                recipe = "asphalt-c"
             },
             {
                 type = "unlock-recipe",
-                recipe = "asphalt-production-alt"
+                recipe = "asphalt-c-alt"
             },
             {
                 type = "unlock-recipe",
@@ -830,7 +830,7 @@ data:extend({
     },
     {
         type = "technology",
-        name = "dry-ice-production",
+        name = "dry-ice",
         icon_size = 256,
         icon = "__space-age__/graphics/technology/health.png", 
         essential = false,
@@ -838,15 +838,15 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "dry-ice-production",
+                recipe = "dry-ice",
             },
             {
                 type = "unlock-recipe",
-                recipe = "dry-ice-production-alt",
+                recipe = "dry-ice-alt",
             },
             {
                 type = "unlock-recipe",
-                recipe = "ice-box-production",
+                recipe = "ice-box",
             },
             {
                 type = "unlock-recipe",

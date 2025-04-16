@@ -122,7 +122,7 @@ data:extend(
     },
     {
       type ="recipe",
-      name ="catalytic-chemical-plant-recipe",
+      name ="catalytic-chemical-plant",
       category ="crafting",
       icon ="__corrundum__/graphics/icons/catalytic-chemical-plant.png",
       enabled = false,
@@ -1182,7 +1182,7 @@ data:extend(
     -- STEP 4. asphalt and concrete production.
     {
         type ="recipe",
-        name ="asphalt-production",
+        name ="asphalt-c",
         subgroup = "sulfur",
         order = "d",
         category ="chemistry",
@@ -1198,10 +1198,10 @@ data:extend(
         energy_required = 15,
         results =
         {
-          {type ="item", name ="asphalt", amount = 1},
+          {type ="item", name ="asphalt-c", amount = 1},
         },
         allow_productivity = true, 
-        main_product ="asphalt",
+        main_product ="asphalt-c",
         factoriopedia_description ="We condense heavy oil into a concrete precusor.",
         auto_recycle = false,
         crafting_machine_tint =
@@ -1215,7 +1215,7 @@ data:extend(
     },
     {
         type ="recipe",
-        name ="asphalt-production-alt",
+        name ="asphalt-c-alt",
         subgroup = "sulfur",
         order = "d",
         category ="chemistry",
@@ -1231,10 +1231,10 @@ data:extend(
         energy_required = 10,
         results =
         {
-          {type ="item", name ="asphalt", amount = 1},
+          {type ="item", name ="asphalt-c", amount = 1},
         },
         allow_productivity = true, 
-        main_product ="asphalt",
+        main_product ="asphalt-c",
         factoriopedia_description ="We can also use excess light oil to make asphalt. Reaction is faster, but less efficient.",
         auto_recycle = false,
         crafting_machine_tint =
@@ -1257,7 +1257,7 @@ data:extend(
         ingredients =
         {
 
-          {type ="item", name ="asphalt", amount = 4},
+          {type ="item", name ="asphalt-c", amount = 4},
           {type ="item", name ="stone", amount = 1},
           {type ="fluid", name ="water", amount = 50},
         },
@@ -1493,7 +1493,7 @@ data:extend(
     },
     {
       type ="recipe",
-      name ="ice-box-production",
+      name ="ice-box",
       category ="crafting",
       icon = "__corrundum__/graphics/icons/ice-box.png",
       enabled = false,
@@ -1518,7 +1518,7 @@ data:extend(
     },
     {
       type ="recipe",
-      name ="dry-ice-production",
+      name ="dry-ice",
       category ="cryogenics",
       icon = "__corrundum__/graphics/icons/dry-ice.png",
       enabled = false,
@@ -1545,7 +1545,7 @@ data:extend(
     },
     {
       type ="recipe",
-      name ="dry-ice-production-alt",
+      name ="dry-ice-alt",
       category ="catalytic-chemistry",
       icon = "__corrundum__/graphics/icons/dry-ice.png",
       enabled = false,
