@@ -7,3 +7,6 @@ if ( (mods["planetslib"] ~= nil and settings.startup["consider-planetslib"].valu
 --After every mod added their sciences to the base lab. I'll add update mine.
 if(handle_lab == true) then data.raw["lab"]["pressure-lab"].inputs = data.raw['lab']['lab'].inputs end
 
+--People set the max temperature too low in their definition of CO2
+data.raw["fluid"]["carbon-dioxide"].subgroup = "sulfur"
+data.raw["fluid"]["carbon-dioxide"].max_temperature = 3000

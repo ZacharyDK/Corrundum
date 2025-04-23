@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.36
+Date: 4. 22. 2025
+  Major Features:
+    - Final overide of CO2 max temperature in final fixes. This should fix issues with mods that add carbon-dioxide but set the max temperature too low. (Needs to be at least 1000)
+---------------------------------------------------------------------------------------------------
 Version: 1.0.35
-Date: 4. 16. 2025
+Date: 4. 17. 2025
   Major Features:
     - Fixed duplicates in Factoriopedia, migrated name to fix duplicates
 ---------------------------------------------------------------------------------------------------
