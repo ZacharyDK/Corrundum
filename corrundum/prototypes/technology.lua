@@ -21,11 +21,11 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "red-steam-engine-recipe",
+                recipe = "red-steam-engine",
             },
             {
                 type = "unlock-recipe",
-                recipe = "red-boiler-recipe",
+                recipe = "red-boiler",
             },
             {
                 type = "unlock-recipe",
@@ -586,7 +586,7 @@ data:extend({
         {
             {
                 type = "unlock-recipe",
-                recipe = "pressure-laboratory-recipe"
+                recipe = "pressure-laboratory"
             },
 
 

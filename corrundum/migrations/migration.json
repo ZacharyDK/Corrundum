@@ -16,7 +16,10 @@
       ["dry-ice-production-alt","dry-ice-alt"],
       ["ice-box-production","ice-box"],
       ["asphalt-production","asphalt-c"],
-      ["asphalt-production-alt","asphalt-c-alt"]
+      ["asphalt-production-alt","asphalt-c-alt"],
+      ["red-steam-engine-recipe","red-steam-engine"],
+      ["red-boiler-recipe","red-boiler"],
+      ["pressure-laboratory-recipe","pressure-laboratory"]
     ],
     "item":
     [

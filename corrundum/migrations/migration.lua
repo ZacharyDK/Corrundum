@@ -20,4 +20,11 @@ for index, force in pairs(game.forces) do
     recipes["controlled-petrol-combustion"].enabled = val
     force.technologies["dry-ice"].researched = val
     recipes["hydrogen-sulfide"].enabled = true
+
+    recipes["red-boiler"].enabled = technologies["planet-discovery-corrundum"].researched
+    recipes["red-steam-engine"].enabled = technologies["planet-discovery-corrundum"].researched
+    recipes["red-steam-engine"].enabled = technologies["planet-discovery-corrundum"].researched
+    recipes["pressure-laboratory"].enabled = technologies["pressure-laboratory"].researched
+
+
   end

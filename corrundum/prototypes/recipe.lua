@@ -1313,7 +1313,7 @@ data:extend(
     --Other
     {
       type ="recipe",
-      name ="pressure-laboratory-recipe",
+      name ="pressure-laboratory",
       category ="crafting",
       icon ="__corrundum__/graphics/icons/pressure-lab.png",
       enabled = false,
@@ -1338,7 +1338,7 @@ data:extend(
     },
     {
       type ="recipe",
-      name ="red-boiler-recipe",
+      name ="red-boiler",
       category ="crafting",
       icon ="__corrundum__/graphics/icons/red-boiler.png",
       enabled = false,
@@ -1360,7 +1360,7 @@ data:extend(
     },
     {
       type ="recipe",
-      name ="red-steam-engine-recipe",
+      name ="red-steam-engine",
       category ="crafting",
       icon ="__corrundum__/graphics/icons/red-steam-engine.png",
       enabled = false,
