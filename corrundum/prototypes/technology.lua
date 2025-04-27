@@ -110,6 +110,7 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "destructive-dilute-acid-neutralization"
             },
+            --[[
             {
                 type = "give-item",
                 item = "iron-plate",
@@ -130,6 +131,7 @@ data:extend({
                 item = "pipe",
                 count = 200
             }
+            --]]
         },
         research_trigger =
         {
