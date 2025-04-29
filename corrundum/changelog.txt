@@ -6,6 +6,8 @@ Date: 4. 26. 2025
     - Added descriptions to sulfate processing, petrol dehydration tech
     - Kuaikuachu thanks for Russian localization
     - MengLeiFudge thanks for Chinese localization update
+    - Removed free items fro chalcopyrite ore to patch an exploit.
+    - Fixed alphalt-c localization issue
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.36
 Date: 4. 22. 2025
