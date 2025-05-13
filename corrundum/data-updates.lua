@@ -224,6 +224,7 @@ if(mods["cubium"]) then
               tertiary = {r = 0.681, g = 0.635, b = 0.486, a = 1.000}, --rgb(190, 147, 97)
               quaternary = {r = 1.000, g = 0.804, b = 0.000, a = 1.000}, --rgb(255, 136, 0)
             },
+            order = "a",
         },
     }
   )

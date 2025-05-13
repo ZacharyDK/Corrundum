@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.38
+Date: 4. 26. 2025
+  Major Features:
+    - RU translation fixes, courtesy of Kuaikuachu 
+    - Utility science no longer in any requirements for asphalt and concrete research. It was my intention to remove this completely, but I messed up. Thanks to sudokor for bring this to my attention
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.37
 Date: 4. 26. 2025
   Major Features:
