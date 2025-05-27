@@ -1,11 +1,12 @@
 {
     "name": "corrundum",
-    "version": "1.0.38",
+    "version": "1.0.39",
     "title": "Corrundum",
     "author": "ZDK, 2025",
     "factorio_version": "2.0",
     "dependencies": ["base >= 2.0",
-        "space-age >= 2.0"
+        "space-age >= 2.0",
+        "? mineral-chemistry >= 1.0.0"
     ],
     "space_travel_required": true,
     "description": "○🌐This mod adds Corrundum, a planet centered around the chemistry of Sulfur."

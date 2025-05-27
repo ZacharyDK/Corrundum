@@ -578,16 +578,16 @@ data:extend({
 
     {
         type = "technology",
-        name = "pressure-laboratory",
+        name = "pressure-lab",
         icon_size = 64,
-        --icon = "__base__/graphics/technology/lamp.png", --PLACEHOLDER
-        icon = "__corrundum__/graphics/icons/pressure-lab.png", --PLACEHOLDER
+        --icon = "__base__/graphics/technology/lamp.png", 
+        icon = "__corrundum__/graphics/icons/pressure-lab.png", 
         essential = true,
         effects =
         {
             {
                 type = "unlock-recipe",
-                recipe = "pressure-laboratory"
+                recipe = "pressure-lab"
             },
 
 
@@ -810,7 +810,7 @@ data:extend({
             },
         },
 
-        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-laboratory"},
+        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-lab"},
         unit =
         {
             count = 1000,
@@ -857,7 +857,7 @@ data:extend({
 
         },
 
-        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-laboratory"},
+        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-lab"},
         unit =
         {
             count = 1000,
@@ -891,7 +891,7 @@ data:extend({
 
         },
 
-        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-laboratory"},
+        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-lab"},
         unit =
         {
             count = 2000,
@@ -927,7 +927,7 @@ data:extend({
 
         },
 
-        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-laboratory"},
+        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-lab"},
         unit =
         {
             count = 2000,
@@ -966,7 +966,7 @@ data:extend({
 
         },
 
-        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-laboratory"},
+        prerequisites = { "planet-discovery-corrundum","platinum-processing","catalytic-chemical-plant","electrochemical-science-pack","sulfur-redox1","sulfur-redox2","sulfate-processing-1","sulfate-processing-2","pressure-lab"},
         unit =
         {
             count = 3000,

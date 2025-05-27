@@ -24,7 +24,16 @@ for index, force in pairs(game.forces) do
     recipes["red-boiler"].enabled = technologies["planet-discovery-corrundum"].researched
     recipes["red-steam-engine"].enabled = technologies["planet-discovery-corrundum"].researched
     recipes["red-steam-engine"].enabled = technologies["planet-discovery-corrundum"].researched
-    recipes["pressure-laboratory"].enabled = technologies["pressure-laboratory"].researched
+    recipes["pressure-lab"].enabled = technologies["pressure-lab"].researched
 
+    if(technologies["pressure-laboratory"] ~= nil) then
+      recipes["pressure-lab"].enabled = true
+      technologies["pressure-lab"].researched = true
+    end
+
+    if(technologies["space-steam-production"].researched or technologies["platinum-thruster"].researched or technologies["dry-ice"].researched or technologies["sulfur-poison-capsule"].researched or technologies["blue-rocket"].researched ) then
+      recipes["pressure-lab"].enabled = true
+      technologies["pressure-lab"].researched = true
+    end
 
   end

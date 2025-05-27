@@ -3,7 +3,8 @@
     [
       ["blue-rocket-production","blue-rocket"],
       ["dry-ice-production","dry-ice"],
-      ["ice-box-production","ice-box"]
+      ["ice-box-production","ice-box"],
+      ["pressure-laboratory","pressure-lab"]
     ],
     "recipe":
     [
@@ -19,7 +20,7 @@
       ["asphalt-production-alt","asphalt-c-alt"],
       ["red-steam-engine-recipe","red-steam-engine"],
       ["red-boiler-recipe","red-boiler"],
-      ["pressure-laboratory-recipe","pressure-laboratory"]
+      ["pressure-laboratory","pressure-lab"]
     ],
     "item":
     [

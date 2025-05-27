@@ -1313,7 +1313,7 @@ data:extend(
     --Other
     {
       type ="recipe",
-      name ="pressure-laboratory",
+      name ="pressure-lab",
       category ="crafting",
       icon ="__corrundum__/graphics/icons/pressure-lab.png",
       enabled = false,

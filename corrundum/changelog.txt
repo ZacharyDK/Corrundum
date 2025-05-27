@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.39
+Date: 5. 16. 2025
+  Major Features:
+    - Pressure-laboratory migrated to pressure lab. Factoriopedia duplicates should be removed
+    - ice box now blueish so it is harder to confuse.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.38
 Date: 4. 26. 2025
   Major Features:
