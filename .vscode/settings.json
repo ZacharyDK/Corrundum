@@ -1,0 +1,16 @@
+{
+    "cSpell.language": "en,es-ES",
+    "spellright.language": [
+        "es"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellright.parserByClass": {
+        "factorio-locale": {
+            "parser": "markdown"
+        }
+    }
+}
