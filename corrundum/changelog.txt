@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.40
+Date: 6. 2. 2025
+  Major Features:
+    - Spanish Localization - thanks to Marks12520 
+    - Fixed Landfill not being able to cover Petroleum tiles
+---------------------------------------------------------------------------------------------------
 Version: 1.0.39
 Date: 5. 16. 2025
   Major Features:
