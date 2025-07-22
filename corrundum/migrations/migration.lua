@@ -3,7 +3,7 @@ for index, force in pairs(game.forces) do
     local recipes = force.recipes
   
 
-
+    recipes["kinetic-reactive-displacement"].enabled = technologies["chalcopyrite-processing"].researched
     recipes["platinum-thruster"].enabled = technologies["platinum-thruster"].researched
     recipes["platinum-plate"].enabled = technologies["platinum-processing"].researched
     recipes["catalytic-chemical-plant"].enabled = technologies["catalytic-chemical-plant"].researched

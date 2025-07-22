@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.41
+Date: 7. 21. 2025
+  Major Features:
+    - Added kinetic displacement recipe. Use excess iron to quickly reduce copper in a mixed sulfate solution
+    - supersaturated displacement now takes 21 copper plates, to ensure it is net negative
+    - Thanks to "some" for the help
+    - Carbon dioxide to carbon now takes 3 iron plates to ensure it is not iron positive
+---------------------------------------------------------------------------------------------------
 Version: 1.0.40
 Date: 6. 2. 2025
   Major Features:

@@ -110,6 +110,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "destructive-dilute-acid-neutralization"
             },
+            {
+                type = "unlock-recipe",
+                recipe = "kinetic-reactive-displacement"
+            },
             --[[
             {
                 type = "give-item",

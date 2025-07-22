@@ -495,7 +495,7 @@ data:extend(
           quaternary = {r = 0.939, g = 0.763, b = 0.191, a = 1.000}, -- #efc230ff
         },
     },
-    {
+    { -- This is the Claus process
         type ="recipe",
         name ="sulfur-reduction",
         category ="chemistry",
@@ -695,7 +695,7 @@ data:extend(
       ingredients =
       {
 
-        {type ="item", name ="copper-plate", amount = 15},
+        {type ="item", name ="copper-plate", amount = 21},
         {type ="fluid", name ="mixed-sulfate-solution", amount = 200},
         {type ="fluid", name ="water", amount = 300},
         {type ="fluid", name ="sulfuric-acid", amount = 300},
@@ -722,7 +722,40 @@ data:extend(
       },
     },
 
+    {
+      type ="recipe",
+      name ="kinetic-reactive-displacement",
+      subgroup = "sulfur",
+      order = "f",
+      category ="chemistry",
+      icon ="__corrundum__/graphics/icons/fluid/kinetic-iron-sulfate-solution.png",
+      enabled = false,
+      ingredients =
+      {
 
+        {type ="item", name ="iron-plate", amount = 5},
+        {type ="fluid", name ="mixed-sulfate-solution", amount = 400},
+      },
+
+      energy_required = 2,
+      results =
+      {
+        {type ="fluid", name ="iron-sulfate-solution", amount = 400},
+        {type ="item", name ="copper-ore", amount = 4}
+      },
+      allow_productivity = true, 
+      auto_recycle = false,
+      maximum_productivity = 1,
+      main_product ="iron-sulfate-solution",
+      factoriopedia_description ="More iron to react faster to displace copper.",
+      crafting_machine_tint =
+      {
+        primary = {r = 86, g = 246, b = 230, a = 1.000}, --rgb(86, 246, 230)
+        secondary = {r = 56, g = 211, b = 190, a = 1.000}, --rgb(56, 211, 190)
+        tertiary = {r = 112, g = 208, b = 205, a = 1.000}, --rgb(112, 208, 205)
+        quaternary = {r = 48, g = 239, b = 194, a = 1.000}, --rgb(48, 239, 194)
+      },
+    },
 
     {
         type ="recipe",
@@ -1424,7 +1457,7 @@ data:extend(
       ingredients =
       {
 
-        {type ="item", name ="iron-plate", amount = 2},
+        {type ="item", name ="iron-plate", amount = 3},
         {type ="fluid", name = "sulfuric-acid", amount = 100},
         {type ="fluid", name = "carbon-dioxide", amount = 300},
       },
