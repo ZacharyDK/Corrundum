@@ -238,3 +238,14 @@ if(mods["cubium"]) then
   }
   )
 end
+
+if(mods["vanilla_galore_continued"]) then
+  table.insert(data.raw["technology"]["pipe-productivity-infinite"].effects,
+  {       
+    type = "change-recipe-productivity",
+    recipe = "steel-plate-pipe",
+    change = 0.1
+  }
+  )
+
+end

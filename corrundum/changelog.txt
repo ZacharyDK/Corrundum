@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.42
+Date: 8. 18. 2025
+  Major Features:
+    - Kuaikuachu thanks for Ru translation
+    - kajacx thanks for updated planet discovery description
+    - if vanilla_galore_continued is installed, steel-plate-pipe recipe added to pipe productivity research
+---------------------------------------------------------------------------------------------------
 Version: 1.0.41
 Date: 7. 21. 2025
   Major Features:
