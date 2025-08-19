@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.43
+Date: 8. 19. 2025
+  Major Features:
+    - Disabled my attempt at vanilla_galore_continued compatibility. It didn't work
+---------------------------------------------------------------------------------------------------
 Version: 1.0.42
 Date: 8. 18. 2025
   Major Features:
