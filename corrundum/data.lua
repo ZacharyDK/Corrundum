@@ -20,3 +20,5 @@ require("__corrundum__.prototypes.planet.corrundum-expressions")
 require("__corrundum__.prototypes.corrundum-decoratives")
 require("__corrundum__.prototypes.ambient-sounds")
 require("__corrundum__.prototypes.achievements")
+
+require("__corrundum__.compatibility.canal-excavator")
