@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.45
+Date: 6. 25. 2026
+  Major Features:
+    - Updated for Factorio 2.1.
+  Bugfixes:
+    - Fixed the corrundum sand and dune ground tiles never appearing in game.
+    - Fixed missing graphics: the huge corrundum rock and petroleum-tile shore transitions referenced space-age assets that moved in 2.1.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.44
 Date: 3. 7. 2026
   Major Features:

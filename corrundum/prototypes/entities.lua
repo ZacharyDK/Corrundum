@@ -1,7 +1,6 @@
 require ("util")
 require ("__base__.prototypes.entity.pipecovers")
 require ("circuit-connector-sprites")
-require ("__base__.prototypes.entity.assemblerpipes")
 
 
 --Control lua handles p lab rejecting items of normal, "", nil, or common quality
@@ -292,7 +291,7 @@ data:extend(
             emissions_per_minute = { pollution = 4 }
         },
         energy_usage = "200kW",
-        crafting_categories = {"chemistry","catalytic-chemistry","chemistry-or-cryogenics","organic-or-chemistry"},
+        crafting_categories = {"chemistry","catalytic-chemistry"}, -- 2.1: combined "X-or-Y" categories removed; the split recipes ({chemistry,cryogenics} / {organic,chemistry}) stay craftable here via "chemistry"
         fluid_boxes =
         {
             {

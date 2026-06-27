@@ -94,7 +94,7 @@ table.insert(data.raw.technology["plastic-bar-productivity"].effects,recipe_patc
 
 
 local brute_force = settings.startup["ignore-everything-brute-force-science-into-pressure-lab"].value
-local all_packs = data.raw['tool']
+local all_packs = data.raw['item'] -- 2.1: science packs are items, not tools
 if(brute_force == true) then
   if(mods["PlanetsLib"] ~= nil) then
     data.raw["lab"]["pressure-lab"].include_all_base_lab_science = false --Disable what they want to do.

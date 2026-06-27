@@ -134,7 +134,7 @@ local fulgora_sand_transitions_between_transitions =
     background_layer_group = "zero",
     offset_background_layer_by_tile_layer = true,
 
-    spritesheet = "__space-age__/graphics/terrain/out-of-map-transition/fulgora-sand-out-of-map-transition.png",
+    spritesheet = "__space-age__/graphics/terrain/out-of-map-transition/fulgora-out-of-map-transition.png", -- 2.1: dropped "-sand" from filename
     layout = tile_spritesheet_layout.transition_3_3_3_1_0,
     overlay_enabled = false
   },
@@ -147,7 +147,7 @@ local fulgora_sand_transitions_between_transitions =
     masked_background_layer_offset = 1,
     offset_background_layer_by_tile_layer = false,
 
-    spritesheet = "__space-age__/graphics/terrain/out-of-map-transition/fulgora-sand-shore-out-of-map-transition.png",
+    spritesheet = "__space-age__/graphics/terrain/out-of-map-transition/fulgora-shore-out-of-map-transition.png", -- 2.1: dropped "-sand" from filename
     layout = tile_spritesheet_layout.transition_3_3_3_1_0,
     effect_map_layout =
     {
@@ -249,7 +249,7 @@ data:extend(
           },
           empty_transitions=true,
         },
-        transitions = {lava_to_out_of_map_transition},
+        transitions = data.raw.tile["lava"].transitions, -- 2.1: lava_to_out_of_map_transition is now a file-local in tiles-vulcanus, no longer on space_age_tiles_util
         transitions_between_transitions = data.raw.tile["water"].transitions_between_transitions,
         walking_sound = sound_variations("__base__/sound/walking/resources/oil", 7, 1, volume_multiplier("main-menu", 1.5)),
         landing_steps_sound = sound_variations("__base__/sound/walking/resources/oil", 7, 1, volume_multiplier("main-menu", 2.9)),
@@ -261,8 +261,7 @@ data:extend(
         default_cover_tile = "landfill",
         fluid = "petroleum-gas",
         ambient_sounds = lake_ambience
-    }
-  },
+    },
   {
     name = "corrundum-dunes",
     type = "tile",
@@ -276,7 +275,7 @@ data:extend(
     map_color={36, 20, 16},
     vehicle_friction_modifier = 4,
     --absorptions_per_second = tile_pollution.corrundum,
-    sprite_usage_surface = "corrundum",
+    sprite_usage_surface = "any", -- 2.1: SpriteUsageSurfaceHint enum only; custom planet uses "any"
     variants =
     {
       transition = transition_masks(),
@@ -312,7 +311,7 @@ data:extend(
     map_color={36, 20, 16},
     vehicle_friction_modifier = 4,
     --absorptions_per_second = tile_pollution.fulgora,
-    sprite_usage_surface = "corrundum",
+    sprite_usage_surface = "any", -- 2.1: SpriteUsageSurfaceHint enum only; custom planet uses "any"
     variants =
     {
       transition = transition_masks(),
@@ -335,9 +334,7 @@ data:extend(
     scorch_mark_color = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
     trigger_effect = tile_trigger_effects.sand_trigger_effect()
   }
-
-
-
+  }
 )
 
 table.insert(water_tile_type_names, "petroleum-tile")

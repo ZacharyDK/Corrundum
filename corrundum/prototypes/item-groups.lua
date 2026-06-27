@@ -14,4 +14,10 @@ data:extend({
       group = "sulfur-chemistry", --todo make item group
       order = "a"
     },
+    {
+      type = "item-subgroup",
+      name = "corrundum-tiles",
+      group = "tiles",
+      order = "f-corrundum"
+    },
 })

@@ -74,7 +74,7 @@ data:extend({
         research_trigger =
         {
             type = "mine-entity",
-            entity = "platinum-ore"
+            entities = {"platinum-ore"}
         },
         prerequisites = { "planet-discovery-corrundum" }
     },
@@ -140,7 +140,7 @@ data:extend({
         research_trigger =
         {
             type = "mine-entity",
-            entity = "chalcopyrite-ore"
+            entities = {"chalcopyrite-ore"}
         },
         prerequisites = { "planet-discovery-corrundum" }
     },
