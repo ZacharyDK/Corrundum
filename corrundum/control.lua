@@ -173,8 +173,8 @@ for _, eventType in pairs({
         add_to_cache(entity,ice_box_cache)
       end
 
-		end)
-		--{{ filter = "name", name ="pressure-lab"}})
+		end,
+		{{filter = "name", name = "pressure-lab"}, {filter = "name", name = "ice-box"}})
 end
 
 for _, eventType in pairs({
@@ -199,8 +199,8 @@ for _, eventType in pairs({
       --lab_cache = nil
       --lab_cache = find_all_entity_of_name("pressure-lab")
       --lab_cache = find_all_entity_of_name("pressure-lab")
-		end)
-		--{{ filter = "name", name = "pressure-lab" }})
+		end,
+		{{filter = "name", name = "pressure-lab"}, {filter = "name", name = "ice-box"}})
 end
 
 
