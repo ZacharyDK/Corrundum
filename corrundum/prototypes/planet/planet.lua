@@ -39,6 +39,7 @@ data:extend(
           ["day-night-cycle"] = 20 * minute,
           ["magnetic-field"] = 99,
           ["solar-power"] = 20,
+          ["robot-energy-usage"] = 0.3,
           pressure = 6000,
           gravity = 10
         },
