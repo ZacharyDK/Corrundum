@@ -189,6 +189,7 @@ if(mods["cubium"]) then
               }
             },
             enabled = false,
+hide_from_signal_gui = false,
             ingredients = --TODO rebalence based on what is available. Let me put all the recipes in...
             {
               {type ="item", name ="sulfur", amount = 2},

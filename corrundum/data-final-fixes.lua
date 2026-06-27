@@ -11,4 +11,3 @@ if(handle_lab == true) then data.raw["lab"]["pressure-lab"].inputs = data.raw['l
 data.raw["fluid"]["carbon-dioxide"].subgroup = "sulfur"
 data.raw["fluid"]["carbon-dioxide"].max_temperature = 3000
 
-require("__corrundum__.prototypes.planet.platform-backdrop")

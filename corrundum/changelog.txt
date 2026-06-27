@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.46
+Date: 6. 27. 2026
+  Major Features:
+    - All recipes have hide_from_signal_gui = false
+    - Made custom Corrundum platform-background, using Fulgora as a template
+    - Actual surface image derived from Nauvis.
+    - Did appreciate danbopes's initial work, left it in platform-background-old but removed the images
+---------------------------------------------------------------------------------------------------
 Version: 1.0.45
 Date: 6. 25. 2026
   Major Features:

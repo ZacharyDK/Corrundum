@@ -16,6 +16,7 @@ data:extend(
         categories = {"catalytic-chemistry"},
         icon ="__corrundum__/graphics/icons/electrochemical-science-pack.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients = --TODO rebalence based on what is available. Let me put all the recipes in...
         {
           {type ="item", name ="sulfur", amount = 2},
@@ -59,6 +60,7 @@ data:extend(
       name = "rocket-fuel-catalytic-chemistry",
       energy_required = 15,
       enabled = false,
+hide_from_signal_gui = false,
       categories = {"catalytic-chemistry"},
       ingredients =
       {
@@ -83,6 +85,7 @@ data:extend(
       categories = {"metallurgy"},
       icon ="__corrundum__/graphics/icons/platinum-plate.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -105,6 +108,7 @@ data:extend(
       categories = {"smelting"},
       icon ="__corrundum__/graphics/icons/platinum-plate.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type ="item", name ="platinum-ore", amount = 4},
@@ -126,6 +130,7 @@ data:extend(
       categories = {"crafting"},
       icon ="__corrundum__/graphics/icons/catalytic-chemical-plant.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type ="item", name ="platinum-plate", amount = 10},
@@ -150,10 +155,12 @@ data:extend(
       categories = {"chemistry", "cryogenics"},
       icon ="__space-age__/graphics/icons/fluid/acid-neutralisation.png",
       enabled = false,
+hide_from_signal_gui = false,
       subgroup ="fluid-recipes",
       order ="d[other-chemistry]-a[pressurized-acid-neutralisation]",
       auto_recycle = false,
       enabled = false,
+hide_from_signal_gui = false,
       surface_conditions =
       {
         {
@@ -192,10 +199,12 @@ data:extend(
       categories = {"chemistry", "cryogenics"},
       icon ="__space-age__/graphics/icons/fluid/acid-neutralisation.png",
       enabled = false,
+hide_from_signal_gui = false,
       subgroup ="fluid-recipes",
       order ="d[other-chemistry]-a[pressurized-acid-neutralisation]",
       auto_recycle = false,
       enabled = false,
+hide_from_signal_gui = false,
       surface_conditions =
       {
         {
@@ -234,10 +243,12 @@ data:extend(
       categories = {"chemistry", "cryogenics"},
       icon ="__base__/graphics/icons/fluid/water.png",
       enabled = false,
+hide_from_signal_gui = false,
       subgroup = "sulfur",
       order ="d[other-chemistry]-b[pressurized-acid-neutralisation]",
       auto_recycle = false,
       enabled = false,
+hide_from_signal_gui = false,
       surface_conditions =
       {
         {
@@ -276,10 +287,12 @@ data:extend(
       categories = {"chemistry", "cryogenics"},
       icon ="__corrundum__/graphics/icons/fluid/sulfuric-acid-dilute-X.png",
       enabled = false,
+hide_from_signal_gui = false,
       subgroup = "sulfur",
       order ="d[other-chemistry]-b[pressurized-acid-neutralisation]",
       auto_recycle = false,
       enabled = false,
+hide_from_signal_gui = false,
       surface_conditions =
       {
         {
@@ -319,10 +332,12 @@ data:extend(
       categories = {"chemistry", "cryogenics"},
       icon ="__base__/graphics/icons/fluid/water.png",
       enabled = false,
+hide_from_signal_gui = false,
       subgroup ="fluid-recipes",
       order ="d[other-chemistry]-c[pressurized-acid-neutralisation]",
       auto_recycle = false,
       enabled = false,
+hide_from_signal_gui = false,
       surface_conditions =
       {
         {
@@ -365,6 +380,7 @@ data:extend(
         subgroup = "sulfur",
         order = "c1",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -397,6 +413,7 @@ data:extend(
         order = "c2",
         icon ="__corrundum__/graphics/icons/light-oil-alkylation.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -429,6 +446,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__corrundum__/graphics/icons/fluid/sulfur-dioxide.png",
         enabled = false,
+hide_from_signal_gui = false,
         surface_conditions =
         {
           {
@@ -469,6 +487,7 @@ data:extend(
         order = "b",
         icon ="__corrundum__/graphics/icons/fluid/hydrogen-sulfide.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -503,6 +522,7 @@ data:extend(
         order = "b",
         icon ="__base__/graphics/icons/fluid/water.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -537,6 +557,7 @@ data:extend(
         order = "b",
         icon ="__base__/graphics/icons/fluid/sulfuric-acid.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -572,6 +593,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__base__/graphics/icons/fluid/water.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -617,6 +639,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__corrundum__/graphics/icons/fluid/mixed-sulfate-solution.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -658,6 +681,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -692,6 +716,7 @@ data:extend(
       categories = {"chemistry"},
       icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -730,6 +755,7 @@ data:extend(
       categories = {"chemistry"},
       icon ="__corrundum__/graphics/icons/fluid/kinetic-iron-sulfate-solution.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -765,6 +791,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__base__/graphics/icons/iron-ore.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -800,6 +827,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__base__/graphics/icons/copper-ore.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -837,6 +865,7 @@ data:extend(
         categories = {"catalytic-chemistry"},
         icon ="__base__/graphics/icons/plastic-bar.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -872,6 +901,7 @@ data:extend(
       categories = {"catalytic-chemistry"},
       icon ="__base__/graphics/icons/plastic-bar.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -910,6 +940,7 @@ data:extend(
         categories = {"organic", "chemistry"},
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -945,6 +976,7 @@ data:extend(
         order = "j",
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -980,6 +1012,7 @@ data:extend(
         categories = {"organic", "chemistry"},
         icon ="__space-age__/graphics/icons/nutrients.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1015,6 +1048,7 @@ data:extend(
         order = "j",
         icon ="__corrundum__/graphics/icons/calcium-sulfate.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1049,6 +1083,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__corrundum__/graphics/icons/fluid/sulfuric-acid-dilute.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1083,6 +1118,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__base__/graphics/icons/fluid/sulfuric-acid.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1117,6 +1153,7 @@ data:extend(
       order = "b",
       icon ="__base__/graphics/icons/fluid/sulfuric-acid.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1150,6 +1187,7 @@ data:extend(
         subgroup = "sulfur",
         order = "j",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1183,6 +1221,7 @@ data:extend(
         subgroup = "sulfur",
         order = "j",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1221,6 +1260,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__corrundum__/graphics/icons/asphalt.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1254,6 +1294,7 @@ data:extend(
         categories = {"chemistry"},
         icon ="__corrundum__/graphics/icons/asphalt.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1287,6 +1328,7 @@ data:extend(
         categories = {"crafting-with-fluid"},
         icon ="__base__/graphics/icons/concrete.png",
         enabled = false,
+hide_from_signal_gui = false,
         ingredients =
         {
 
@@ -1314,6 +1356,7 @@ data:extend(
       order = "j",
       icon ="__corrundum__/graphics/icons/calcium-sulfate.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "nutrients", amount = 160},
@@ -1350,6 +1393,7 @@ data:extend(
       categories = {"crafting"},
       icon ="__corrundum__/graphics/icons/pressure-lab.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1375,6 +1419,7 @@ data:extend(
       categories = {"crafting"},
       icon ="__corrundum__/graphics/icons/red-boiler.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1397,6 +1442,7 @@ data:extend(
       categories = {"crafting"},
       icon ="__corrundum__/graphics/icons/red-steam-engine.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1422,6 +1468,7 @@ data:extend(
       subgroup = "sulfur",
       order = "zz",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1454,6 +1501,7 @@ data:extend(
       categories = {"catalytic-chemistry"},
       icon ="__space-age__/graphics/icons/carbon.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1499,6 +1547,7 @@ data:extend(
       order = "a",
       icon = "__corrundum__/graphics/icons/fluid/carbon-dioxide.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1530,6 +1579,7 @@ data:extend(
       categories = {"crafting"},
       icon = "__corrundum__/graphics/icons/ice-box.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1555,6 +1605,7 @@ data:extend(
       categories = {"cryogenics"},
       icon = "__corrundum__/graphics/icons/dry-ice.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1582,6 +1633,7 @@ data:extend(
       categories = {"catalytic-chemistry"},
       icon = "__corrundum__/graphics/icons/dry-ice.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1612,6 +1664,7 @@ data:extend(
       categories = {"chemistry"},
       icon ="__corrundum__/graphics/icons/fluid/copper-sulfate-solution.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1645,6 +1698,7 @@ data:extend(
       categories = {"chemistry"},
       icon ="__corrundum__/graphics/icons/fluid/copper-sulfate-solution.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1678,6 +1732,7 @@ data:extend(
       categories = {"chemistry"},
       icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1711,6 +1766,7 @@ data:extend(
       categories = {"chemistry"},
       icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1744,6 +1800,7 @@ data:extend(
       order = "m",
       icon ="__corrundum__/graphics/icons/fluid/iron-sulfate-solution.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
 
@@ -1777,6 +1834,7 @@ data:extend(
       categories = {"crafting"},
       icon = "__corrundum__/graphics/icons/platinum-thruster-icon.png",
       enabled = false,
+hide_from_signal_gui = false,
       ingredients =
       {
         {type = "item", name = "steel-plate", amount = 20},
@@ -1804,6 +1862,7 @@ data:extend(
       icon = "__corrundum__/graphics/icons/poison-capsule.png",
       categories = {"catalytic-chemistry"},
       enabled = false,
+hide_from_signal_gui = false,
       energy_required = 8,
       ingredients =
       {
@@ -1821,6 +1880,7 @@ data:extend(
       icon = "__corrundum__/graphics/icons/sulfuric-oxidizer.png",
       categories = {"catalytic-chemistry"},
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 23,
       allow_productivity = true,
@@ -1837,6 +1897,7 @@ data:extend(
       icon = "__base__/graphics/icons/explosives.png",
       categories = {"catalytic-chemistry"},
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = false,
       energy_required = 8,
       allow_productivity = true,
@@ -1856,6 +1917,7 @@ data:extend(
       icon = "__corrundum__/graphics/icons/blue-rocket.png",
       categories = {"chemistry"},
       enabled = false,
+hide_from_signal_gui = false,
       auto_recycle = true,
       energy_required = 8,
       ingredients =
@@ -1881,6 +1943,7 @@ if mods["maraxsis"] and settings.startup["maraxsis-bonus-content"].value then
         name ="petrol-dehydrogenation-and-combustion",
         categories = {"catalytic-chemistry"},
         enabled = false,
+hide_from_signal_gui = false,
         ingredients = 
         {
           {type ="fluid", name ="petroleum-gas", amount = 50} 
@@ -1914,6 +1977,7 @@ if mods["maraxsis"] and settings.startup["maraxsis-bonus-content"].value then
       name ="petrol-dehydrogenation-and-combustion-maraxsis",
       categories = {"catalytic-chemistry"},
       enabled = false,
+hide_from_signal_gui = false,
       ingredients = 
       {
         {type ="fluid", name ="petroleum-gas", amount = 50}, 
