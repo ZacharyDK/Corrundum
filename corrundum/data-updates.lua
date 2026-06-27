@@ -175,7 +175,7 @@ if(mods["cubium"]) then
         {
             type ="recipe",
             name ="electrochemical-science-pack-cubic",
-            category ="catalytic-chemistry",
+            categories ={"catalytic-chemistry"},
             subgroup = "cubic",
             icons = 
             {
