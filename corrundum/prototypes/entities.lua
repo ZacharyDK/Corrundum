@@ -1055,6 +1055,7 @@ data:extend(
         usage_priority = "secondary-output",
         emissions_per_minute = { pollution = 10 }
       },
+      --[[ --2.1 changes
       horizontal_animation =
       {
         layers =
@@ -1102,6 +1103,67 @@ data:extend(
             draw_as_shadow = true,
             shift = util.by_pixel(40.5, 9.25),
             scale = 0.5
+          }
+        }
+      },
+      --]]
+      two_direction_only = true, -- 2.1
+      pictures =
+      {
+        north =
+        {
+          animation =
+          {
+            layers =
+            {
+              {
+                filename = "__corrundum__/graphics/entity/red-steam-engine-V.png",
+                width = 225,
+                height = 391,
+                frame_count = 32,
+                line_length = 8,
+                shift = util.by_pixel(4.75, -6.25),
+                scale = 0.5
+              },
+              {
+                filename = "__base__/graphics/entity/steam-engine/steam-engine-V-shadow.png",
+                width = 330,
+                height = 307,
+                frame_count = 32,
+                line_length = 8,
+                draw_as_shadow = true,
+                shift = util.by_pixel(40.5, 9.25),
+                scale = 0.5
+              }
+            }
+          }
+        },
+        east =
+        {
+          animation =
+          {
+            layers =
+            {
+              {
+                filename = "__corrundum__/graphics/entity/red-steam-engine-H.png",
+                width = 352,
+                height = 257,
+                frame_count = 32,
+                line_length = 8,
+                shift = util.by_pixel(1, -4.75),
+                scale = 0.5
+              },
+              {
+                filename = "__base__/graphics/entity/steam-engine/steam-engine-H-shadow.png",
+                width = 508,
+                height = 160,
+                frame_count = 32,
+                line_length = 8,
+                draw_as_shadow = true,
+                shift = util.by_pixel(48, 24),
+                scale = 0.5
+              }
+            }
           }
         }
       },

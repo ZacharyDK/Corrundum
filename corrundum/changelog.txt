@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.48
+Date: 7. 11. 2026
+  Major Features:
+    - Thanks to shanquan954 for pointing out red engine graphics were lost.
+    - Wube changed the api for generators, and I updated the code
+---------------------------------------------------------------------------------------------------
 Version: 1.0.47
 Date: 7. 1. 2026
   Major Features:
