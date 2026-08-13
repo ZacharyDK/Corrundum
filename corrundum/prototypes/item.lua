@@ -12,7 +12,7 @@ local simulations_corrundum = require("__corrundum__.prototypes.factoriopedia-si
 data:extend(
 {
     {
-        type = "tool",
+        type = "item",
         name = "electrochemical-science-pack",
         localised_description = {"item-description.science-pack"},
         icon = "__corrundum__/graphics/icons/electrochemical-science-pack.png",
