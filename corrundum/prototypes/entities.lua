@@ -1019,6 +1019,7 @@ data:extend(
       effectivity = 0.3,
       fluid_usage_per_tick = 0.5, --Might have to adjust
       maximum_temperature = 1500,
+      minimum_input_temperature = 100.0,
       heating_energy = "50kW",
       max_power_output = "300kW",
       resistances =
@@ -1046,8 +1047,7 @@ data:extend(
           { flow_direction = "input-output", direction = defines.direction.north, position = {0, -2} }
         },
         production_type = "input",
-        filter = "carbon-dioxide", --TODO change
-        minimum_temperature = 100.0
+        filter = "carbon-dioxide" --TODO change
       },
       energy_source =
       {
