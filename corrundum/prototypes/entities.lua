@@ -378,7 +378,9 @@ data:extend(
             },
             rotate = false,
             orientation_to_variation = true
-        }
+        },
+
+        use_mirroring = true,
     },
     
     {
@@ -1047,7 +1049,7 @@ data:extend(
         },
         production_type = "input",
         filter = "carbon-dioxide", --TODO change
-        minimum_temperature = 100.0
+        --minimum_temperature = 100.0 -- pre 2.1
       },
       energy_source =
       {
