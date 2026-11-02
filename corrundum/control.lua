@@ -266,31 +266,31 @@ script.on_nth_tick(53,
           local dry_ice_stacks = {}
           for j,c in pairs(contents) do --can't cut it short if we reach ice_able_array_length, items of different quality have the same stack name
             if(c.name == "dry-ice" ) then --can't check for values in an array -  at least efficiently. So I'll hardcode the items and stack size that I care about
-              dry_ice_stacks["dry-ice" .. c.quality] = {item_count = c.count, stack_count = calculate_stack_count(c.count,500), base_name = "dry-ice", quality_name = c.quality}
+              dry_ice_stacks["dry-ice" .. c.quality] = {item_count = c.count, stack_count = calculate_stack_count(c.count, prototypes.item[c.name].stack_size), base_name = "dry-ice", quality_name = c.quality}
               dry_ice_total = dry_ice_total + c.count
 
-              iceable_stacks["dry-ice" .. c.quality] = {item_count = c.count, stack_count = calculate_stack_count(c.count,500), base_name = "dry-ice", quality_name = c.quality}
+              iceable_stacks["dry-ice" .. c.quality] = {item_count = c.count, stack_count = calculate_stack_count(c.count, prototypes.item[c.name].stack_size), base_name = "dry-ice", quality_name = c.quality}
               --Need to remember it here too to rebuild the inventory properly
               if(first_available_dry_ice_key == "") then first_available_dry_ice_key="dry-ice" .. c.quality end
               
             elseif (c.name == "bioflux") then
-              local sc = calculate_stack_count(c.count,100)
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size)
               iceable_stacks["bioflux" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "bioflux", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
             elseif(c.name == "agricultural-science-pack") then
-              local sc = calculate_stack_count(c.count,200)
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size)
               iceable_stacks["agricultural-science-pack" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "agricultural-science-pack", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
             elseif(c.name == "biter-egg") then
-              local sc = calculate_stack_count(c.count,100)
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size)
               iceable_stacks["biter-egg" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "biter-egg", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
             elseif(c.name == "pentapod-egg") then
-              local sc = calculate_stack_count(c.count,20)
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size)
               iceable_stacks["pentapod-egg" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "pentapod-egg", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
             elseif(c.name == "raw-fish") then
-              local sc = calculate_stack_count(c.count,100) --if this is incorrect, we will actually crash 
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size) --if this is incorrect, we will actually crash 
               iceable_stacks["raw-fish" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "raw-fish", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
 
@@ -493,27 +493,27 @@ script.on_nth_tick(53,
           local dry_ice_stacks = {}
           for j,c in pairs(contents) do --can't cut it short if we reach ice_able_array_length, items of different quality have the same stack name
             if(c.name == "dry-ice" ) then --can't check for values in an array -  at least efficiently. So I'll hardcode the items and stack size that I care about
-              dry_ice_stacks["dry-ice" .. c.quality] = {item_count = c.count, stack_count = calculate_stack_count(c.count,500), base_name = "dry-ice", quality_name = c.quality}
+              dry_ice_stacks["dry-ice" .. c.quality] = {item_count = c.count, stack_count = calculate_stack_count(c.count, prototypes.item[c.name].stack_size), base_name = "dry-ice", quality_name = c.quality}
               dry_ice_total = dry_ice_total + c.count
 
-              iceable_stacks["dry-ice" .. c.quality] = {item_count = c.count, stack_count = calculate_stack_count(c.count,500), base_name = "dry-ice", quality_name = c.quality}
+              iceable_stacks["dry-ice" .. c.quality] = {item_count = c.count, stack_count = calculate_stack_count(c.count, prototypes.item[c.name].stack_size), base_name = "dry-ice", quality_name = c.quality}
               --Need to remember it here too to rebuild the inventory properly
               if(first_available_dry_ice_key == "") then first_available_dry_ice_key="dry-ice" .. c.quality end
               
             elseif (c.name == "bioflux") then
-              local sc = calculate_stack_count(c.count,100)
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size)
               iceable_stacks["bioflux" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "bioflux", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
             elseif(c.name == "agricultural-science-pack") then
-              local sc = calculate_stack_count(c.count,200)
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size)
               iceable_stacks["agricultural-science-pack" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "agricultural-science-pack", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
             elseif(c.name == "biter-egg") then
-              local sc = calculate_stack_count(c.count,100)
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size)
               iceable_stacks["biter-egg" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "biter-egg", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
             elseif(c.name == "pentapod-egg") then
-              local sc = calculate_stack_count(c.count,20)
+              local sc = calculate_stack_count(c.count, prototypes.item[c.name].stack_size)
               iceable_stacks["pentapod-egg" .. c.quality] = {item_count = c.count, stack_count = sc,base_name = "pentapod-egg", quality_name = c.quality}
               total_spoilable_stacks = total_spoilable_stacks + sc
             else
