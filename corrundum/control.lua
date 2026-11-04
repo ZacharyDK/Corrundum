@@ -2,9 +2,7 @@ local iceable_products = {"bioflux","agricultural-science-pack","biter-egg","pen
 local last_tick = -1 --Last time we queried ice-box
 --local iceable_array_length = table.getn(iceable_products) Need to use table_size() 
 
-local lab_cache = {}
-local ice_box_cache = {}
-local initialized_cache = false
+--The caches live in storage (storage.lab_cache, storage.ice_box_cache) so they survive a load
 local skip_process_lab = false --When we want to make sure we reset the cache properly
 local skip_process_ice = false
 
@@ -76,6 +74,18 @@ local function remove_from_cache(entity,cache)
   end
 end
 
+local function init_cache()
+  storage.lab_cache = find_all_entity_of_name("pressure-lab")
+  storage.ice_box_cache = find_all_entity_of_name("ice-box")
+end
+
+--Saves made before the caches moved to storage have none, build them on first use
+local function ensure_cache()
+  if(storage.lab_cache == nil or storage.ice_box_cache == nil) then
+    init_cache()
+  end
+end
+
 local function process_labs(pressure_labs)
   local nil_ent = nil
   ---@cast nil_ent LuaEntity
@@ -86,7 +96,7 @@ local function process_labs(pressure_labs)
     --log(serpent.block(v))
 
     if(v == nil or v.valid == false or v == nil_ent ) then --If we messed up with the cache somehow.
-      lab_cache = find_all_entity_of_name("pressure-lab")
+      storage.lab_cache = find_all_entity_of_name("pressure-lab")
       return
       --goto continue_loop
     end
@@ -130,16 +140,8 @@ script.on_event(defines.events.on_player_joined_game,function()
 end) 
 --]]
 
-script.on_nth_tick(10, --closest we get to begin play
-  function(NthTickEventData)
-    if(initialized_cache == false) then
-      lab_cache = find_all_entity_of_name("pressure-lab")
-      ice_box_cache = find_all_entity_of_name("ice-box")
-      initialized_cache = true
-    end
-    
-  end
-)
+script.on_init(init_cache)
+script.on_configuration_changed(init_cache) --Mods or entity prototypes may have changed, scan again
 
 --[[
 script.on_nth_tick(7200, --Not sure why caching isn't working correctly. This should ensure that cache eventually recovers.
@@ -159,28 +161,49 @@ script.on_nth_tick(7200, --Not sure why caching isn't working correctly. This sh
 for _, eventType in pairs({
 	defines.events.on_built_entity,
 	defines.events.on_robot_built_entity,
+	defines.events.on_space_platform_built_entity,
+	defines.events.script_raised_built,
+	defines.events.script_raised_revive,
 }) do
 	script.on_event(eventType,
 		function(event)
 			---@cast event EventData.on_built_entity | EventData.on_player_mined_entity | EventData.on_robot_built_entity | EventData.on_robot_mined_entity | EventData.on_entity_died
 			local entity = event.entity
 			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
+      ensure_cache()
       if (entity.name == "pressure-lab") then
-        add_to_cache(entity,lab_cache)
+        add_to_cache(entity,storage.lab_cache)
       end
       
       if(entity.name == "ice-box") then
-        add_to_cache(entity,ice_box_cache)
+        add_to_cache(entity,storage.ice_box_cache)
       end
 
 		end,
 		{{filter = "name", name = "pressure-lab"}, {filter = "name", name = "ice-box"}})
 end
 
+--The clone is in event.destination, event.source is the original
+script.on_event(defines.events.on_entity_cloned,
+	function(event)
+		local entity = event.destination
+		ensure_cache()
+		if (entity.name == "pressure-lab") then
+			add_to_cache(entity,storage.lab_cache)
+		end
+
+		if(entity.name == "ice-box") then
+			add_to_cache(entity,storage.ice_box_cache)
+		end
+	end,
+	{{filter = "name", name = "pressure-lab"}, {filter = "name", name = "ice-box"}})
+
 for _, eventType in pairs({
 	defines.events.on_player_mined_entity,
 	defines.events.on_robot_mined_entity,
 	defines.events.on_entity_died,
+	defines.events.on_space_platform_mined_entity,
+	defines.events.script_raised_destroy,
 }) do
 	script.on_event(eventType,
 		function(event)
@@ -188,12 +211,13 @@ for _, eventType in pairs({
 			local entity = event.entity
 			---@cast entity LuaEntity -- Guaranteed to be LuaEntity when read.
 
+      ensure_cache()
       if (entity.name == "pressure-lab") then
-        remove_from_cache(entity,lab_cache)
+        remove_from_cache(entity,storage.lab_cache)
       end
 
       if(entity.name == "ice-box") then
-        remove_from_cache(entity,ice_box_cache)
+        remove_from_cache(entity,storage.ice_box_cache)
       end
       ---skip_process_lab = true
       --lab_cache = nil
@@ -214,7 +238,8 @@ script.on_nth_tick(45,
       return
     end
     
-    for s,labArray in pairs(lab_cache) do
+    ensure_cache()
+    for s,labArray in pairs(storage.lab_cache) do
       process_labs(labArray)
     end
   end
@@ -229,6 +254,7 @@ script.on_nth_tick(53,
       return
     end
 
+    ensure_cache()
     local current_tick = NthTickEventData.tick
     local delta_time = 53
     if(last_tick == -1 ) then --Only works if are on tick > 53. last_tick is -1 on start up
@@ -242,7 +268,7 @@ script.on_nth_tick(53,
     local surface_array = game.surfaces
     for k,q in pairs(surface_array) do --names of surfaces are in keys
         local current_surface = game.get_surface(k)
-        local ice_boxes = ice_box_cache[current_surface.name]
+        local ice_boxes = storage.ice_box_cache[current_surface.name]
         --log("Ice-Boxes")
         --log(serpent.block(ice_boxes))
 
@@ -253,7 +279,7 @@ script.on_nth_tick(53,
 
         for i,v in pairs(ice_boxes) do
           if(v == nil or v.valid == false) then --If we messed up with the cache somehow.
-            ice_box_cache = find_all_entity_of_name("ice-box")
+            storage.ice_box_cache = find_all_entity_of_name("ice-box")
             goto end_function
           end
 
